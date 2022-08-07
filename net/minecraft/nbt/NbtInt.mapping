@@ -1,0 +1,4 @@
+CLASS bz net/minecraft/nbt/NbtInt
+	FIELD a value I
+	METHOD <init> (I)V
+		ARG 1 value

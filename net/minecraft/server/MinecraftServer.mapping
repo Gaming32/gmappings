@@ -1,0 +1,38 @@
+CLASS net/minecraft/server/MinecraftServer
+	FIELD a logger Ljava/util/logging/Logger;
+	FIELD d properties Ldt;
+	FIELD f playerManager Lhk;
+	FIELD g stopped Z
+	FIELD h tickRan I
+	FIELD i percentageMessage Ljava/lang/String;
+	FIELD j loadPercentage I
+	FIELD l onlineMode Z
+	FIELD m spawnAnimals Z
+	FIELD n pvp Z
+	FIELD o running Z
+	FIELD p tickListeners Ljava/util/List;
+	FIELD q commandQueue Ljava/util/List;
+	METHOD a stopServer ()V
+	METHOD a addTickListener (Lfc;)V
+		ARG 1 listener
+	METHOD a createServerFile (Ljava/lang/String;)Ljava/io/File;
+		ARG 1 filename
+	METHOD a logPercentage (Ljava/lang/String;I)V
+		ARG 1 message
+		ARG 2 percentage
+	METHOD a runCommand (Ljava/lang/String;Lfn;)V
+		ARG 1 command
+		ARG 2 sender
+	METHOD a broadcastCommandResponse (Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 author
+		ARG 2 message
+	METHOD a access$000 (Lnet/minecraft/server/MinecraftServer;)Z
+	METHOD b handleQueuedCommands ()V
+	METHOD c startWorld (Ljava/lang/String;)V
+		ARG 1 worldName
+	METHOD d startServer ()Z
+	METHOD e resetLoadPercentage ()V
+	METHOD g shutdownServer ()V
+	METHOD h tick ()V
+	METHOD main ([Ljava/lang/String;)V
+		ARG 0 args

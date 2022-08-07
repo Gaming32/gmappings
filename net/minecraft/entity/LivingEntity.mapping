@@ -1,0 +1,9 @@
+CLASS ep net/minecraft/entity/LivingEntity
+	METHOD a writeLivingNbt (Lad;)V
+		ARG 1 nbt
+	METHOD b readLivingNbt (Lad;)V
+		ARG 1 nbt
+	METHOD d writeNbt (Lad;)V
+		ARG 1 nbt
+	METHOD e readNbt (Lad;)V
+		ARG 1 nbt

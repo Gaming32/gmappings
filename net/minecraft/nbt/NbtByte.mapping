@@ -1,0 +1,4 @@
+CLASS cm net/minecraft/nbt/NbtByte
+	FIELD a value B
+	METHOD <init> (B)V
+		ARG 1 value

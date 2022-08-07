@@ -1,0 +1,4 @@
+CLASS ez net/minecraft/nbt/NbtDouble
+	FIELD a value D
+	METHOD <init> (D)V
+		ARG 1 value

@@ -1,0 +1,4 @@
+CLASS q net/minecraft/nbt/NbtFloat
+	FIELD a value F
+	METHOD <init> (F)V
+		ARG 1 value

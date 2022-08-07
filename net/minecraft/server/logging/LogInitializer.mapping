@@ -1,0 +1,3 @@
+CLASS ha net/minecraft/server/logging/LogInitializer
+	FIELD a logger Ljava/util/logging/Logger;
+	METHOD a initLog ()V

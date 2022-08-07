@@ -1,0 +1,2 @@
+CLASS gp net/minecraft/entity/AbstractPlayerEntity
+	FIELD aw username Ljava/lang/String;

@@ -1,0 +1,4 @@
+CLASS iv net/minecraft/server/logging/MinecraftFormatter
+	FIELD a dateFormat Ljava/text/SimpleDateFormat;
+	METHOD format (Ljava/util/logging/LogRecord;)Ljava/lang/String;
+		ARG 1 record

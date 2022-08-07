@@ -1,0 +1,19 @@
+CLASS hz net/minecraft/nbt/NbtElement
+	FIELD a name Ljava/lang/String;
+	METHOD a getTag ()B
+	METHOD a createElementFromTag (B)Lhz;
+		ARG 0 tag
+	METHOD a writeElementToStream (Lhz;Ljava/io/DataOutput;)V
+		ARG 0 element
+		ARG 1 out
+	METHOD a read (Ljava/io/DataInput;)V
+		ARG 1 in
+	METHOD a write (Ljava/io/DataOutput;)V
+		ARG 1 out
+	METHOD b getTagName (B)Ljava/lang/String;
+		ARG 0 tag
+	METHOD b readElementFromStream (Ljava/io/DataInput;)Lhz;
+		ARG 0 in
+	METHOD c getName ()Ljava/lang/String;
+	METHOD m setName (Ljava/lang/String;)Lhz;
+		ARG 1 name

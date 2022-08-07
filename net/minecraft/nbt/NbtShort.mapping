@@ -1,0 +1,4 @@
+CLASS gq net/minecraft/nbt/NbtShort
+	FIELD a value S
+	METHOD <init> (S)V
+		ARG 1 value

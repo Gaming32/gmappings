@@ -1,0 +1,2 @@
+CLASS cj net/minecraft/server/MinecraftServer$1
+	FIELD a this$0 Lnet/minecraft/server/MinecraftServer;

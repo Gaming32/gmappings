@@ -1,0 +1,8 @@
+CLASS es net/minecraft/nbt/NbtList
+	FIELD a value Ljava/util/List;
+	FIELD b elementTag B
+	METHOD a get (I)Lhz;
+		ARG 1 i
+	METHOD a add (Lhz;)V
+		ARG 1 element
+	METHOD b size ()I

@@ -1,0 +1,9 @@
+CLASS dm net/minecraft/server/PlayerDataSaver
+	FIELD a logger Ljava/util/logging/Logger;
+	FIELD b playersDir Ljava/io/File;
+	METHOD <init> (Ljava/io/File;)V
+		ARG 1 playersDir
+	METHOD a savePlayerData (Lfi;)V
+		ARG 1 player
+	METHOD b loadPlayerData (Lfi;)V
+		ARG 1 player

@@ -1,0 +1,4 @@
+CLASS e net/minecraft/nbt/NbtLong
+	FIELD a value J
+	METHOD <init> (J)V
+		ARG 1 value

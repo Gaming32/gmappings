@@ -1,0 +1,35 @@
+CLASS hk net/minecraft/server/PlayerManager
+	FIELD a logger Ljava/util/logging/Logger;
+	FIELD b players Ljava/util/List;
+	FIELD c server Lnet/minecraft/server/MinecraftServer;
+	FIELD e maxPlayers I
+	FIELD f bannedPlayers Ljava/util/Set;
+	FIELD g bannedIps Ljava/util/Set;
+	FIELD h ops Ljava/util/Set;
+	FIELD i bannedPlayersFile Ljava/io/File;
+	FIELD j bannedIpsFile Ljava/io/File;
+	FIELD k opsFile Ljava/io/File;
+	FIELD l dataSaver Ldm;
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;)V
+		ARG 1 server
+	METHOD a banPlayer (Ljava/lang/String;)V
+		ARG 1 username
+	METHOD b pardonPlayer (Ljava/lang/String;)V
+		ARG 1 username
+	METHOD c playerListToString ()Ljava/lang/String;
+	METHOD c banIp (Ljava/lang/String;)V
+		ARG 1 ip
+	METHOD d pardonIp (Ljava/lang/String;)V
+		ARG 1 ip
+	METHOD e loadBannedPlayers ()V
+	METHOD e op (Ljava/lang/String;)V
+		ARG 1 username
+	METHOD f saveBannedPlayers ()V
+	METHOD f deop (Ljava/lang/String;)V
+		ARG 1 username
+	METHOD g loadBannedIps ()V
+	METHOD g isOpped (Ljava/lang/String;)Z
+		ARG 1 username
+	METHOD h saveBannedIps ()V
+	METHOD i loadOps ()V
+	METHOD j saveOps ()V

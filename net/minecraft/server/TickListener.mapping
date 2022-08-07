@@ -1,0 +1,2 @@
+CLASS fc net/minecraft/server/TickListener
+	METHOD a onTick ()V

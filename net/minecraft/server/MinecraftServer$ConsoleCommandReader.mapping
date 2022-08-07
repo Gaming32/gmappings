@@ -1,0 +1,2 @@
+CLASS cl net/minecraft/server/MinecraftServer$ConsoleCommandReader
+	FIELD a this$0 Lnet/minecraft/server/MinecraftServer;
