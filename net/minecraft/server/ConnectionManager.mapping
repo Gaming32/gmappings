@@ -1,0 +1,13 @@
+CLASS eh net/minecraft/server/ConnectionManager
+	FIELD a logger Ljava/util/logging/Logger;
+	FIELD b active Z
+	FIELD c server Lnet/minecraft/server/MinecraftServer;
+	FIELD d socket Ljava/net/ServerSocket;
+	FIELD e listenThread Ljava/lang/Thread;
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Ljava/net/InetAddress;I)V
+		ARG 1 server
+		ARG 2 address
+		ARG 3 port
+	METHOD a access$100 (Leh;)Ljava/net/ServerSocket;
+	METHOD a access$000 (Leh;Lgh;)V
+	METHOD b access$012 (Leh;)I

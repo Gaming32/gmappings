@@ -1,0 +1,11 @@
+CLASS au net/minecraft/nbt/NbtUtils
+	METHOD a write (Lad;Ljava/io/DataOutput;)V
+		ARG 0 compound
+		ARG 1 out
+	METHOD a writeCompressed (Lad;Ljava/io/OutputStream;)V
+		ARG 0 compound
+		ARG 1 out
+	METHOD a read (Ljava/io/DataInput;)Lad;
+		ARG 0 in
+	METHOD a readCompressed (Ljava/io/InputStream;)Lad;
+		ARG 0 in

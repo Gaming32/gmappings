@@ -1,5 +1,6 @@
 CLASS net/minecraft/server/MinecraftServer
 	FIELD a logger Ljava/util/logging/Logger;
+	FIELD c connectionManager Leh;
 	FIELD d properties Ldt;
 	FIELD f playerManager Lhk;
 	FIELD g stopped Z

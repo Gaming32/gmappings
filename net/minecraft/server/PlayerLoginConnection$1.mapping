@@ -1,0 +1,2 @@
+CLASS ei net/minecraft/server/PlayerLoginConnection$1
+	FIELD b this$0 Lgh;
