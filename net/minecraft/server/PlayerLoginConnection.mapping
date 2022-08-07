@@ -1,10 +1,12 @@
 CLASS gh net/minecraft/server/PlayerLoginConnection
 	FIELD a logger Ljava/util/logging/Logger;
 	FIELD e server Lnet/minecraft/server/MinecraftServer;
+	FIELD f ticks I
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Ljava/net/Socket;Ljava/lang/String;)V
 		ARG 1 server
 		ARG 2 socket
 		ARG 3 threadBaseName
+	METHOD a tick ()V
 	METHOD a access$012 (Lgh;)Ljava/lang/String;
 	METHOD a access$000 (Lgh;Laj;)Laj;
 	METHOD a disconnect (Ljava/lang/String;)V

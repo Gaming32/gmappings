@@ -1,0 +1,2 @@
+CLASS js net/minecraft/network/PacketManager$1
+	FIELD a this$0 Lbs;

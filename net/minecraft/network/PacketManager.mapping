@@ -1,0 +1,33 @@
+CLASS bs net/minecraft/network/PacketManager
+	FIELD a threadCountLock Ljava/lang/Object;
+	FIELD b readThreads I
+	FIELD c writeThreads I
+	FIELD e packetQueueLock Ljava/lang/Object;
+	FIELD f socket Ljava/net/Socket;
+	FIELD g remoteAddress Ljava/net/SocketAddress;
+	FIELD h input Ljava/io/DataInputStream;
+	FIELD i output Ljava/io/DataOutputStream;
+	FIELD j running Z
+	FIELD n handler Lfr;
+	FIELD o stopped Z
+	FIELD p writeThread Ljava/lang/Thread;
+	FIELD q readThread Ljava/lang/Thread;
+	FIELD u timeSinceLastPacket I
+	FIELD v writeQueueSize I
+	METHOD <init> (Ljava/net/Socket;Ljava/lang/String;Lfr;)V
+		ARG 1 socket
+		ARG 2 threadBaseName
+		ARG 3 handler
+	METHOD a access$060 (Lbs;)Z
+	METHOD a setHandler (Lfr;)V
+		ARG 1 handler
+	METHOD a sendPacket (Lju;)V
+		ARG 1 packet
+	METHOD b getRemoteAddress ()Ljava/net/SocketAddress;
+	METHOD b access$048 (Lbs;)Z
+	METHOD c access$036 (Lbs;)V
+	METHOD d access$024 (Lbs;)V
+	METHOD e writePacket ()V
+	METHOD e access$012 (Lbs;)Ljava/lang/Thread;
+	METHOD f readPacket ()V
+	METHOD f access$000 (Lbs;)Ljava/lang/Thread;

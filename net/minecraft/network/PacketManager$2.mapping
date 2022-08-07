@@ -1,0 +1,2 @@
+CLASS jt net/minecraft/network/PacketManager$2
+	FIELD a this$0 Lbs;
