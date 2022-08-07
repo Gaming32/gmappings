@@ -8,10 +8,14 @@ CLASS bs net/minecraft/network/PacketManager
 	FIELD h input Ljava/io/DataInputStream;
 	FIELD i output Ljava/io/DataOutputStream;
 	FIELD j running Z
+	FIELD k readQueue Ljava/util/List;
+	FIELD l writeQueue Ljava/util/List;
+	FIELD m chunkWriteQueue Ljava/util/List;
 	FIELD n handler Lfr;
 	FIELD o stopped Z
 	FIELD p writeThread Ljava/lang/Thread;
 	FIELD q readThread Ljava/lang/Thread;
+	FIELD r disconnected Z
 	FIELD u timeSinceLastPacket I
 	FIELD v writeQueueSize I
 	METHOD <init> (Ljava/net/Socket;Ljava/lang/String;Lfr;)V
@@ -21,6 +25,9 @@ CLASS bs net/minecraft/network/PacketManager
 	METHOD a access$060 (Lbs;)Z
 	METHOD a setHandler (Lfr;)V
 		ARG 1 handler
+	METHOD a disconnect (Ljava/lang/String;[Ljava/lang/Object;)V
+		ARG 1 reason
+		ARG 2 translationArgs
 	METHOD a sendPacket (Lju;)V
 		ARG 1 packet
 	METHOD b getRemoteAddress ()Ljava/net/SocketAddress;

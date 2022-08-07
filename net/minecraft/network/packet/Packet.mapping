@@ -2,6 +2,7 @@ CLASS ju net/minecraft/network/packet/Packet
 	FIELD a packetIdToClass Ljava/util/Map;
 	FIELD b packetClassToId Ljava/util/Map;
 	FIELD j creationTime J
+	FIELD k isChunkPacket Z
 	METHOD a getSize ()I
 	METHOD a getPacketInstanceById (I)Lju;
 		ARG 0 packetId
