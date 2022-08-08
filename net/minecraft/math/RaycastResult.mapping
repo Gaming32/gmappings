@@ -1,0 +1,3 @@
+CLASS hj net/minecraft/math/RaycastResult
+	FIELD f location Lbn;
+	FIELD g entity Lep;

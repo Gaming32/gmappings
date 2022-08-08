@@ -1,4 +1,4 @@
-CLASS fm net/minecraft/server/world/ServerWorld
+CLASS fm net/minecraft/server/ServerWorld
 	FIELD C autoSave Z
 	FIELD D server Lnet/minecraft/server/MinecraftServer;
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Ljava/io/File;Ljava/lang/String;I)V

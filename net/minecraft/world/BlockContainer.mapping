@@ -1,0 +1,17 @@
+CLASS jw net/minecraft/world/BlockContainer
+	METHOD a getBlockId (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD b getBlockState (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD c getBlockType (III)Lkz;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD d (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z

@@ -1,6 +1,48 @@
 CLASS ff net/minecraft/world/World
+	FIELD F objectCreationTime J
+	FIELD H playerData Lad;
+	FIELD d playerEntities Ljava/util/List;
 	FIELD e worldTime J
 	FIELD k spawnMonsters I
+	FIELD l random Ljava/util/Random;
+	FIELD m spawnX I
+	FIELD n spawnY I
+	FIELD o spawnZ I
+	FIELD p newWorld Z
+	FIELD q worldGenerator Ljl;
+	FIELD s baseDir Ljava/io/File;
 	FIELD t worldDir Ljava/io/File;
+	FIELD u seed J
+	FIELD v worldSize J
+	FIELD w name Ljava/lang/String;
+	FIELD x searchingForSpawn Z
+	METHOD <init> (Ljava/io/File;Ljava/lang/String;JLjl;)V
+		ARG 1 worldBaseDir
+		ARG 2 worldName
+		ARG 3 seed
+		ARG 5 worldGenerator
 	METHOD a save (ZLke;)V
 		ARG 2 progressMonitor
+	METHOD b getChunkFromBlockPos (II)Lkw;
+		ARG 1 blockX
+		ARG 2 blockZ
+	METHOD c getChunk (II)Lkw;
+		ARG 1 x
+		ARG 2 z
+	METHOD d (II)I
+		ARG 1 x
+		ARG 2 z
+	METHOD e isAir (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD h verifySessionLock ()V
+	METHOD h (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD i saveData ()V
+	METHOD j (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z

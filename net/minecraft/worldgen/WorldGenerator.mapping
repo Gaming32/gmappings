@@ -1,0 +1,6 @@
+CLASS jl net/minecraft/worldgen/WorldGenerator
+	FIELD a world Lff;
+	METHOD a createForDimension (I)Ljl;
+		ARG 0 dimensionId
+	METHOD a (Lff;)V
+		ARG 1 world

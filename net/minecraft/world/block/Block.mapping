@@ -15,6 +15,7 @@ CLASS gu net/minecraft/world/block/Block
 	FIELD aH stairsStone Lgu;
 	FIELD aJ lever Lgu;
 	FIELD aL doorIron Lgu;
+	FIELD a stringId Ljava/lang/String;
 	FIELD aR button Lgu;
 	FIELD aT ice Lgu;
 	FIELD aV cactus Lgu;
@@ -71,3 +72,6 @@ CLASS gu net/minecraft/world/block/Block
 	METHOD <init> (ILkz;)V
 		ARG 1 id
 		ARG 2 type
+	METHOD a setName (Ljava/lang/String;)Lgu;
+		ARG 1 name
+	METHOD e getStringId ()Ljava/lang/String;

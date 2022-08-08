@@ -1,0 +1,4 @@
+CLASS kr
+	FIELD g world Lfm;
+	METHOD <init> (Lfm;Lbd;Lcg;)V
+		ARG 1 world

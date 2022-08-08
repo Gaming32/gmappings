@@ -77,6 +77,7 @@ CLASS gl net/minecraft/world/item/Item
 	FIELD ax minecart Lgl;
 	FIELD ay saddle Lgl;
 	FIELD az doorIron Lgl;
+	FIELD b random Ljava/util/Random;
 	FIELD c items [Lgl;
 	FIELD d shovelIron Lgl;
 	FIELD e pickaxeIron Lgl;
@@ -104,6 +105,21 @@ CLASS gl net/minecraft/world/item/Item
 	METHOD <init> (I)V
 		ARG 1 baseId
 	METHOD a getStringId ()Ljava/lang/String;
+	METHOD a use (Lik;Lff;Lgp;)Lik;
+		ARG 1 itemStack
+		ARG 2 world
+		ARG 3 player
+	METHOD a interact (Lik;Lgp;Lff;IIII)Z
+		ARG 1 itemStack
+		ARG 2 player
+		ARG 3 world
+		ARG 4 x
+		ARG 5 y
+		ARG 6 z
+		ARG 7 side
+	METHOD a (Lik;Llb;)V
+		ARG 1 itemStack
+		ARG 2 entity
 	METHOD a setName (Ljava/lang/String;)Lgl;
 		ARG 1 name
 	METHOD b getMaxStack ()I

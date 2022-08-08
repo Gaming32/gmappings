@@ -1,4 +1,4 @@
-CLASS ep net/minecraft/entity/Entity
+CLASS ep net/minecraft/world/entity/Entity
 	FIELD p x D
 	FIELD q y D
 	FIELD r z D
