@@ -1,0 +1,38 @@
+CLASS ik net/minecraft/inventory/ItemStack
+	FIELD a count I
+	FIELD c id I
+	FIELD d damage I
+	METHOD <init> (I)V
+		ARG 1 id
+	METHOD <init> (II)V
+		ARG 1 id
+		ARG 2 count
+	METHOD <init> (III)V
+		ARG 1 id
+		ARG 2 count
+		ARG 3 damage
+	METHOD <init> (Lad;)V
+		ARG 1 nbt
+	METHOD <init> (Lgl;)V
+		ARG 1 item
+	METHOD <init> (Lgl;I)V
+		ARG 1 item
+		ARG 2 count
+	METHOD <init> (Lgu;)V
+		ARG 1 block
+	METHOD <init> (Lgu;I)V
+		ARG 1 block
+		ARG 2 count
+	METHOD a getItem ()Lgl;
+	METHOD a split (I)Lik;
+		COMMENT Remove {@code count} items from this {@code ItemStack} and return a new
+		COMMENT {@code ItemStack} with {@code count} items.
+		ARG 1 count
+	METHOD a write (Lad;)Lad;
+		ARG 1 nbt
+	METHOD b getMaxStack ()I
+	METHOD b damage (I)V
+		ARG 1 amount
+	METHOD b read (Lad;)V
+		ARG 1 nbt
+	METHOD c getMaxDamage ()I

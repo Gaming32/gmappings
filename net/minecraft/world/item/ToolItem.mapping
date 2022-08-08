@@ -1,0 +1,8 @@
+CLASS dq net/minecraft/world/item/ToolItem
+	FIELD a level I
+	FIELD bb toolBlocks [Lgu;
+	METHOD <init> (III[Lgu;)V
+		ARG 1 id
+		ARG 2 type
+		ARG 3 level
+		ARG 4 toolBlocks

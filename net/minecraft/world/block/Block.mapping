@@ -46,6 +46,8 @@ CLASS gu net/minecraft/world/block/Block
 	FIELD bc hecksand Lgu;
 	FIELD bd lightgem Lgu;
 	FIELD be portal Lao;
+	FIELD bh id I
+	FIELD bs type Lkz;
 	FIELD d stoneSound Lcp;
 	FIELD e woodSound Lcp;
 	FIELD f gravelSound Lcp;
@@ -63,3 +65,9 @@ CLASS gu net/minecraft/world/block/Block
 	FIELD x wood Lgu;
 	FIELD y sapling Lgu;
 	FIELD z bedrock Lgu;
+	METHOD <init> (IILkz;)V
+		ARG 1 id
+		ARG 3 type
+	METHOD <init> (ILkz;)V
+		ARG 1 id
+		ARG 2 type
