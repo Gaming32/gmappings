@@ -1,2 +1,3 @@
 CLASS ei net/minecraft/server/PlayerLoginConnection$1
+	FIELD a val$packet Laj;
 	FIELD b this$0 Lgh;

@@ -1,0 +1,5 @@
+CLASS fm
+	FIELD C autoSave Z
+	FIELD D server Lnet/minecraft/server/MinecraftServer;
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Ljava/io/File;Ljava/lang/String;I)V
+		ARG 1 server

@@ -12,13 +12,26 @@ CLASS hk net/minecraft/server/PlayerManager
 	FIELD l dataSaver Ldm;
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;)V
 		ARG 1 server
+	METHOD a initializeWorld (Lfm;)V
+	METHOD a loginPlayer (Lgh;Ljava/lang/String;Ljava/lang/String;)Lfi;
+		ARG 1 loginHandler
+		ARG 2 username
 	METHOD a banPlayer (Ljava/lang/String;)V
 		ARG 1 username
+	METHOD a sendMessageToPlayer (Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 username
+		ARG 2 message
+	METHOD a sendPacketToPlayer (Ljava/lang/String;Lju;)Z
+		ARG 1 username
+		ARG 2 packet
+	METHOD a broadcastPacket (Lju;)V
+		ARG 1 packet
 	METHOD b pardonPlayer (Ljava/lang/String;)V
 		ARG 1 username
 	METHOD c playerListToString ()Ljava/lang/String;
 	METHOD c banIp (Ljava/lang/String;)V
 		ARG 1 ip
+	METHOD d saveAllPlayers ()V
 	METHOD d pardonIp (Ljava/lang/String;)V
 		ARG 1 ip
 	METHOD e loadBannedPlayers ()V
@@ -31,5 +44,9 @@ CLASS hk net/minecraft/server/PlayerManager
 	METHOD g isOpped (Ljava/lang/String;)Z
 		ARG 1 username
 	METHOD h saveBannedIps ()V
+	METHOD h getPlayer (Ljava/lang/String;)Lfi;
+		ARG 1 username
 	METHOD i loadOps ()V
+	METHOD i broadcastToOps (Ljava/lang/String;)V
+		ARG 1 message
 	METHOD j saveOps ()V

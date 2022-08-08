@@ -1,0 +1,2 @@
+CLASS hb net/minecraft/network/packet/s2c/TimeUpdatePacket
+	FIELD a time J

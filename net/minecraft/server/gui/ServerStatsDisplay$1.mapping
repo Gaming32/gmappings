@@ -1,0 +1,4 @@
+CLASS lc net/minecraft/server/gui/ServerStatsDisplay$1
+	FIELD a this$0 Lkf;
+	METHOD actionPerformed actionPerformed (Ljava/awt/event/ActionEvent;)V
+		ARG 1 event

@@ -16,15 +16,20 @@ CLASS bs net/minecraft/network/PacketManager
 	FIELD p writeThread Ljava/lang/Thread;
 	FIELD q readThread Ljava/lang/Thread;
 	FIELD r disconnected Z
-	FIELD u timeSinceLastPacket I
+	FIELD s disconnectReason Ljava/lang/String;
+	FIELD t disconnectTranslationArgs [Ljava/lang/Object;
+	FIELD u timeSinceLastRead I
 	FIELD v writeQueueSize I
 	METHOD <init> (Ljava/net/Socket;Ljava/lang/String;Lfr;)V
 		ARG 1 socket
 		ARG 2 threadBaseName
 		ARG 3 handler
+	METHOD a processReadQueue ()V
 	METHOD a access$060 (Lbs;)Z
 	METHOD a setHandler (Lfr;)V
 		ARG 1 handler
+	METHOD a disconnectForException (Ljava/lang/Exception;)V
+		ARG 1 e
 	METHOD a disconnect (Ljava/lang/String;[Ljava/lang/Object;)V
 		ARG 1 reason
 		ARG 2 translationArgs
@@ -32,6 +37,7 @@ CLASS bs net/minecraft/network/PacketManager
 		ARG 1 packet
 	METHOD b getRemoteAddress ()Ljava/net/SocketAddress;
 	METHOD b access$048 (Lbs;)Z
+	METHOD c stop ()V
 	METHOD c access$036 (Lbs;)V
 	METHOD d access$024 (Lbs;)V
 	METHOD e writePacket ()V

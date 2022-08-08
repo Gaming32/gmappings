@@ -1,0 +1,4 @@
+CLASS ht net/minecraft/server/gui/GuiLogHandler$1
+	FIELD a this$0 Ldp;
+	METHOD format format (Ljava/util/logging/LogRecord;)Ljava/lang/String;
+		ARG 1 record

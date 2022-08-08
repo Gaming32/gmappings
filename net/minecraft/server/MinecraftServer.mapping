@@ -2,6 +2,7 @@ CLASS net/minecraft/server/MinecraftServer
 	FIELD a logger Ljava/util/logging/Logger;
 	FIELD c connectionManager Leh;
 	FIELD d properties Ldt;
+	FIELD e world Lfm;
 	FIELD f playerManager Lhk;
 	FIELD g stopped Z
 	FIELD h tickRan I
@@ -29,11 +30,16 @@ CLASS net/minecraft/server/MinecraftServer
 		ARG 2 message
 	METHOD a access$000 (Lnet/minecraft/server/MinecraftServer;)Z
 	METHOD b handleQueuedCommands ()V
+	METHOD b parseIntOrDefault (Ljava/lang/String;I)I
+		ARG 1 value
+		ARG 2 def
 	METHOD c startWorld (Ljava/lang/String;)V
 		ARG 1 worldName
 	METHOD d startServer ()Z
 	METHOD e resetLoadPercentage ()V
+	METHOD f saveWorld ()V
 	METHOD g shutdownServer ()V
 	METHOD h tick ()V
-	METHOD main ([Ljava/lang/String;)V
+	METHOD main main ([Ljava/lang/String;)V
 		ARG 0 args
+	METHOD run run ()V

@@ -1,4 +1,16 @@
 CLASS fr net/minecraft/network/PacketHandler
+	METHOD a handleClientInformation (Laj;)V
+		ARG 1 packet
+	METHOD a handleChat (Lbr;)V
+		ARG 1 packet
+	METHOD a handleTimeUpdate (Lhb;)V
+		ARG 1 packet
+	METHOD a handleMovement (Lhx;)V
+		ARG 1 packet
 	METHOD a onDisconnected (Ljava/lang/String;[Ljava/lang/Object;)V
 		ARG 1 reason
 		ARG 2 translationArgs
+	METHOD a handlePacket (Lju;)V
+		ARG 1 packet
+	METHOD a handleDisconnect (Lkx;)V
+		ARG 1 packet
