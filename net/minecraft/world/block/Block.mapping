@@ -1,4 +1,8 @@
 CLASS gu net/minecraft/world/block/Block
+	FIELD A waterFlowing Lgu;
+	FIELD B waterStill Lgu;
+	FIELD C lavaFlowing Lgu;
+	FIELD D lavaStill Lgu;
 	FIELD E sand Lgu;
 	FIELD F gravel Lgu;
 	FIELD G oreGold Lgu;
@@ -48,7 +52,7 @@ CLASS gu net/minecraft/world/block/Block
 	FIELD bd lightgem Lgu;
 	FIELD be portal Lao;
 	FIELD bh id I
-	FIELD bs type Lkz;
+	FIELD bs material Lkz;
 	FIELD d stoneSound Lcp;
 	FIELD e woodSound Lcp;
 	FIELD f gravelSound Lcp;
@@ -59,6 +63,11 @@ CLASS gu net/minecraft/world/block/Block
 	FIELD k clothSound Lcp;
 	FIELD l sandSound Lcp;
 	FIELD m blocks [Lgu;
+	FIELD n hasRandomTick [Z
+	FIELD o opaque [Z
+	FIELD p tileEntity [Z
+	FIELD q solidity [I
+	FIELD s lightLevel [I
 	FIELD t stone Lgu;
 	FIELD u grass Lix;
 	FIELD v dirt Lgu;
@@ -68,10 +77,27 @@ CLASS gu net/minecraft/world/block/Block
 	FIELD z bedrock Lgu;
 	METHOD <init> (IILkz;)V
 		ARG 1 id
-		ARG 3 type
+		ARG 3 material
 	METHOD <init> (ILkz;)V
 		ARG 1 id
-		ARG 2 type
+		ARG 2 material
+	METHOD a isOpaque ()Z
+	METHOD a setLightLevel (F)Lgu;
+		COMMENT {@code level} in this method is unusually a float from {@code 0.0f} to
+		COMMENT {@code 1.0f} (inclusive) that maps to light levels 0 through 15.
+		ARG 1 level01
+	METHOD a (Lff;III)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a randomTick (Lff;IIILjava/util/Random;)V
 	METHOD a setName (Ljava/lang/String;)Lgu;
 		ARG 1 name
+	METHOD a setHasRandomTick (Z)V
+		ARG 1 hasRandomTick
+	METHOD b onDestroy (Lff;III)V
+	METHOD c setSoliditiy (I)Lgu;
+		ARG 1 solidity
 	METHOD e getStringId ()Ljava/lang/String;
+	METHOD e onPlace (Lff;III)V

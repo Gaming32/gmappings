@@ -1,8 +1,19 @@
 CLASS ff net/minecraft/world/World
+	FIELD B queuedEntityRemovals Ljava/util/List;
 	FIELD F objectCreationTime J
+	FIELD G chunkProvider Lcg;
 	FIELD H playerData Lad;
+	FIELD K tickedChunks Ljava/util/Set;
+	FIELD L nextCaveNoise I
+	FIELD b loadedEntities Ljava/util/List;
+	FIELD c tileEntities Ljava/util/List;
 	FIELD d playerEntities Ljava/util/List;
 	FIELD e worldTime J
+	FIELD g randomBlockPosSeed I
+		COMMENT Used in computing the random block pos for random ticks and for cave noises.
+	FIELD h randomBlockPosPrime I
+		COMMENT Used in computing the random block pos for random ticks and for cave noises. This
+		COMMENT number is in fact prime.
 	FIELD k spawnMonsters I
 	FIELD l random Ljava/util/Random;
 	FIELD m spawnX I
@@ -10,6 +21,7 @@ CLASS ff net/minecraft/world/World
 	FIELD o spawnZ I
 	FIELD p newWorld Z
 	FIELD q worldGenerator Ljl;
+	FIELD r listeners Ljava/util/List;
 	FIELD s baseDir Ljava/io/File;
 	FIELD t worldDir Ljava/io/File;
 	FIELD u seed J
@@ -21,21 +33,95 @@ CLASS ff net/minecraft/world/World
 		ARG 2 worldName
 		ARG 3 seed
 		ARG 5 worldGenerator
+	METHOD a playSound (DDDLjava/lang/String;FF)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 soundId
+		ARG 8 volume
+		ARG 9 pitch
+	METHOD a setBlockId (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 blockId
+	METHOD a setBlockIdAndData (IIIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 blockId
+		ARG 5 data
+	METHOD a areAllBlocksLoaded (IIIIII)Z
+		COMMENT Returns true if all blocks in range in the range from {@code minX} and {@code minZ}
+		COMMENT (inclusive) to {@code maxX} and {@code maxZ} (inclusive) are loaded and
+		COMMENT {@code maxY} is in between {@code 0} (inclusive) and {@code 128} (exclusive). All
+		COMMENT coordinates passed to this method are block coordinates (not chunk coordinates).
+		ARG 1 minX
+		ARG 2 minY
+		ARG 3 minZ
+		ARG 4 maxX
+		ARG 5 maxY
+		ARG 6 maxZ
+	METHOD a addListener (Lbw;)V
+		ARG 1 listener
+	METHOD a spawnEntity (Lep;)Z
+		ARG 1 entity
+	METHOD a playSoundFromEntity (Lep;Ljava/lang/String;FF)V
+		ARG 1 entity
+		ARG 2 soundId
+		ARG 3 volume
+		ARG 4 pitch
+	METHOD a countEntitiesOfType (Ljava/lang/Class;)I
+		ARG 1 type
+	METHOD a getEntitiesInBox (Ljava/lang/Class;Lel;)Ljava/util/List;
+		ARG 1 entityType
+		ARG 2 box
+	METHOD a addLoadedEntities (Ljava/util/List;)V
+		ARG 1 entities
 	METHOD a save (ZLke;)V
 		ARG 2 progressMonitor
 	METHOD b getChunkFromBlockPos (II)Lkw;
 		ARG 1 blockX
 		ARG 2 blockZ
+	METHOD b notifyEntitySpawned (Lep;)V
+		ARG 1 entity
+	METHOD b queueEntityRemovals (Ljava/util/List;)V
+		ARG 1 entities
 	METHOD c getChunk (II)Lkw;
 		ARG 1 x
 		ARG 2 z
+	METHOD c notifyEntityRemoved (Lep;)V
+		ARG 1 entity
 	METHOD d (II)I
 		ARG 1 x
 		ARG 2 z
+	METHOD d (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 blockId
+	METHOD d removeEntityQuietly (Lep;)V
+		ARG 1 entity
 	METHOD e isAir (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD e removeEntity (Lep;)V
+		ARG 1 entity
+	METHOD f tick ()V
+	METHOD f isChunkLoaded (II)Z
+		ARG 1 x
+		ARG 2 z
+	METHOD f isBlockLoaded (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD f (IIII)V
+		ARG 1 x
+		ARG 2 z
+		ARG 3 lowMaxY
+		ARG 4 highMaxY
+	METHOD g randomTick ()V
 	METHOD h verifySessionLock ()V
 	METHOD h (III)Z
 		ARG 1 x

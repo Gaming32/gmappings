@@ -1,1 +1,4 @@
 CLASS ki net/minecraft/world/item/HoeItem
+	METHOD <init> (II)V
+		ARG 1 itemId
+		ARG 2 level

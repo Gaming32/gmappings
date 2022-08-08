@@ -1,1 +1,5 @@
 CLASS fa net/minecraft/world/item/HatchetItem
+	FIELD bb hatchetBlocks [Lgu;
+	METHOD <init> (II)V
+		ARG 1 itemId
+		ARG 2 level

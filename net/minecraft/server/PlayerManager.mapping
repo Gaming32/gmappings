@@ -36,6 +36,8 @@ CLASS hk net/minecraft/server/PlayerManager
 	METHOD b pardonPlayer (Ljava/lang/String;)V
 		ARG 1 username
 	METHOD c playerListToString ()Ljava/lang/String;
+	METHOD c removePlayer (Lfi;)V
+		ARG 1 player
 	METHOD c banIp (Ljava/lang/String;)V
 		ARG 1 ip
 	METHOD d saveAllPlayers ()V

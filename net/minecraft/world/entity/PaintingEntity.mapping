@@ -1,0 +1,9 @@
+CLASS ct net/minecraft/world/entity/PaintingEntity
+	FIELD d blockX I
+	FIELD e blockY I
+	FIELD f blockZ I
+	METHOD <init> (Lff;IIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

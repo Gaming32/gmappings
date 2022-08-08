@@ -1,1 +1,5 @@
 CLASS lg net/minecraft/world/item/FoodItem
+	FIELD a healthRestoration I
+	METHOD <init> (II)V
+		ARG 1 itemId
+		ARG 2 healthRestoration

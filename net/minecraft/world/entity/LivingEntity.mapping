@@ -1,1 +1,4 @@
 CLASS lb net/minecraft/world/entity/LivingEntity
+	FIELD ba health I
+	METHOD c heal (I)V
+		ARG 1 amount

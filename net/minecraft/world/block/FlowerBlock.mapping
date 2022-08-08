@@ -1,1 +1,3 @@
 CLASS ij net/minecraft/world/block/FlowerBlock
+	METHOD <init> (II)V
+		ARG 1 blockId

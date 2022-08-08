@@ -1,0 +1,11 @@
+CLASS kp net/minecraft/world/entity/MinecartEntity
+	FIELD aj pushZ D
+	FIELD d type I
+	FIELD e fuel I
+	FIELD f pushX D
+	METHOD <init> (Lff;DDDI)V
+		ARG 1 world
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 type

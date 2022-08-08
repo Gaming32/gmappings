@@ -1,14 +1,25 @@
 CLASS ep net/minecraft/world/entity/Entity
+	FIELD ag chunkX I
+	FIELD ah chunkY I
+	FIELD ai chunkZ I
+	FIELD m lastX D
+	FIELD n lastY D
+	FIELD o lastZ D
 	FIELD p x D
 	FIELD q y D
 	FIELD r z D
 	FIELD v yaw F
 	FIELD w pitch F
+	FIELD z boundingBox Lel;
 	METHOD <init> (Lff;)V
 		ARG 1 world
-	METHOD a writeLivingNbt (Lad;)V
+	METHOD a setPosition (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD a writeTypeNbt (Lad;)V
 		ARG 1 nbt
-	METHOD b readLivingNbt (Lad;)V
+	METHOD b readTypeNbt (Lad;)V
 		ARG 1 nbt
 	METHOD d writeNbt (Lad;)V
 		ARG 1 nbt

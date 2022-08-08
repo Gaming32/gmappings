@@ -1,1 +1,5 @@
 CLASS hs net/minecraft/world/item/DoorItem
+	FIELD a material Lkz;
+	METHOD <init> (ILkz;)V
+		ARG 1 itemId
+		ARG 2 material

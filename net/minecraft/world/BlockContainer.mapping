@@ -3,11 +3,11 @@ CLASS jw net/minecraft/world/BlockContainer
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD b getBlockState (III)I
+	METHOD b getBlockData (III)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD c getBlockType (III)Lkz;
+	METHOD c getMaterial (III)Lkz;
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

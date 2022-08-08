@@ -1,2 +1,0 @@
-CLASS kz net/minecraft/world/block/BlockType
-	FIELD a air Lkz;
