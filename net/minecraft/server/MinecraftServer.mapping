@@ -1,4 +1,4 @@
-CLASS net/minecraft/server/MinecraftServer
+CLASS net/minecraft/server/MinecraftServer net/minecraft/server/MinecraftServer
 	FIELD a logger Ljava/util/logging/Logger;
 	FIELD c connectionManager Leh;
 	FIELD d properties Ldt;

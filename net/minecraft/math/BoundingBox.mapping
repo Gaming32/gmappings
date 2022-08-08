@@ -1,0 +1,69 @@
+CLASS el net/minecraft/math/BoundingBox
+	FIELD a minX D
+	FIELD b minY D
+	FIELD c minZ D
+	FIELD d maxX D
+	FIELD e maxY D
+	FIELD f maxZ D
+	FIELD g boundingBoxPool Ljava/util/List;
+	FIELD h nextBoundingBox I
+	METHOD <init> (DDDDDD)V
+		ARG 1 minX
+		ARG 3 minY
+		ARG 5 minZ
+		ARG 7 maxX
+		ARG 9 maxY
+		ARG 11 maxZ
+	METHOD a poolBoundingBoxes ()V
+	METHOD a (DDD)Lel;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD a createUnpooled (DDDDDD)Lel;
+		ARG 0 minX
+		ARG 2 minY
+		ARG 4 minZ
+		ARG 6 maxX
+		ARG 8 maxY
+		ARG 10 maxZ
+	METHOD a collideYZ (Lbn;)Z
+		ARG 1 vec
+	METHOD a collide (Lel;)Z
+		ARG 1 other
+	METHOD b copy ()Lel;
+	METHOD b expand (DDD)Lel;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD b create (DDDDDD)Lel;
+		ARG 0 minX
+		ARG 2 minY
+		ARG 4 minZ
+		ARG 6 maxX
+		ARG 8 maxY
+		ARG 10 maxZ
+	METHOD b collideXZ (Lbn;)Z
+		ARG 1 vec
+	METHOD b set (Lel;)V
+		ARG 1 other
+	METHOD c move (DDD)Lel;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD c set (DDDDDD)Lel;
+		ARG 1 minX
+		ARG 3 minY
+		ARG 5 minZ
+		ARG 7 maxX
+		ARG 9 maxY
+		ARG 11 maxZ
+	METHOD c collideXY (Lbn;)Z
+		ARG 1 vec
+	METHOD d moveInPlace (DDD)Lel;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD e (DDD)Lel;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z

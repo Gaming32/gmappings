@@ -1,0 +1,6 @@
+CLASS ff net/minecraft/world/World
+	FIELD e worldTime J
+	FIELD k spawnMonsters I
+	FIELD t worldDir Ljava/io/File;
+	METHOD a save (ZLke;)V
+		ARG 2 progressMonitor

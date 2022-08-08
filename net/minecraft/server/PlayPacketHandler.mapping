@@ -7,6 +7,12 @@ CLASS kj net/minecraft/server/PlayPacketHandler
 		ARG 1 server
 		ARG 2 packetManager
 		ARG 3 player
+	METHOD a teleport (DDDFF)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 yaw
+		ARG 8 pitch
 	METHOD a disconnect (Ljava/lang/String;)V
 		ARG 1 reason
 	METHOD b sendPacket (Lju;)V

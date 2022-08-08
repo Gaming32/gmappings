@@ -1,4 +1,0 @@
-CLASS ff
-	FIELD e worldTime J
-	FIELD k spawnMonsters I
-	FIELD t worldDir Ljava/io/File;

@@ -3,4 +3,5 @@ CLASS fi net/minecraft/server/ServerPlayerEntity
 	FIELD b server Lnet/minecraft/server/MinecraftServer;
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lff;Ljava/lang/String;Lkv;)V
 		ARG 1 server
+		ARG 2 world
 		ARG 3 username

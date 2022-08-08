@@ -12,7 +12,14 @@ CLASS hk net/minecraft/server/PlayerManager
 	FIELD l dataSaver Ldm;
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;)V
 		ARG 1 server
+	METHOD a broadcastToNearbyPlayers (DDDDLju;)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 distance
+		ARG 9 packet
 	METHOD a initializeWorld (Lfm;)V
+		ARG 1 world
 	METHOD a loginPlayer (Lgh;Ljava/lang/String;Ljava/lang/String;)Lfi;
 		ARG 1 loginHandler
 		ARG 2 username
@@ -32,6 +39,8 @@ CLASS hk net/minecraft/server/PlayerManager
 	METHOD c banIp (Ljava/lang/String;)V
 		ARG 1 ip
 	METHOD d saveAllPlayers ()V
+	METHOD d (Lfi;)Lfi;
+		ARG 1 player
 	METHOD d pardonIp (Ljava/lang/String;)V
 		ARG 1 ip
 	METHOD e loadBannedPlayers ()V

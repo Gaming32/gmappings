@@ -1,0 +1,5 @@
+CLASS kv
+	FIELD a player Lgp;
+	FIELD b world Lff;
+	METHOD <init> (Lff;)V
+		ARG 1 world

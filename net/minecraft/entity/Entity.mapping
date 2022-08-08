@@ -1,1 +1,16 @@
-CLASS lb net/minecraft/entity/Entity
+CLASS ep net/minecraft/entity/Entity
+	FIELD p x D
+	FIELD q y D
+	FIELD r z D
+	FIELD v yaw F
+	FIELD w pitch F
+	METHOD <init> (Lff;)V
+		ARG 1 world
+	METHOD a writeLivingNbt (Lad;)V
+		ARG 1 nbt
+	METHOD b readLivingNbt (Lad;)V
+		ARG 1 nbt
+	METHOD d writeNbt (Lad;)V
+		ARG 1 nbt
+	METHOD e readNbt (Lad;)V
+		ARG 1 nbt
