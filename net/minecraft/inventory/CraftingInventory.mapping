@@ -1,0 +1,2 @@
+CLASS i net/minecraft/inventory/CraftingInventory
+	FIELD a slots [Lik;

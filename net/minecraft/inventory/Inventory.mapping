@@ -1,0 +1,18 @@
+CLASS lf net/minecraft/inventory/Inventory
+	METHOD a getSize ()I
+	METHOD a getSlot (I)Lik;
+		ARG 1 slotId
+	METHOD a getStackOfSize (II)Lik;
+		COMMENT Gets an {@link net.minecraft.inventory.ItemStack ItemStack} from the specified
+		COMMENT {@code slotId} of up to {@code size} items, or {@code null} if the specified slot
+		COMMENT is empty.
+		ARG 1 slotId
+		ARG 2 size
+	METHOD a setSlot (ILik;)V
+		ARG 1 slotId
+		ARG 2 itemStack
+	METHOD a_ (Lgp;)Z
+		ARG 1 player
+	METHOD b getName ()Ljava/lang/String;
+	METHOD c getMaxStack ()I
+	METHOD d ()V

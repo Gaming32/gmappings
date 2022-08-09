@@ -3,6 +3,11 @@ CLASS bw net/minecraft/world/WorldListener
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD a (IIILbg;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 entity
 	METHOD a entitySpawned (Lep;)V
 		ARG 1 entity
 	METHOD a spawnParticle (Ljava/lang/String;DDDDDD)V

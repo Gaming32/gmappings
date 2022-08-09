@@ -1,15 +1,24 @@
 CLASS ep net/minecraft/world/entity/Entity
 	FIELD A onGround Z
+	FIELD G dead Z
+	FIELD I width F
+	FIELD J height F
 	FIELD N fallDistance F
 	FIELD O tempX D
 	FIELD P tempY D
 	FIELD Q tempZ D
+	FIELD W random Ljava/util/Random;
 	FIELD Z fireTicks I
+	FIELD a nextEntityId I
 	FIELD ad airTicks I
 	FIELD af isLoaded Z
 	FIELD ag chunkX I
 	FIELD ah chunkY I
 	FIELD ai chunkZ I
+	FIELD g entityId I
+	FIELD j ridingEntity Lep;
+	FIELD k riddenEntity Lep;
+	FIELD l world Lff;
 	FIELD m lastX D
 	FIELD n lastY D
 	FIELD o lastZ D
@@ -30,13 +39,50 @@ CLASS ep net/minecraft/world/entity/Entity
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
+	METHOD a setSize (FF)V
+		ARG 1 width
+		ARG 2 height
+	METHOD a dropItem (IIF)Lhe;
+		ARG 1 itemId
+		ARG 2 count
+		ARG 3 yOffset
 	METHOD a writeTypeNbt (Lad;)V
 		ARG 1 nbt
+	METHOD a damage (Lep;I)Z
+		ARG 1 damager
+		ARG 2 amount
+	METHOD a (Lgp;)Z
+		ARG 1 player
 	METHOD a arrayToNbtList ([D)Les;
 	METHOD a arrayToNbtList ([F)Les;
+	METHOD b setRotation (FF)V
+		ARG 1 yaw
+		ARG 2 pitch
+	METHOD b damage (I)V
+		ARG 1 amount
+	METHOD b dropItem (II)Lhe;
+		ARG 1 itemId
+		ARG 2 count
 	METHOD b readTypeNbt (Lad;)V
 		ARG 1 nbt
+	METHOD b distanceTo (Lep;)D
+		ARG 1 entity
+	METHOD b interactedWith (Lgp;)V
+		ARG 1 player
+	METHOD b_ tick ()V
+	METHOD c move (DDD)V
+		ARG 1 vx
+		ARG 3 vy
+		ARG 5 vz
+	METHOD d distanceTo (DDD)D
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
 	METHOD d writeNbt (Lad;)V
 		ARG 1 nbt
 	METHOD e readNbt (Lad;)V
 		ARG 1 nbt
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 o
+	METHOD l markDead ()V
+	METHOD x isAlive ()Z

@@ -1,1 +1,14 @@
 CLASS gk net/minecraft/world/block/SandBlock
+	FIELD a teleportToGround Z
+	METHOD <init> (II)V
+		ARG 1 blockId
+	METHOD g shouldFall (Lff;III)Z
+		ARG 0 world
+		ARG 1 x
+		ARG 2 yUnder
+		ARG 3 z
+	METHOD h update (Lff;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

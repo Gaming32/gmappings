@@ -1,0 +1,2 @@
+CLASS kb net/minecraft/world/entity/ZombiePigEntity
+	FIELD a anger I

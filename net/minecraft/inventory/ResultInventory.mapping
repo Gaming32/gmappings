@@ -1,0 +1,2 @@
+CLASS is net/minecraft/inventory/ResultInventory
+	FIELD a slots [Lik;

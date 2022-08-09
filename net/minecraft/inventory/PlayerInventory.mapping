@@ -1,0 +1,31 @@
+CLASS ih net/minecraft/inventory/PlayerInventory
+	FIELD a inventorySlots [Lik;
+	FIELD b armorSlots [Lik;
+	FIELD c heldItemSlot I
+	FIELD e player Lgp;
+	METHOD <init> (Lgp;)V
+		ARG 1 player
+	METHOD a (II)Lik;
+		COMMENT Gets an {@link net.minecraft.inventory.ItemStack ItemStack} from the specified
+		COMMENT {@code slotId} of up to {@code size} items, or {@code null} if the specified slot
+		COMMENT is empty.
+	METHOD a add (Lik;)Z
+		COMMENT @return {@code true} if {@code itemStack} was added to the inventory in full,
+		COMMENT {@code false} if it was only added in part or not at all.
+		ARG 1 itemStack
+	METHOD b removeOneOf (I)Z
+		COMMENT @return {@code true} if an item was successfully removed, {@code} false otherwise.
+		ARG 1 itemId
+	METHOD b addToOneStack (II)I
+		COMMENT Adds up to {@code amount} items of {@code itemId} to the first matching or empty
+		COMMENT slot.
+		COMMENT
+		COMMENT @return The remaining {@code amount} that couldn't fit into the inventory.
+		ARG 1 itemId
+		ARG 2 amount
+	METHOD d getFirstMatchingSlot (I)I
+		ARG 1 itemId
+	METHOD e getHeldItem ()Lik;
+	METHOD e getMatchingSlotWithRoomForOne (I)I
+		ARG 1 itemId
+	METHOD j getFirstEmptySlot ()I

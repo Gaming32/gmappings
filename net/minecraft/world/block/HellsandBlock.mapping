@@ -1,1 +1,3 @@
 CLASS ai net/minecraft/world/block/HellsandBlock
+	METHOD <init> (II)V
+		ARG 1 blockId

@@ -1,5 +1,13 @@
 CLASS lb net/minecraft/world/entity/LivingEntity
 	FIELD aQ texturePath Ljava/lang/String;
 	FIELD ba health I
+	FIELD bc hurtTime I
+	FIELD bf deathTime I
+	FIELD bg attackTime I
 	METHOD c heal (I)V
 		ARG 1 amount
+	METHOD d getIdleSound ()Ljava/lang/String;
+	METHOD e getHurtSound ()Ljava/lang/String;
+	METHOD f getDeathSound ()Ljava/lang/String;
+	METHOD g getDropItemId ()I
+	METHOD h getSoundVolume ()F

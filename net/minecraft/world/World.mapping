@@ -16,7 +16,7 @@ CLASS ff net/minecraft/world/World
 	FIELD h randomBlockPosPrime I
 		COMMENT Used in computing the random block pos for random ticks and for cave noises. This
 		COMMENT number is in fact prime.
-	FIELD k spawnMonsters I
+	FIELD k difficulty I
 	FIELD l random Ljava/util/Random;
 	FIELD m spawnX I
 	FIELD n spawnY I
@@ -71,6 +71,11 @@ CLASS ff net/minecraft/world/World
 		ARG 4 maxX
 		ARG 5 maxY
 		ARG 6 maxZ
+	METHOD a setTileEntity (IIILbg;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 entity
 	METHOD a (IIIZ)I
 		ARG 1 x
 		ARG 2 y
@@ -132,6 +137,11 @@ CLASS ff net/minecraft/world/World
 		ARG 3 z
 		ARG 4 blockId
 		ARG 5 data
+	METHOD b (IIILbg;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 entity
 	METHOD b setLightLevel (Leb;IIII)V
 		ARG 1 type
 		ARG 2 x
@@ -226,3 +236,11 @@ CLASS ff net/minecraft/world/World
 		ARG 2 y
 		ARG 3 z
 		ARG 4 blockId
+	METHOD l getTileEntity (III)Lbg;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD m removeTileEntity (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z

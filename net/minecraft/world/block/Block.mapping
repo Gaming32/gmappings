@@ -13,6 +13,8 @@ CLASS gu net/minecraft/world/block/Block
 	FIELD L sponge Lgu;
 	FIELD M glass Lgu;
 	FIELD aA farmland Lgu;
+	FIELD aB unlitFurnace Lgu;
+	FIELD aC litFurnace Lgu;
 	FIELD aE doorWood Lgu;
 	FIELD aF ladder Lgu;
 	FIELD aG rail Lgu;
@@ -51,7 +53,7 @@ CLASS gu net/minecraft/world/block/Block
 	FIELD bc hecksand Lgu;
 	FIELD bd lightgem Lgu;
 	FIELD be portal Lao;
-	FIELD bh id I
+	FIELD bh blockId I
 	FIELD bk minX D
 	FIELD bl minY D
 	FIELD bm minZ D
@@ -60,6 +62,7 @@ CLASS gu net/minecraft/world/block/Block
 	FIELD bp maxZ D
 	FIELD bq stepSound Lcp;
 	FIELD bs material Lkz;
+	FIELD bt slipperiness F
 	FIELD d stoneSound Lcp;
 	FIELD e woodSound Lcp;
 	FIELD f gravelSound Lcp;
@@ -100,6 +103,9 @@ CLASS gu net/minecraft/world/block/Block
 		ARG 4 maxX
 		ARG 5 maxY
 		ARG 6 maxZ
+	METHOD a getDroppedItemId (ILjava/util/Random;)I
+		ARG 1 blockData
+		ARG 2 random
 	METHOD a setStepSound (Lcp;)Lgu;
 		ARG 1 stepSound
 	METHOD a (Lff;III)Z
@@ -107,6 +113,13 @@ CLASS gu net/minecraft/world/block/Block
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD a dropItems (Lff;IIIIF)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 blockData
+		ARG 6 chance
 	METHOD a addOwnBoundingBoxToListIfColliding (Lff;IIILel;Ljava/util/ArrayList;)V
 		ARG 1 world
 		ARG 2 x
@@ -114,10 +127,23 @@ CLASS gu net/minecraft/world/block/Block
 		ARG 4 z
 		ARG 5 box
 		ARG 6 list
+	METHOD a onMovementCollision (Lff;IIILep;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 entity
 	METHOD a a (Lff;IIILgp;)Z
 	METHOD a randomTick (Lff;IIILjava/util/Random;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 random
 	METHOD a setName (Ljava/lang/String;)Lgu;
 		ARG 1 name
+	METHOD a getDropCount (Ljava/util/Random;)I
+		ARG 1 random
 	METHOD a shouldRenderSide (Ljw;IIII)Z
 		ARG 1 world
 		ARG 2 sideX
@@ -126,8 +152,23 @@ CLASS gu net/minecraft/world/block/Block
 		ARG 5 side
 	METHOD a setHasRandomTick (Z)V
 		ARG 1 hasRandomTick
+	METHOD a_ dropItems (Lff;IIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 blockData
 	METHOD b onDestroy (Lff;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD b blockChangedNearby (Lff;IIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 newBlockId
 	METHOD c setSoliditiy (I)Lgu;
 		ARG 1 solidity
 	METHOD d getBoundingBox (Lff;III)Lel;
@@ -137,3 +178,12 @@ CLASS gu net/minecraft/world/block/Block
 		ARG 4 z
 	METHOD e getStringId ()Ljava/lang/String;
 	METHOD e onPlace (Lff;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD g (Lff;IIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

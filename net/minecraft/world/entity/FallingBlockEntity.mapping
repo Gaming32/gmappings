@@ -1,0 +1,9 @@
+CLASS jb net/minecraft/world/entity/FallingBlockEntity
+	FIELD a tile I
+	FIELD b age I
+	METHOD <init> (Lff;DDDI)V
+		ARG 1 world
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 blockId

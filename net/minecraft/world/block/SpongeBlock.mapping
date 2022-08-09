@@ -1,1 +1,3 @@
 CLASS jo net/minecraft/world/block/SpongeBlock
+	METHOD <init> (I)V
+		ARG 1 blockId

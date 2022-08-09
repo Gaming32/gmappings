@@ -32,7 +32,7 @@ CLASS ik net/minecraft/inventory/ItemStack
 		ARG 1 nbt
 	METHOD a (Lep;)I
 		ARG 1 entity
-	METHOD a (Lff;Lgp;)Lik;
+	METHOD a use (Lff;Lgp;)Lik;
 		ARG 1 world
 		ARG 2 player
 	METHOD a (Lgp;)V

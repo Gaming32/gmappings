@@ -1,9 +1,24 @@
 CLASS kz net/minecraft/world/material/Material
 	FIELD a AIR Lkz;
+	FIELD b GRASS Lkz;
 	FIELD c WOOD Lkz;
+	FIELD e GEM Lkz;
 	FIELD f WATER Lkz;
 	FIELD g LAVA Lkz;
-	FIELD i FLOWER Lkz;
+	FIELD h LEAVES Lkz;
+	FIELD i PLANT Lkz;
+	FIELD j SPONGE Lkz;
+	FIELD k CLOTH Lkz;
 	FIELD l FIRE Lkz;
+	FIELD m SAND Lkz;
+	FIELD o GLASS Lkz;
+	FIELD p TNT Lkz;
+	FIELD r ICE Lkz;
+	FIELD s SNOW_LAYER Lkz;
+	FIELD t SNOW Lkz;
+	FIELD u CACTUS Lkz;
+	FIELD v CLAY Lkz;
+	FIELD w PUMPKIN Lkz;
+	FIELD x PORTAL Lkz;
 	METHOD c isSolid ()Z
 	METHOD d isLiquid ()Z

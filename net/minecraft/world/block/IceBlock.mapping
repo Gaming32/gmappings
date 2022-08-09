@@ -1,1 +1,3 @@
 CLASS t net/minecraft/world/block/IceBlock
+	METHOD <init> (II)V
+		ARG 1 blockId
