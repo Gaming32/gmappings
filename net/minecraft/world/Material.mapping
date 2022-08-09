@@ -1,5 +1,0 @@
-CLASS kz net/minecraft/world/Material
-	FIELD a AIR Lkz;
-	FIELD c WOOD Lkz;
-	FIELD f WATER Lkz;
-	FIELD g LAVA Lkz;

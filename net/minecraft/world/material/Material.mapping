@@ -1,0 +1,9 @@
+CLASS kz net/minecraft/world/material/Material
+	FIELD a AIR Lkz;
+	FIELD c WOOD Lkz;
+	FIELD f WATER Lkz;
+	FIELD g LAVA Lkz;
+	FIELD i FLOWER Lkz;
+	FIELD l FIRE Lkz;
+	METHOD c isSolid ()Z
+	METHOD d isLiquid ()Z

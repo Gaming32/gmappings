@@ -14,3 +14,4 @@ CLASS bg net/minecraft/world/tileentity/TileEntity
 		ARG 1 nbt
 	METHOD c createAndRead (Lad;)Lbg;
 		ARG 0 nbt
+	METHOD e tick ()V

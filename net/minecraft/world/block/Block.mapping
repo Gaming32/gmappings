@@ -52,6 +52,13 @@ CLASS gu net/minecraft/world/block/Block
 	FIELD bd lightgem Lgu;
 	FIELD be portal Lao;
 	FIELD bh id I
+	FIELD bk minX D
+	FIELD bl minY D
+	FIELD bm minZ D
+	FIELD bn maxX D
+	FIELD bo maxY D
+	FIELD bp maxZ D
+	FIELD bq stepSound Lcp;
 	FIELD bs material Lkz;
 	FIELD d stoneSound Lcp;
 	FIELD e woodSound Lcp;
@@ -86,18 +93,47 @@ CLASS gu net/minecraft/world/block/Block
 		COMMENT {@code level} in this method is unusually a float from {@code 0.0f} to
 		COMMENT {@code 1.0f} (inclusive) that maps to light levels 0 through 15.
 		ARG 1 level01
+	METHOD a setBlockBounds (FFFFFF)V
+		ARG 1 minX
+		ARG 2 minY
+		ARG 3 minZ
+		ARG 4 maxX
+		ARG 5 maxY
+		ARG 6 maxZ
+	METHOD a setStepSound (Lcp;)Lgu;
+		ARG 1 stepSound
 	METHOD a (Lff;III)Z
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD a addOwnBoundingBoxToListIfColliding (Lff;IIILel;Ljava/util/ArrayList;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 box
+		ARG 6 list
+	METHOD a a (Lff;IIILgp;)Z
 	METHOD a randomTick (Lff;IIILjava/util/Random;)V
 	METHOD a setName (Ljava/lang/String;)Lgu;
 		ARG 1 name
+	METHOD a shouldRenderSide (Ljw;IIII)Z
+		ARG 1 world
+		ARG 2 sideX
+		ARG 3 sideY
+		ARG 4 sideZ
+		ARG 5 side
 	METHOD a setHasRandomTick (Z)V
 		ARG 1 hasRandomTick
 	METHOD b onDestroy (Lff;III)V
+	METHOD b blockChangedNearby (Lff;IIII)V
 	METHOD c setSoliditiy (I)Lgu;
 		ARG 1 solidity
+	METHOD d getBoundingBox (Lff;III)Lel;
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD e getStringId ()Ljava/lang/String;
 	METHOD e onPlace (Lff;III)V

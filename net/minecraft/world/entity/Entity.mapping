@@ -1,4 +1,12 @@
 CLASS ep net/minecraft/world/entity/Entity
+	FIELD A onGround Z
+	FIELD N fallDistance F
+	FIELD O tempX D
+	FIELD P tempY D
+	FIELD Q tempZ D
+	FIELD Z fireTicks I
+	FIELD ad airTicks I
+	FIELD af isLoaded Z
 	FIELD ag chunkX I
 	FIELD ah chunkY I
 	FIELD ai chunkZ I
@@ -8,8 +16,13 @@ CLASS ep net/minecraft/world/entity/Entity
 	FIELD p x D
 	FIELD q y D
 	FIELD r z D
+	FIELD s motionX D
+	FIELD t motionY D
+	FIELD u motionZ D
 	FIELD v yaw F
 	FIELD w pitch F
+	FIELD x lastYaw F
+	FIELD y lastPitch F
 	FIELD z boundingBox Lel;
 	METHOD <init> (Lff;)V
 		ARG 1 world
@@ -19,6 +32,8 @@ CLASS ep net/minecraft/world/entity/Entity
 		ARG 5 z
 	METHOD a writeTypeNbt (Lad;)V
 		ARG 1 nbt
+	METHOD a arrayToNbtList ([D)Les;
+	METHOD a arrayToNbtList ([F)Les;
 	METHOD b readTypeNbt (Lad;)V
 		ARG 1 nbt
 	METHOD d writeNbt (Lad;)V
