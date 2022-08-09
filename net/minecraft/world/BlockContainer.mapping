@@ -3,7 +3,7 @@ CLASS jw net/minecraft/world/BlockContainer
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD b getBlockData (III)I
+	METHOD b getBlockMetadata (III)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

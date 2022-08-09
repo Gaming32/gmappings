@@ -104,7 +104,7 @@ CLASS gu net/minecraft/world/block/Block
 		ARG 5 maxY
 		ARG 6 maxZ
 	METHOD a getDroppedItemId (ILjava/util/Random;)I
-		ARG 1 blockData
+		ARG 1 metadata
 		ARG 2 random
 	METHOD a setStepSound (Lcp;)Lgu;
 		ARG 1 stepSound
@@ -118,7 +118,7 @@ CLASS gu net/minecraft/world/block/Block
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-		ARG 5 blockData
+		ARG 5 metadata
 		ARG 6 chance
 	METHOD a addOwnBoundingBoxToListIfColliding (Lff;IIILel;Ljava/util/ArrayList;)V
 		ARG 1 world
@@ -157,7 +157,7 @@ CLASS gu net/minecraft/world/block/Block
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-		ARG 5 blockData
+		ARG 5 metadata
 	METHOD b onDestroy (Lff;III)V
 		ARG 1 world
 		ARG 2 x

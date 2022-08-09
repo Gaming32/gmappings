@@ -54,12 +54,12 @@ CLASS ff net/minecraft/world/World
 		ARG 2 y
 		ARG 3 z
 		ARG 4 blockId
-	METHOD a setBlockIdAndData (IIIII)Z
+	METHOD a setBlockIdAndMetadata (IIIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 blockId
-		ARG 5 data
+		ARG 5 metadata
 	METHOD a areAllBlocksLoaded (IIIIII)Z
 		COMMENT Returns true if all blocks in range in the range from {@code minX} and {@code minZ}
 		COMMENT (inclusive) to {@code maxX} and {@code maxZ} (inclusive) are loaded and
@@ -131,12 +131,17 @@ CLASS ff net/minecraft/world/World
 	METHOD b getChunkFromBlockPos (II)Lkw;
 		ARG 1 blockX
 		ARG 2 blockZ
-	METHOD b setBlockIdAndDataAndUpdate (IIIII)Z
+	METHOD b setBlockMetadataAndUpdate (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 metadata
+	METHOD b setBlockIdAndMetadataAndUpdate (IIIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 blockId
-		ARG 5 data
+		ARG 5 metadata
 	METHOD b (IIILbg;)V
 		ARG 1 x
 		ARG 2 y
@@ -163,11 +168,11 @@ CLASS ff net/minecraft/world/World
 	METHOD c getChunk (II)Lkw;
 		ARG 1 x
 		ARG 2 z
-	METHOD c setBlockData (IIII)Z
+	METHOD c setBlockMetadata (IIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-		ARG 4 data
+		ARG 4 metadata
 	METHOD c hasBurningBlockInBox (Lel;)Z
 		ARG 1 box
 	METHOD c notifyEntityRemoved (Lep;)V

@@ -3,7 +3,7 @@ CLASS kw net/minecraft/world/Chunk
 	FIELD b blocks [B
 	FIELD c syncEntitiesWithWorld Z
 	FIELD d world Lff;
-	FIELD e blocksData Lir;
+	FIELD e metadata Lir;
 	FIELD f skyLight Lir;
 	FIELD g blockLight Lir;
 	FIELD h heightmap [B
@@ -35,17 +35,17 @@ CLASS kw net/minecraft/world/Chunk
 	METHOD a setBlockId (IIII)Z
 		COMMENT @apiNote Implicitly sets block data to {@code 0} as well.
 		COMMENT
-		COMMENT @see #setBlockIdAndData
+		COMMENT @see #setBlockIdAndMetaata
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 blockId
-	METHOD a setBlockIdAndData (IIIII)Z
+	METHOD a setBlockIdAndMetadata (IIIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 blockId
-		ARG 5 data
+		ARG 5 metadata
 	METHOD a setTileEntity (IIILbg;)V
 		ARG 1 x
 		ARG 2 y
@@ -85,7 +85,7 @@ CLASS kw net/minecraft/world/Chunk
 		COMMENT passed since its load).
 		ARG 1 saveHarder
 	METHOD a writeBlocks ([BIIIIIII)I
-		COMMENT Writes all block data (blocks, blocks' data, sky light, and block light) in the
+		COMMENT Writes all block data (blocks, metadata, sky light, and block light) in the
 		COMMENT specified block range (min* is inclusive, max* is exclusive) to {@code array} at
 		COMMENT {@code address}.
 		COMMENT
@@ -102,15 +102,15 @@ CLASS kw net/minecraft/world/Chunk
 	METHOD b getHighestBlock (II)I
 		ARG 1 x
 		ARG 2 z
-	METHOD b getBlockData (III)I
+	METHOD b getBlockMetadata (III)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD b setBlockData (IIII)V
+	METHOD b setBlockMetadata (IIII)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-		ARG 4 data
+		ARG 4 metadata
 	METHOD b removeEntity (Lep;)V
 		ARG 1 entity
 	METHOD c recalculateBlockLight ()V
