@@ -1,9 +1,17 @@
 CLASS fr net/minecraft/network/PacketHandler
+	METHOD a handleEntityInteract (La;)V
+		ARG 1 packet
 	METHOD a handleClientInformation (Laj;)V
+		ARG 1 packet
+	METHOD a handleRespawn (Lbh;)V
 		ARG 1 packet
 	METHOD a handleChat (Lbr;)V
 		ARG 1 packet
+	METHOD a handleSignUpdate (Lgm;)V
+		ARG 1 packet
 	METHOD a handleTimeUpdate (Lhb;)V
+		ARG 1 packet
+	METHOD a handleHoldItem (Lhm;)V
 		ARG 1 packet
 	METHOD a handleMovement (Lhx;)V
 		ARG 1 packet

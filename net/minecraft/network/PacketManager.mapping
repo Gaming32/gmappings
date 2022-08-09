@@ -39,6 +39,7 @@ CLASS bs net/minecraft/network/PacketManager
 	METHOD b access$048 (Lbs;)Z
 	METHOD c stop ()V
 	METHOD c access$036 (Lbs;)V
+	METHOD d getChunkWriteQueueSize ()I
 	METHOD d access$024 (Lbs;)V
 	METHOD e writePacket ()V
 	METHOD e access$012 (Lbs;)Ljava/lang/Thread;

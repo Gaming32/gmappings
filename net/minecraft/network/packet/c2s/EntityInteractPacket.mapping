@@ -1,0 +1,4 @@
+CLASS a net/minecraft/network/packet/c2s/EntityInteractPacket
+	FIELD b entityId I
+	FIELD c interaction I
+		COMMENT Either {@code 0} for right click or {@code 1} for left click.

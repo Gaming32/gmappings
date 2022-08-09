@@ -1,1 +1,2 @@
 CLASS ko net/minecraft/world/tileentity/SignEntity
+	FIELD e lines [Ljava/lang/String;

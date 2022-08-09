@@ -80,6 +80,12 @@ CLASS ff net/minecraft/world/World
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD a raycast (Lbn;Lbn;)Lhj;
+		ARG 1 from
+		ARG 2 to
+	METHOD a raycast (Lbn;Lbn;Z)Lhj;
+		ARG 1 from
+		ARG 2 to
 	METHOD a addListener (Lbw;)V
 		ARG 1 listener
 	METHOD a getLightLevel (Leb;III)I
@@ -142,7 +148,7 @@ CLASS ff net/minecraft/world/World
 		ARG 3 z
 		ARG 4 blockId
 		ARG 5 metadata
-	METHOD b (IIILbg;)V
+	METHOD b notifyTileEntityUpdated (IIILbg;)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

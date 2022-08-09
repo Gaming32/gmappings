@@ -1,0 +1,35 @@
+CLASS je net/minecraft/util/IntToObjectHashMap
+	FIELD a table [Liu;
+	FIELD b size I
+	FIELD c threshold I
+	FIELD d loadFactor F
+	FIELD e modCount I
+	METHOD a clear ()V
+	METHOD a get (I)Ljava/lang/Object;
+		ARG 1 key
+	METHOD a indexFor (II)I
+		ARG 0 hash
+		ARG 1 size
+	METHOD a putInternal (IILjava/lang/Object;I)V
+		ARG 1 hash
+		ARG 2 key
+		ARG 3 value
+		ARG 4 index
+	METHOD a put (ILjava/lang/Object;)V
+		ARG 1 key
+		ARG 2 value
+	METHOD a rehash ([Liu;)V
+		ARG 1 newTab
+	METHOD b containsKey (I)Z
+		ARG 1 key
+	METHOD c getNode (I)Liu;
+		ARG 1 key
+	METHOD d remove (I)Ljava/lang/Object;
+		ARG 1 key
+	METHOD e removeNode (I)Liu;
+		ARG 1 key
+	METHOD f access$000 (I)I
+	METHOD g hash (I)I
+		ARG 0 key
+	METHOD h resize (I)V
+		ARG 1 newSize

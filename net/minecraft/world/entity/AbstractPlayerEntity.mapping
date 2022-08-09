@@ -2,7 +2,13 @@ CLASS gp net/minecraft/world/entity/AbstractPlayerEntity
 	FIELD an inventory Lih;
 	FIELD aw username Ljava/lang/String;
 	FIELD ax dimension I
+	METHOD M getHeldItem ()Lik;
+	METHOD N deleteHeldItem ()V
 	METHOD c (Lep;I)V
 		ARG 1 entity
-	METHOD j interactWith (Lep;)V
+	METHOD g interactWith (Lep;)V
+		ARG 1 entity
+	METHOD h attack (Lep;)V
+		ARG 1 entity
+	METHOD j collideWith (Lep;)V
 		ARG 1 entity

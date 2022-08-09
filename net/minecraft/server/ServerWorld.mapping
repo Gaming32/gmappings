@@ -1,8 +1,11 @@
 CLASS fm net/minecraft/server/ServerWorld
 	FIELD C autoSave Z
 	FIELD D server Lnet/minecraft/server/MinecraftServer;
+	FIELD E entities Lje;
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Ljava/io/File;Ljava/lang/String;I)V
 		ARG 1 server
 		ARG 2 baseDir
 		ARG 3 worldName
 		ARG 4 dimensionId
+	METHOD a getEntity (I)Lep;
+		ARG 1 entityId

@@ -105,6 +105,10 @@ CLASS gl net/minecraft/world/item/Item
 	METHOD <init> (I)V
 		ARG 1 baseId
 	METHOD a getStringId ()Ljava/lang/String;
+	METHOD a damageAgainst (Lep;)I
+		ARG 1 entity
+	METHOD a (Lik;IIII)V
+		ARG 1 itemStack
 	METHOD a use (Lik;Lff;Lgp;)Lik;
 		ARG 1 itemStack
 		ARG 2 world
@@ -117,7 +121,7 @@ CLASS gl net/minecraft/world/item/Item
 		ARG 5 y
 		ARG 6 z
 		ARG 7 side
-	METHOD a (Lik;Llb;)V
+	METHOD a attack (Lik;Llb;)V
 		ARG 1 itemStack
 		ARG 2 entity
 	METHOD a setName (Ljava/lang/String;)Lgl;

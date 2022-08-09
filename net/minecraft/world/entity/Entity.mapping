@@ -51,10 +51,16 @@ CLASS ep net/minecraft/world/entity/Entity
 	METHOD a damage (Lep;I)Z
 		ARG 1 damager
 		ARG 2 amount
-	METHOD a (Lgp;)Z
+	METHOD a interactedWith (Lgp;)Z
 		ARG 1 player
 	METHOD a arrayToNbtList ([D)Les;
 	METHOD a arrayToNbtList ([F)Les;
+	METHOD b teleport (DDDFF)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 yaw
+		ARG 8 pitch
 	METHOD b setRotation (FF)V
 		ARG 1 yaw
 		ARG 2 pitch
@@ -67,7 +73,7 @@ CLASS ep net/minecraft/world/entity/Entity
 		ARG 1 nbt
 	METHOD b distanceTo (Lep;)D
 		ARG 1 entity
-	METHOD b interactedWith (Lgp;)V
+	METHOD b collidedWith (Lgp;)V
 		ARG 1 player
 	METHOD b_ tick ()V
 	METHOD c move (DDD)V

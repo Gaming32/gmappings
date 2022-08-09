@@ -1,12 +1,19 @@
 CLASS kj net/minecraft/server/PlayPacketHandler
 	FIELD a logger Ljava/util/logging/Logger;
 	FIELD b packetManager Lbs;
+	FIELD c disconnected Z
 	FIELD d server Lnet/minecraft/server/MinecraftServer;
 	FIELD e player Lfi;
+	FIELD f ticksActive I
+	FIELD g x D
+	FIELD h y D
+	FIELD i z D
+	FIELD j teleportAcknowledged Z
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lbs;Lfi;)V
 		ARG 1 server
 		ARG 2 packetManager
 		ARG 3 player
+	METHOD a tick ()V
 	METHOD a teleport (DDDFF)V
 		ARG 1 x
 		ARG 3 y
@@ -15,6 +22,7 @@ CLASS kj net/minecraft/server/PlayPacketHandler
 		ARG 8 pitch
 	METHOD a disconnect (Ljava/lang/String;)V
 		ARG 1 reason
+	METHOD b getChunkWriteQueueSize ()I
 	METHOD b sendPacket (Lju;)V
 		ARG 1 packet
 	METHOD c handleCommand (Ljava/lang/String;)V

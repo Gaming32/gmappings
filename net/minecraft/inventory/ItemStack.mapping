@@ -30,12 +30,12 @@ CLASS ik net/minecraft/inventory/ItemStack
 		ARG 1 count
 	METHOD a write (Lad;)Lad;
 		ARG 1 nbt
-	METHOD a (Lep;)I
+	METHOD a damageAgainst (Lep;)I
 		ARG 1 entity
 	METHOD a use (Lff;Lgp;)Lik;
 		ARG 1 world
 		ARG 2 player
-	METHOD a (Lgp;)V
+	METHOD a itemBroken (Lgp;)V
 		ARG 1 player
 	METHOD a interact (Lgp;Lff;IIII)Z
 		ARG 1 player
@@ -51,7 +51,7 @@ CLASS ik net/minecraft/inventory/ItemStack
 	METHOD a nullSafeMatch (Lik;Lik;)Z
 		ARG 0 a
 		ARG 1 b
-	METHOD a (Llb;)V
+	METHOD a attack (Llb;)V
 		ARG 1 entity
 	METHOD b getMaxStack ()I
 	METHOD b damage (I)V

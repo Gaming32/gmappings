@@ -41,7 +41,7 @@ CLASS hk net/minecraft/server/PlayerManager
 	METHOD c banIp (Ljava/lang/String;)V
 		ARG 1 ip
 	METHOD d saveAllPlayers ()V
-	METHOD d (Lfi;)Lfi;
+	METHOD d respawn (Lfi;)Lfi;
 		ARG 1 player
 	METHOD d pardonIp (Ljava/lang/String;)V
 		ARG 1 ip

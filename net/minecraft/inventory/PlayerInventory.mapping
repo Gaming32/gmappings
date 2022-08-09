@@ -9,6 +9,8 @@ CLASS ih net/minecraft/inventory/PlayerInventory
 		COMMENT Gets an {@link net.minecraft.inventory.ItemStack ItemStack} from the specified
 		COMMENT {@code slotId} of up to {@code size} items, or {@code null} if the specified slot
 		COMMENT is empty.
+	METHOD a damageAgainst (Lep;)I
+		ARG 1 entity
 	METHOD a writeNbt (Les;)Les;
 		ARG 1 nbt
 	METHOD a add (Lik;)Z

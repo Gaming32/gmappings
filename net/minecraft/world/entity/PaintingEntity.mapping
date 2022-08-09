@@ -1,6 +1,7 @@
 CLASS ct net/minecraft/world/entity/PaintingEntity
 	FIELD a direction I
 	FIELD b type Lid;
+	FIELD c timeSinceWallCheck I
 	FIELD d blockX I
 	FIELD e blockY I
 	FIELD f blockZ I
@@ -9,3 +10,4 @@ CLASS ct net/minecraft/world/entity/PaintingEntity
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD c wallCheck ()Z
