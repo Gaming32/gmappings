@@ -1,0 +1,2 @@
+CLASS dh net/minecraft/world/entity/SheepEntity
+	FIELD a sheared Z

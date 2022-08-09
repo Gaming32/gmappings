@@ -74,6 +74,10 @@ CLASS ep net/minecraft/world/entity/Entity
 		ARG 1 vx
 		ARG 3 vy
 		ARG 5 vz
+	METHOD c writeNbtWithType (Lad;)Z
+		COMMENT @return {@code false} if this entity is dead or does not have a valid entity type,
+		COMMENT otherwise {@code true}.
+		ARG 1 nbt
 	METHOD d distanceTo (DDD)D
 		ARG 1 x
 		ARG 3 y
@@ -85,4 +89,5 @@ CLASS ep net/minecraft/world/entity/Entity
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
 	METHOD l markDead ()V
+	METHOD w getTypeName ()Ljava/lang/String;
 	METHOD x isAlive ()Z

@@ -9,6 +9,8 @@ CLASS ih net/minecraft/inventory/PlayerInventory
 		COMMENT Gets an {@link net.minecraft.inventory.ItemStack ItemStack} from the specified
 		COMMENT {@code slotId} of up to {@code size} items, or {@code null} if the specified slot
 		COMMENT is empty.
+	METHOD a writeNbt (Les;)Les;
+		ARG 1 nbt
 	METHOD a add (Lik;)Z
 		COMMENT @return {@code true} if {@code itemStack} was added to the inventory in full,
 		COMMENT {@code false} if it was only added in part or not at all.
@@ -23,6 +25,8 @@ CLASS ih net/minecraft/inventory/PlayerInventory
 		COMMENT @return The remaining {@code amount} that couldn't fit into the inventory.
 		ARG 1 itemId
 		ARG 2 amount
+	METHOD b readNbt (Les;)V
+		ARG 1 nbt
 	METHOD d getFirstMatchingSlot (I)I
 		ARG 1 itemId
 	METHOD e getHeldItem ()Lik;

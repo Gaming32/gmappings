@@ -1,0 +1,19 @@
+CLASS im net/minecraft/world/entity/EntityTypeMap
+	FIELD a typeNameToId Ljava/util/Map;
+	FIELD b classToTypeName Ljava/util/Map;
+	FIELD c typeIdToClass Ljava/util/Map;
+	FIELD d classToTypeId Ljava/util/Map;
+	METHOD a readEntity (Lad;Lff;)Lep;
+		ARG 0 nbt
+		ARG 1 world
+	METHOD a getTypeId (Lep;)I
+		ARG 0 entity
+	METHOD a register (Ljava/lang/Class;Ljava/lang/String;I)V
+		ARG 0 entityClass
+		ARG 1 typeName
+		ARG 2 typeId
+	METHOD a createEntity (Ljava/lang/String;Lff;)Lep;
+		ARG 0 typeName
+		ARG 1 world
+	METHOD b getTypeName (Lep;)Ljava/lang/String;
+		ARG 0 entity

@@ -1,0 +1,9 @@
+CLASS ca net/minecraft/world/entity/FireballEntity
+	FIELD a shake I
+	FIELD aj zTile I
+	FIELD ak inTile I
+	FIELD al inGround Z
+	FIELD e xTile I
+	FIELD f yTile I
+	METHOD <init> (Lff;Llb;DDD)V
+		ARG 1 world

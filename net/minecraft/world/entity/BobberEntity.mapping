@@ -1,0 +1,9 @@
+CLASS li net/minecraft/world/entity/BobberEntity
+	FIELD a shake I
+	FIELD aj inTile I
+	FIELD ak inGround Z
+	FIELD d xTile I
+	FIELD e yTile I
+	FIELD f zTile I
+	METHOD <init> (Lff;Lgp;)V
+		ARG 1 world

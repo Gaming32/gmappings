@@ -1,0 +1,7 @@
+CLASS cx net/minecraft/world/entity/TntEntity
+	FIELD a fuse I
+	METHOD <init> (Lff;DDD)V
+		ARG 1 world
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
