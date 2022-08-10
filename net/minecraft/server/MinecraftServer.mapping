@@ -28,7 +28,7 @@ CLASS net/minecraft/server/MinecraftServer net/minecraft/server/MinecraftServer
 	METHOD a broadcastCommandResponse (Ljava/lang/String;Ljava/lang/String;)V
 		ARG 1 author
 		ARG 2 message
-	METHOD a access$000 (Lnet/minecraft/server/MinecraftServer;)Z
+	METHOD a access$1 (Lnet/minecraft/server/MinecraftServer;)Z
 	METHOD b handleQueuedCommands ()V
 	METHOD b parseIntOrDefault (Ljava/lang/String;I)I
 		ARG 1 value

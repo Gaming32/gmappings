@@ -25,7 +25,7 @@ CLASS bs net/minecraft/network/PacketManager
 		ARG 2 threadBaseName
 		ARG 3 handler
 	METHOD a processReadQueue ()V
-	METHOD a access$060 (Lbs;)Z
+	METHOD a access$1 (Lbs;)Z
 	METHOD a setHandler (Lfr;)V
 		ARG 1 handler
 	METHOD a disconnectForException (Ljava/lang/Exception;)V
@@ -36,12 +36,12 @@ CLASS bs net/minecraft/network/PacketManager
 	METHOD a sendPacket (Lju;)V
 		ARG 1 packet
 	METHOD b getRemoteAddress ()Ljava/net/SocketAddress;
-	METHOD b access$048 (Lbs;)Z
+	METHOD b access$2 (Lbs;)Z
 	METHOD c stop ()V
-	METHOD c access$036 (Lbs;)V
+	METHOD c access$3 (Lbs;)V
 	METHOD d getChunkWriteQueueSize ()I
-	METHOD d access$024 (Lbs;)V
+	METHOD d access$4 (Lbs;)V
 	METHOD e writePacket ()V
-	METHOD e access$012 (Lbs;)Ljava/lang/Thread;
+	METHOD e access$5 (Lbs;)Ljava/lang/Thread;
 	METHOD f readPacket ()V
-	METHOD f access$000 (Lbs;)Ljava/lang/Thread;
+	METHOD f access$6 (Lbs;)Ljava/lang/Thread;

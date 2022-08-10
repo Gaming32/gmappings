@@ -4,7 +4,7 @@ CLASS hf net/minecraft/server/gui/ServerGui
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;)V
 		ARG 1 server
 	METHOD a createStatsPanel ()Ljavax/swing/JComponent;
-	METHOD a access$000 (Lhf;)Lnet/minecraft/server/MinecraftServer;
+	METHOD a access$1 (Lhf;)Lnet/minecraft/server/MinecraftServer;
 	METHOD a createServerGui (Lnet/minecraft/server/MinecraftServer;)V
 		ARG 0 server
 	METHOD b createPlayersList ()Ljavax/swing/JComponent;

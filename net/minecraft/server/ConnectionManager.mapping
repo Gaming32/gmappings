@@ -11,6 +11,6 @@ CLASS eh net/minecraft/server/ConnectionManager
 		ARG 2 address
 		ARG 3 port
 	METHOD a tick ()V
-	METHOD a access$024 (Leh;)Ljava/net/ServerSocket;
-	METHOD a access$000 (Leh;Lgh;)V
-	METHOD b access$012 (Leh;)I
+	METHOD a access$1 (Leh;)Ljava/net/ServerSocket;
+	METHOD a access$3 (Leh;Lgh;)V
+	METHOD b access$2 (Leh;)I

@@ -3,6 +3,6 @@ CLASS kf net/minecraft/server/gui/ServerStatsDisplay
 	FIELD b currentGraphTime I
 	FIELD c lines [Ljava/lang/String;
 	METHOD a update ()V
-	METHOD a access$000 (Lkf;)V
+	METHOD a access$1 (Lkf;)V
 	METHOD paint paint (Ljava/awt/Graphics;)V
 		ARG 1 graphics

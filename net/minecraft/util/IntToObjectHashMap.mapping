@@ -28,7 +28,7 @@ CLASS je net/minecraft/util/IntToObjectHashMap
 		ARG 1 key
 	METHOD e removeNode (I)Liu;
 		ARG 1 key
-	METHOD f access$000 (I)I
+	METHOD f access$1 (I)I
 	METHOD g hash (I)I
 		ARG 0 key
 	METHOD h resize (I)V
