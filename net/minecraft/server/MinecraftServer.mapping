@@ -5,9 +5,10 @@ CLASS net/minecraft/server/MinecraftServer net/minecraft/server/MinecraftServer
 	FIELD e world Lfm;
 	FIELD f playerManager Lhk;
 	FIELD g stopped Z
-	FIELD h tickRan I
+	FIELD h ticksRan I
 	FIELD i percentageMessage Ljava/lang/String;
 	FIELD j loadPercentage I
+	FIELD k entityTracker Lho;
 	FIELD l onlineMode Z
 	FIELD m spawnAnimals Z
 	FIELD n pvp Z

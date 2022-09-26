@@ -4,6 +4,7 @@ CLASS ff net/minecraft/world/World
 	FIELD G chunkProvider Lcg;
 	FIELD H playerData Lad;
 	FIELD I collidingBoxesInBox Ljava/util/ArrayList;
+	FIELD J tickDepth I
 	FIELD K tickedChunks Ljava/util/Set;
 	FIELD L nextCaveNoise I
 	FIELD M entitiesInBoxExcluding Ljava/util/List;
@@ -183,6 +184,7 @@ CLASS ff net/minecraft/world/World
 		ARG 1 box
 	METHOD c notifyEntityRemoved (Lep;)V
 		ARG 1 entity
+	METHOD d tickOnce ()Z
 	METHOD d getHighestBlock (II)I
 		ARG 1 x
 		ARG 2 z

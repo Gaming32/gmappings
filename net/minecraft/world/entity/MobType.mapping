@@ -1,0 +1,5 @@
+CLASS kt net/minecraft/world/entity/MobType
+	FIELD a monster Lkt;
+	FIELD b creature Lkt;
+	FIELD c baseClass Ljava/lang/Class;
+	FIELD d spawnLimit I

@@ -1,0 +1,30 @@
+CLASS jp net/minecraft/world/biome/Biome
+	FIELD a RAINFOREST Ljp;
+	FIELD b SWAMPLAND Ljp;
+	FIELD c SEASONAL_FOREST Ljp;
+	FIELD d FOREST Ljp;
+	FIELD e SAVANNA Ljp;
+	FIELD f SHRUBLAND Ljp;
+	FIELD g TAIGA Ljp;
+	FIELD h DESERT Ljp;
+	FIELD i PLAINS Ljp;
+	FIELD j ICE_DESERT Ljp;
+	FIELD k TUNDRA Ljp;
+	FIELD l HELL Ljp;
+	FIELD m name Ljava/lang/String;
+	FIELD o topLayer B
+	FIELD p secondLayer B
+	FIELD r monsters [Ljava/lang/Class;
+	FIELD s passiveMobs [Ljava/lang/Class;
+	FIELD t biomeMap [Ljp;
+	METHOD a init ()V
+	METHOD a getBiomeMapAt (DD)Ljp;
+		ARG 0 x
+		ARG 2 z
+	METHOD a calcBiomeMapAt (FF)Ljp;
+		ARG 0 x
+		ARG 1 y
+	METHOD a name (Ljava/lang/String;)Ljp;
+		ARG 1 name
+	METHOD a getSpawnableMobs (Lkt;)[Ljava/lang/Class;
+		ARG 1 type

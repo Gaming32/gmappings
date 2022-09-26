@@ -1,0 +1,13 @@
+CLASS ho net/minecraft/server/EntityTracker
+	FIELD b trackedEntities Lje;
+	FIELD c server Lnet/minecraft/server/MinecraftServer;
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;)V
+		ARG 1 server
+	METHOD a trackEntity (Lep;)V
+		ARG 1 entity
+	METHOD a trackEntity (Lep;II)V
+		ARG 1 entity
+	METHOD a trackEntity (Lep;IIZ)V
+		ARG 1 entity
+	METHOD b untrackEntity (Lep;)V
+		ARG 1 entity

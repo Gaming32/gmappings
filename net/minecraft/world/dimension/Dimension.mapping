@@ -1,6 +1,7 @@
 CLASS jl net/minecraft/world/dimension/Dimension
 	COMMENT This {@code Dimension} base class also doubles as the overworld dimension.
 	FIELD a world Lff;
+	FIELD e hasRoof Z
 	METHOD a createForDimension (I)Ljl;
 		ARG 0 dimensionId
 	METHOD a (Lff;)V
