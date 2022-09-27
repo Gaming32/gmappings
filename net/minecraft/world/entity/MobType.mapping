@@ -3,3 +3,4 @@ CLASS kt net/minecraft/world/entity/MobType
 	FIELD b creature Lkt;
 	FIELD c baseClass Ljava/lang/Class;
 	FIELD d spawnLimit I
+	METHOD values values ()[Lkt;

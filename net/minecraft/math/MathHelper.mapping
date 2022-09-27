@@ -1,4 +1,4 @@
-CLASS ib net/minecraft/math/MathUtil
+CLASS ib net/minecraft/math/MathHelper
 	FIELD a sinTable [F
 	METHOD a sqrtToFloat (D)F
 		ARG 0 d

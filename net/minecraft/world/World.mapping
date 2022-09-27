@@ -1,4 +1,5 @@
 CLASS ff net/minecraft/world/World
+	FIELD A lightUpdateTickets Ljava/util/List;
 	FIELD B queuedEntityRemovals Ljava/util/List;
 	FIELD F objectCreationTime J
 	FIELD G chunkProvider Lcg;
@@ -31,6 +32,10 @@ CLASS ff net/minecraft/world/World
 	FIELD v worldSize J
 	FIELD w name Ljava/lang/String;
 	FIELD x searchingForSpawn Z
+	FIELD y lightUpdateDepth I
+	FIELD z disableUpdates Z
+		COMMENT Appears to disable many updates, such as block updates, break and place events,
+		COMMENT random entity actions, projectile throwing, and more.
 	METHOD <init> (Ljava/io/File;Ljava/lang/String;JLjl;)V
 		ARG 1 worldBaseDir
 		ARG 2 worldName
@@ -94,6 +99,22 @@ CLASS ff net/minecraft/world/World
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
+	METHOD a scheduleLightUpdate (Leb;IIIIII)V
+		ARG 1 type
+		ARG 2 minX
+		ARG 3 minY
+		ARG 4 minZ
+		ARG 5 maxX
+		ARG 6 maxY
+		ARG 7 maxZ
+	METHOD a scheduleLightUpdate (Leb;IIIIIIZ)V
+		ARG 1 type
+		ARG 2 minX
+		ARG 3 minY
+		ARG 4 minZ
+		ARG 5 maxX
+		ARG 6 maxY
+		ARG 7 maxZ
 	METHOD a (Lel;)Z
 		ARG 1 box
 	METHOD a hasMaterialInBox (Lel;Lkz;)Z

@@ -8,6 +8,7 @@ CLASS ep net/minecraft/world/entity/Entity
 	FIELD P tempY D
 	FIELD Q tempZ D
 	FIELD W random Ljava/util/Random;
+	FIELD X ticksLiving I
 	FIELD Z fireTicks I
 	FIELD a nextEntityId I
 	FIELD ad airTicks I
@@ -39,7 +40,7 @@ CLASS ep net/minecraft/world/entity/Entity
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
-	METHOD a setSize (FF)V
+	METHOD a setDimensions (FF)V
 		ARG 1 width
 		ARG 2 height
 	METHOD a dropItem (IIF)Lhe;
@@ -48,13 +49,17 @@ CLASS ep net/minecraft/world/entity/Entity
 		ARG 3 yOffset
 	METHOD a writeTypeNbt (Lad;)V
 		ARG 1 nbt
+	METHOD a distanceTo (Lep;)F
+		ARG 1 other
 	METHOD a damage (Lep;I)Z
 		ARG 1 damager
 		ARG 2 amount
 	METHOD a interactedWith (Lgp;)Z
 		ARG 1 player
 	METHOD a arrayToNbtList ([D)Les;
+		ARG 1 array
 	METHOD a arrayToNbtList ([F)Les;
+		ARG 1 array
 	METHOD b teleport (DDDFF)V
 		ARG 1 x
 		ARG 3 y
@@ -71,7 +76,7 @@ CLASS ep net/minecraft/world/entity/Entity
 		ARG 2 count
 	METHOD b readTypeNbt (Lad;)V
 		ARG 1 nbt
-	METHOD b distanceTo (Lep;)D
+	METHOD b distanceToSquared (Lep;)D
 		ARG 1 entity
 	METHOD b collidedWith (Lgp;)V
 		ARG 1 player
@@ -80,20 +85,35 @@ CLASS ep net/minecraft/world/entity/Entity
 		ARG 1 vx
 		ARG 3 vy
 		ARG 5 vz
+	METHOD c setPositionAndRotation (DDDFF)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 yaw
+		ARG 8 pitch
 	METHOD c writeNbtWithType (Lad;)Z
 		COMMENT @return {@code false} if this entity is dead or does not have a valid entity type,
 		COMMENT otherwise {@code true}.
 		ARG 1 nbt
-	METHOD d distanceTo (DDD)D
+	METHOD d distanceToSquared (DDD)D
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
 	METHOD d writeNbt (Lad;)V
 		ARG 1 nbt
+	METHOD e distanceTo (DDD)D
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
 	METHOD e readNbt (Lad;)V
 		ARG 1 nbt
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
-	METHOD l markDead ()V
+	METHOD f addVelocity (DDD)V
+		ARG 1 vx
+		ARG 3 vy
+		ARG 5 vz
+	METHOD l discard ()V
+	METHOD m livingTick ()V
 	METHOD w getTypeName ()Ljava/lang/String;
 	METHOD x isAlive ()Z

@@ -1,0 +1,25 @@
+CLASS ev net/minecraft/world/LightUpdateTicket
+	FIELD a type Leb;
+	FIELD b minX I
+	FIELD c minY I
+	FIELD d minZ I
+	FIELD e maxX I
+	FIELD f maxY I
+	FIELD g maxZ I
+	METHOD <init> (Leb;IIIIII)V
+		ARG 1 type
+		ARG 2 minX
+		ARG 3 minY
+		ARG 4 minZ
+		ARG 5 maxX
+		ARG 6 maxY
+		ARG 7 maxZ
+	METHOD a (IIIIII)Z
+		ARG 1 minX
+		ARG 2 minY
+		ARG 3 minZ
+		ARG 4 maxX
+		ARG 5 maxY
+		ARG 6 maxZ
+	METHOD a update (Lff;)V
+		ARG 1 world
