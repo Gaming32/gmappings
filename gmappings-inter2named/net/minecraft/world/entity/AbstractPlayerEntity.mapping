@@ -1,14 +1,14 @@
-CLASS gp net/minecraft/world/entity/AbstractPlayerEntity
-	FIELD an inventory Lih;
-	FIELD aw username Ljava/lang/String;
-	FIELD ax dimension I
-	METHOD M getHeldItem ()Lik;
-	METHOD N deleteHeldItem ()V
-	METHOD c (Lep;I)V
+CLASS net/minecraft/class_179 net/minecraft/world/entity/AbstractPlayerEntity
+	FIELD field_649 inventory Lnet/minecraft/class_225;
+	FIELD field_658 username Ljava/lang/String;
+	FIELD field_659 dimension I
+	METHOD method_501 getHeldItem ()Lnet/minecraft/class_228;
+	METHOD method_502 deleteHeldItem ()V
+	METHOD method_513 (Lnet/minecraft/class_125;I)V
 		ARG 1 entity
-	METHOD g interactWith (Lep;)V
+	METHOD method_514 interactWith (Lnet/minecraft/class_125;)V
 		ARG 1 entity
-	METHOD h attack (Lep;)V
+	METHOD method_515 attack (Lnet/minecraft/class_125;)V
 		ARG 1 entity
-	METHOD j collideWith (Lep;)V
+	METHOD method_516 collideWith (Lnet/minecraft/class_125;)V
 		ARG 1 entity

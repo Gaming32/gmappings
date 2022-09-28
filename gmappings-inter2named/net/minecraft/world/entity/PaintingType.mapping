@@ -1,29 +1,29 @@
-CLASS id net/minecraft/world/entity/PaintingType
-	FIELD a Kebab Lid;
-	FIELD b Aztec Lid;
-	FIELD c Alban Lid;
-	FIELD d Aztec2 Lid;
-	FIELD e Bomb Lid;
-	FIELD f Plant Lid;
-	FIELD g Wasteland Lid;
-	FIELD h Pool Lid;
-	FIELD i Courbet Lid;
-	FIELD j Sea Lid;
-	FIELD k Sunset Lid;
-	FIELD l Creebet Lid;
-	FIELD m Wanderer Lid;
-	FIELD n Graham Lid;
-	FIELD o Match Lid;
-	FIELD p Bust Lid;
-	FIELD q Stage Lid;
-	FIELD r Void Lid;
-	FIELD s SkullAndRoses Lid;
-	FIELD t Fighters Lid;
-	FIELD u Pointer Lid;
-	FIELD v Pigscene Lid;
-	FIELD w Skeleton Lid;
-	FIELD x DonkeyKong Lid;
-	FIELD y name Ljava/lang/String;
+CLASS net/minecraft/class_221 net/minecraft/world/entity/PaintingType
+	FIELD field_917 Kebab Lnet/minecraft/class_221;
+	FIELD field_918 Aztec Lnet/minecraft/class_221;
+	FIELD field_919 Alban Lnet/minecraft/class_221;
+	FIELD field_920 Aztec2 Lnet/minecraft/class_221;
+	FIELD field_921 Bomb Lnet/minecraft/class_221;
+	FIELD field_922 Plant Lnet/minecraft/class_221;
+	FIELD field_923 Wasteland Lnet/minecraft/class_221;
+	FIELD field_924 Pool Lnet/minecraft/class_221;
+	FIELD field_925 Courbet Lnet/minecraft/class_221;
+	FIELD field_926 Sea Lnet/minecraft/class_221;
+	FIELD field_927 Sunset Lnet/minecraft/class_221;
+	FIELD field_928 Creebet Lnet/minecraft/class_221;
+	FIELD field_929 Wanderer Lnet/minecraft/class_221;
+	FIELD field_930 Graham Lnet/minecraft/class_221;
+	FIELD field_931 Match Lnet/minecraft/class_221;
+	FIELD field_932 Bust Lnet/minecraft/class_221;
+	FIELD field_933 Stage Lnet/minecraft/class_221;
+	FIELD field_934 Void Lnet/minecraft/class_221;
+	FIELD field_935 SkullAndRoses Lnet/minecraft/class_221;
+	FIELD field_936 Fighters Lnet/minecraft/class_221;
+	FIELD field_937 Pointer Lnet/minecraft/class_221;
+	FIELD field_938 Pigscene Lnet/minecraft/class_221;
+	FIELD field_939 Skeleton Lnet/minecraft/class_221;
+	FIELD field_940 DonkeyKong Lnet/minecraft/class_221;
+	FIELD field_941 name Ljava/lang/String;
 	METHOD <init> (Ljava/lang/String;ILjava/lang/String;IIII)V
 		ARG 3 name
-	METHOD values values ()[Lid;
+	METHOD values values ()[Lnet/minecraft/class_221;

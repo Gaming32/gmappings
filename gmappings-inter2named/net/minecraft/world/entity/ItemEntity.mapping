@@ -1,15 +1,15 @@
-CLASS he net/minecraft/world/entity/ItemEntity
-	FIELD a item Lik;
-	FIELD b age I
-	FIELD c timeBeforePickup I
-	FIELD f health I
-	METHOD <init> (Lff;DDDLik;)V
+CLASS net/minecraft/class_195 net/minecraft/world/entity/ItemEntity
+	FIELD field_805 item Lnet/minecraft/class_228;
+	FIELD field_806 age I
+	FIELD field_807 timeBeforePickup I
+	FIELD field_810 health I
+	METHOD <init> (Lnet/minecraft/class_142;DDDLnet/minecraft/class_228;)V
 		ARG 1 world
 		ARG 2 x
 		ARG 4 y
 		ARG 6 z
 		ARG 8 item
-	METHOD g pushOutOfBlock (DDD)Z
+	METHOD method_571 pushOutOfBlock (DDD)Z
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z

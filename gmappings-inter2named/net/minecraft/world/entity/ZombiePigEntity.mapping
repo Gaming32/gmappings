@@ -1,2 +1,2 @@
-CLASS kb net/minecraft/world/entity/ZombiePigEntity
-	FIELD a anger I
+CLASS net/minecraft/class_273 net/minecraft/world/entity/ZombiePigEntity
+	FIELD field_1080 anger I

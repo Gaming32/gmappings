@@ -1,7 +1,0 @@
-CLASS kr
-	FIELD b chunk Lkw;
-	FIELD c chunkProvider Lcg;
-	FIELD g world Lfm;
-	METHOD <init> (Lfm;Lbd;Lcg;)V
-		ARG 1 world
-		ARG 3 chunkProvider

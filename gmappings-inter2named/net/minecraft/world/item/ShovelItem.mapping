@@ -1,5 +1,5 @@
-CLASS il net/minecraft/world/item/ShovelItem
-	FIELD bb shovelBlocks [Lgu;
+CLASS net/minecraft/class_229 net/minecraft/world/item/ShovelItem
+	FIELD field_969 shovelBlocks [Lnet/minecraft/class_184;
 	METHOD <init> (II)V
 		ARG 1 itemId
 		ARG 2 level

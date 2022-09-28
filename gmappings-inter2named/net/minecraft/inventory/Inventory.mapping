@@ -1,18 +1,18 @@
-CLASS lf net/minecraft/inventory/Inventory
-	METHOD a getSize ()I
-	METHOD a getSlot (I)Lik;
+CLASS net/minecraft/class_304 net/minecraft/inventory/Inventory
+	METHOD method_63 ()V
+	METHOD method_893 getSize ()I
+	METHOD method_894 getSlot (I)Lnet/minecraft/class_228;
 		ARG 1 slotId
-	METHOD a getStackOfSize (II)Lik;
+	METHOD method_895 getStackOfSize (II)Lnet/minecraft/class_228;
 		COMMENT Gets an {@link net.minecraft.inventory.ItemStack ItemStack} from the specified
 		COMMENT {@code slotId} of up to {@code size} items, or {@code null} if the specified slot
 		COMMENT is empty.
 		ARG 1 slotId
 		ARG 2 size
-	METHOD a setSlot (ILik;)V
+	METHOD method_896 setSlot (ILnet/minecraft/class_228;)V
 		ARG 1 slotId
 		ARG 2 itemStack
-	METHOD a_ (Lgp;)Z
+	METHOD method_897 (Lnet/minecraft/class_179;)Z
 		ARG 1 player
-	METHOD b getName ()Ljava/lang/String;
-	METHOD c getMaxStack ()I
-	METHOD d ()V
+	METHOD method_898 getName ()Ljava/lang/String;
+	METHOD method_899 getMaxStack ()I

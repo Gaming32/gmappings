@@ -1,8 +1,8 @@
-CLASS jl net/minecraft/world/dimension/Dimension
+CLASS net/minecraft/class_256 net/minecraft/world/dimension/Dimension
 	COMMENT This {@code Dimension} base class also doubles as the overworld dimension.
-	FIELD a world Lff;
-	FIELD e hasRoof Z
-	METHOD a createForDimension (I)Ljl;
+	FIELD field_1029 world Lnet/minecraft/class_142;
+	FIELD field_1033 hasRoof Z
+	METHOD method_749 createForDimension (I)Lnet/minecraft/class_256;
 		ARG 0 dimensionId
-	METHOD a (Lff;)V
+	METHOD method_752 (Lnet/minecraft/class_142;)V
 		ARG 1 world

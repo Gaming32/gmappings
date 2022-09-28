@@ -1,6 +1,6 @@
-CLASS iw net/minecraft/world/block/SemiTransparentBlock
-	FIELD a equalBlocksCountAsOthers Z
-	METHOD <init> (IILkz;Z)V
+CLASS net/minecraft/class_240 net/minecraft/world/block/SemiTransparentBlock
+	FIELD field_994 equalBlocksCountAsOthers Z
+	METHOD <init> (IILnet/minecraft/class_297;Z)V
 		ARG 1 blockId
 		ARG 3 material
 		ARG 4 equalBlocksCountAsOthers

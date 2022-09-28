@@ -1,72 +1,72 @@
-CLASS ff net/minecraft/world/World
-	FIELD A lightUpdateTickets Ljava/util/List;
-	FIELD B queuedEntityRemovals Ljava/util/List;
-	FIELD F objectCreationTime J
-	FIELD G chunkProvider Lcg;
-	FIELD H playerData Lad;
-	FIELD I collidingBoxesInBox Ljava/util/ArrayList;
-	FIELD J tickDepth I
-	FIELD K tickedChunks Ljava/util/Set;
-	FIELD L nextCaveNoise I
-	FIELD M entitiesInBoxExcluding Ljava/util/List;
-	FIELD b loadedEntities Ljava/util/List;
-	FIELD c tileEntities Ljava/util/List;
-	FIELD d playerEntities Ljava/util/List;
-	FIELD e worldTime J
-	FIELD g randomBlockPosSeed I
+CLASS net/minecraft/class_142 net/minecraft/world/World
+	FIELD field_406 lightUpdateTickets Ljava/util/List;
+	FIELD field_407 queuedEntityRemovals Ljava/util/List;
+	FIELD field_411 objectCreationTime J
+	FIELD field_412 chunkProvider Lnet/minecraft/class_62;
+	FIELD field_413 playerData Lnet/minecraft/class_5;
+	FIELD field_414 collidingBoxesInBox Ljava/util/ArrayList;
+	FIELD field_415 tickDepth I
+	FIELD field_416 tickedChunks Ljava/util/Set;
+	FIELD field_417 nextCaveNoise I
+	FIELD field_418 entitiesInBoxExcluding Ljava/util/List;
+	FIELD field_420 loadedEntities Ljava/util/List;
+	FIELD field_421 tileEntities Ljava/util/List;
+	FIELD field_422 playerEntities Ljava/util/List;
+	FIELD field_423 worldTime J
+	FIELD field_425 randomBlockPosSeed I
 		COMMENT Used in computing the random block pos for random ticks and for cave noises.
-	FIELD h randomBlockPosPrime I
+	FIELD field_426 randomBlockPosPrime I
 		COMMENT Used in computing the random block pos for random ticks and for cave noises. This
 		COMMENT number is in fact prime.
-	FIELD k difficulty I
-	FIELD l random Ljava/util/Random;
-	FIELD m spawnX I
-	FIELD n spawnY I
-	FIELD o spawnZ I
-	FIELD p newWorld Z
-	FIELD q dimension Ljl;
-	FIELD r listeners Ljava/util/List;
-	FIELD s baseDir Ljava/io/File;
-	FIELD t worldDir Ljava/io/File;
-	FIELD u seed J
-	FIELD v worldSize J
-	FIELD w name Ljava/lang/String;
-	FIELD x searchingForSpawn Z
-	FIELD y lightUpdateDepth I
-	FIELD z disableUpdates Z
+	FIELD field_429 difficulty I
+	FIELD field_430 random Ljava/util/Random;
+	FIELD field_431 spawnX I
+	FIELD field_432 spawnY I
+	FIELD field_433 spawnZ I
+	FIELD field_434 newWorld Z
+	FIELD field_435 dimension Lnet/minecraft/class_256;
+	FIELD field_436 listeners Ljava/util/List;
+	FIELD field_437 baseDir Ljava/io/File;
+	FIELD field_438 worldDir Ljava/io/File;
+	FIELD field_439 seed J
+	FIELD field_440 worldSize J
+	FIELD field_441 name Ljava/lang/String;
+	FIELD field_442 searchingForSpawn Z
+	FIELD field_443 lightUpdateDepth I
+	FIELD field_444 disableUpdates Z
 		COMMENT Appears to disable many updates, such as block updates, break and place events,
 		COMMENT random entity actions, projectile throwing, and more.
-	METHOD <init> (Ljava/io/File;Ljava/lang/String;JLjl;)V
+	METHOD <init> (Ljava/io/File;Ljava/lang/String;JLnet/minecraft/class_256;)V
 		ARG 1 worldBaseDir
 		ARG 2 worldName
 		ARG 3 seed
 		ARG 5 dimension
-	METHOD a playSound (DDDLjava/lang/String;FF)V
+	METHOD method_291 playSound (DDDLjava/lang/String;FF)V
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
 		ARG 7 soundId
 		ARG 8 volume
 		ARG 9 pitch
-	METHOD a findSurfaceY (II)I
+	METHOD method_293 findSurfaceY (II)I
 		COMMENT This function attempts to (badly) determine the surface Y-level. Unfortunately,
 		COMMENT the algorithm used doesn't work well at all if a player has built here, so this
 		COMMENT method is only actually used during worldgen. For most uses, I'd recommend using
 		COMMENT {@link #getHighestBlock getHighestBlock).
 		ARG 1 x
 		ARG 2 z
-	METHOD a setBlockId (IIII)Z
+	METHOD method_294 setBlockId (IIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 blockId
-	METHOD a setBlockIdAndMetadata (IIIII)Z
+	METHOD method_295 setBlockIdAndMetadata (IIIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 blockId
 		ARG 5 metadata
-	METHOD a areAllBlocksLoaded (IIIIII)Z
+	METHOD method_296 areAllBlocksLoaded (IIIIII)Z
 		COMMENT Returns true if all blocks in range in the range from {@code minX} and {@code minZ}
 		COMMENT (inclusive) to {@code maxX} and {@code maxZ} (inclusive) are loaded and
 		COMMENT {@code maxY} is in between {@code 0} (inclusive) and {@code 128} (exclusive). All
@@ -77,29 +77,29 @@ CLASS ff net/minecraft/world/World
 		ARG 4 maxX
 		ARG 5 maxY
 		ARG 6 maxZ
-	METHOD a setTileEntity (IIILbg;)V
+	METHOD method_298 setTileEntity (IIILnet/minecraft/class_35;)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 entity
-	METHOD a (IIIZ)I
+	METHOD method_299 (IIIZ)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD a raycast (Lbn;Lbn;)Lhj;
+	METHOD method_300 raycast (Lnet/minecraft/class_42;Lnet/minecraft/class_42;)Lnet/minecraft/class_200;
 		ARG 1 from
 		ARG 2 to
-	METHOD a raycast (Lbn;Lbn;Z)Lhj;
+	METHOD method_301 raycast (Lnet/minecraft/class_42;Lnet/minecraft/class_42;Z)Lnet/minecraft/class_200;
 		ARG 1 from
 		ARG 2 to
-	METHOD a addListener (Lbw;)V
+	METHOD method_303 addListener (Lnet/minecraft/class_51;)V
 		ARG 1 listener
-	METHOD a getLightLevel (Leb;III)I
+	METHOD method_304 getLightLevel (Lnet/minecraft/class_111;III)I
 		ARG 1 type
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD a scheduleLightUpdate (Leb;IIIIII)V
+	METHOD method_306 scheduleLightUpdate (Lnet/minecraft/class_111;IIIIII)V
 		ARG 1 type
 		ARG 2 minX
 		ARG 3 minY
@@ -107,7 +107,7 @@ CLASS ff net/minecraft/world/World
 		ARG 5 maxX
 		ARG 6 maxY
 		ARG 7 maxZ
-	METHOD a scheduleLightUpdate (Leb;IIIIIIZ)V
+	METHOD method_307 scheduleLightUpdate (Lnet/minecraft/class_111;IIIIIIZ)V
 		ARG 1 type
 		ARG 2 minX
 		ARG 3 minY
@@ -115,31 +115,31 @@ CLASS ff net/minecraft/world/World
 		ARG 5 maxX
 		ARG 6 maxY
 		ARG 7 maxZ
-	METHOD a (Lel;)Z
+	METHOD method_308 (Lnet/minecraft/class_121;)Z
 		ARG 1 box
-	METHOD a hasMaterialInBox (Lel;Lkz;)Z
+	METHOD method_309 hasMaterialInBox (Lnet/minecraft/class_121;Lnet/minecraft/class_297;)Z
 		ARG 1 box
 		ARG 2 material
-	METHOD a spawnEntity (Lep;)Z
+	METHOD method_311 spawnEntity (Lnet/minecraft/class_125;)Z
 		ARG 1 entity
-	METHOD a getCollidingBoxesInBox (Lep;Lel;)Ljava/util/List;
+	METHOD method_317 getCollidingBoxesInBox (Lnet/minecraft/class_125;Lnet/minecraft/class_121;)Ljava/util/List;
 		COMMENT The return value of this method is shared across all calls to this method on the
 		COMMENT same {@code World} object, so future calls will probably invalidate past calls.
 		ARG 1 entity
 		ARG 2 box
-	METHOD a playSoundFromEntity (Lep;Ljava/lang/String;FF)V
+	METHOD method_319 playSoundFromEntity (Lnet/minecraft/class_125;Ljava/lang/String;FF)V
 		ARG 1 entity
 		ARG 2 soundId
 		ARG 3 volume
 		ARG 4 pitch
-	METHOD a moveEntityToNewChunk (Lep;Z)V
+	METHOD method_320 moveEntityToNewChunk (Lnet/minecraft/class_125;Z)V
 		ARG 1 entity
-	METHOD a countEntitiesOfType (Ljava/lang/Class;)I
+	METHOD method_323 countEntitiesOfType (Ljava/lang/Class;)I
 		ARG 1 type
-	METHOD a getEntitiesInBox (Ljava/lang/Class;Lel;)Ljava/util/List;
+	METHOD method_324 getEntitiesInBox (Ljava/lang/Class;Lnet/minecraft/class_121;)Ljava/util/List;
 		ARG 1 entityType
 		ARG 2 box
-	METHOD a spawnParticle (Ljava/lang/String;DDDDDD)V
+	METHOD method_325 spawnParticle (Ljava/lang/String;DDDDDD)V
 		ARG 1 particleId
 		ARG 2 x
 		ARG 4 y
@@ -147,134 +147,134 @@ CLASS ff net/minecraft/world/World
 		ARG 8 motionX
 		ARG 10 motionY
 		ARG 12 motionZ
-	METHOD a notifyJukeboxPlayed (Ljava/lang/String;III)V
+	METHOD method_326 notifyJukeboxPlayed (Ljava/lang/String;III)V
 		ARG 1 trackId
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD a addLoadedEntities (Ljava/util/List;)V
+	METHOD method_327 addLoadedEntities (Ljava/util/List;)V
 		ARG 1 entities
-	METHOD a save (ZLke;)V
+	METHOD method_329 save (ZLnet/minecraft/class_276;)V
 		ARG 2 progressMonitor
-	METHOD b getChunkFromBlockPos (II)Lkw;
+	METHOD method_332 getChunkFromBlockPos (II)Lnet/minecraft/class_294;
 		ARG 1 blockX
 		ARG 2 blockZ
-	METHOD b setBlockMetadataAndUpdate (IIII)V
+	METHOD method_333 setBlockMetadataAndUpdate (IIII)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 metadata
-	METHOD b setBlockIdAndMetadataAndUpdate (IIIII)Z
+	METHOD method_334 setBlockIdAndMetadataAndUpdate (IIIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 blockId
 		ARG 5 metadata
-	METHOD b notifyTileEntityUpdated (IIILbg;)V
+	METHOD method_336 notifyTileEntityUpdated (IIILnet/minecraft/class_35;)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 entity
-	METHOD b setLightLevel (Leb;IIII)V
+	METHOD method_337 setLightLevel (Lnet/minecraft/class_111;IIII)V
 		ARG 1 type
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 		ARG 5 level
-	METHOD b hasLiquidInBox (Lel;)Z
+	METHOD method_338 hasLiquidInBox (Lnet/minecraft/class_121;)Z
 		ARG 1 box
-	METHOD b notifyEntitySpawned (Lep;)V
+	METHOD method_340 notifyEntitySpawned (Lnet/minecraft/class_125;)V
 		ARG 1 entity
-	METHOD b getEntitiesInBoxExcluding (Lep;Lel;)Ljava/util/List;
+	METHOD method_341 getEntitiesInBoxExcluding (Lnet/minecraft/class_125;Lnet/minecraft/class_121;)Ljava/util/List;
 		COMMENT The return value of this method is shared across all calls to this method on the
 		COMMENT same {@code World} object, so future calls will probably invalidate past calls.
 		ARG 1 entity
 		ARG 2 box
-	METHOD b queueEntityRemovals (Ljava/util/List;)V
+	METHOD method_342 queueEntityRemovals (Ljava/util/List;)V
 		ARG 1 entities
-	METHOD c tickEnd ()V
-	METHOD c getChunk (II)Lkw;
+	METHOD method_343 tickEnd ()V
+	METHOD method_344 getChunk (II)Lnet/minecraft/class_294;
 		ARG 1 x
 		ARG 2 z
-	METHOD c setBlockMetadata (IIII)Z
+	METHOD method_345 setBlockMetadata (IIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 metadata
-	METHOD c hasBurningBlockInBox (Lel;)Z
+	METHOD method_347 hasBurningBlockInBox (Lnet/minecraft/class_121;)Z
 		ARG 1 box
-	METHOD c notifyEntityRemoved (Lep;)V
+	METHOD method_348 notifyEntityRemoved (Lnet/minecraft/class_125;)V
 		ARG 1 entity
-	METHOD d tickOnce ()Z
-	METHOD d getHighestBlock (II)I
+	METHOD method_349 tickOnce ()Z
+	METHOD method_350 getHighestBlock (II)I
 		ARG 1 x
 		ARG 2 z
-	METHOD d setBlockIdAndUpdate (IIII)Z
+	METHOD method_351 setBlockIdAndUpdate (IIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 blockId
-	METHOD d removeEntityQuietly (Lep;)V
+	METHOD method_352 removeEntityQuietly (Lnet/minecraft/class_125;)V
 		ARG 1 entity
-	METHOD e getHighestSolidBlock (II)I
+	METHOD method_354 getHighestSolidBlock (II)I
 		ARG 1 x
 		ARG 2 z
-	METHOD e isAir (III)Z
+	METHOD method_355 isAir (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD e blockNotifyAndUpdate (IIII)V
+	METHOD method_356 blockNotifyAndUpdate (IIII)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 blockId
-	METHOD e removeEntity (Lep;)V
+	METHOD method_357 removeEntity (Lnet/minecraft/class_125;)V
 		ARG 1 entity
-	METHOD f tickStart ()V
-	METHOD f isChunkLoaded (II)Z
+	METHOD method_358 tickStart ()V
+	METHOD method_359 isChunkLoaded (II)Z
 		ARG 1 x
 		ARG 2 z
-	METHOD f isBlockLoaded (III)Z
+	METHOD method_360 isBlockLoaded (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD f (IIII)V
+	METHOD method_361 (IIII)V
 		ARG 1 x
 		ARG 2 z
 		ARG 3 lowMaxY
 		ARG 4 highMaxY
-	METHOD f moveEntityToNewChunk (Lep;)V
+	METHOD method_362 moveEntityToNewChunk (Lnet/minecraft/class_125;)V
 		ARG 1 entity
-	METHOD g randomTick ()V
-	METHOD g notifyBlockChanged (III)V
+	METHOD method_363 randomTick ()V
+	METHOD method_364 notifyBlockChanged (III)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD g updateBlock (IIII)V
-		ARG 1 x
-		ARG 2 y
-		ARG 3 z
-		ARG 4 blockId
-	METHOD h verifySessionLock ()V
-	METHOD h isTopBlockOrHigherLoad (III)Z
-		ARG 1 x
-		ARG 2 y
-		ARG 3 z
-	METHOD i saveData ()V
-	METHOD j isTopBlockOrHigher (III)Z
-		ARG 1 x
-		ARG 2 y
-		ARG 3 z
-	METHOD k updateBlockInternal (IIII)V
+	METHOD method_365 updateBlock (IIII)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 blockId
-	METHOD l getTileEntity (III)Lbg;
+	METHOD method_366 verifySessionLock ()V
+	METHOD method_367 isTopBlockOrHigherLoad (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD m removeTileEntity (III)V
+	METHOD method_369 saveData ()V
+	METHOD method_372 isTopBlockOrHigher (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_375 updateBlockInternal (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 blockId
+	METHOD method_376 getTileEntity (III)Lnet/minecraft/class_35;
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD method_377 removeTileEntity (III)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

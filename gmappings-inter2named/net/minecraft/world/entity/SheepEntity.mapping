@@ -1,2 +1,2 @@
-CLASS dh net/minecraft/world/entity/SheepEntity
-	FIELD a sheared Z
+CLASS net/minecraft/class_90 net/minecraft/world/entity/SheepEntity
+	FIELD field_234 sheared Z

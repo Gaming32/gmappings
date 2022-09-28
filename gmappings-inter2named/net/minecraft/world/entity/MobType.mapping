@@ -1,6 +1,6 @@
-CLASS kt net/minecraft/world/entity/MobType
-	FIELD a monster Lkt;
-	FIELD b creature Lkt;
-	FIELD c baseClass Ljava/lang/Class;
-	FIELD d spawnLimit I
-	METHOD values values ()[Lkt;
+CLASS net/minecraft/class_291 net/minecraft/world/entity/MobType
+	FIELD field_1156 monster Lnet/minecraft/class_291;
+	FIELD field_1157 creature Lnet/minecraft/class_291;
+	FIELD field_1158 baseClass Ljava/lang/Class;
+	FIELD field_1159 spawnLimit I
+	METHOD values values ()[Lnet/minecraft/class_291;

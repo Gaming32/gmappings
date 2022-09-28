@@ -1,6 +1,6 @@
-CLASS cx net/minecraft/world/entity/TntEntity
-	FIELD a fuse I
-	METHOD <init> (Lff;DDD)V
+CLASS net/minecraft/class_79 net/minecraft/world/entity/TntEntity
+	FIELD field_210 fuse I
+	METHOD <init> (Lnet/minecraft/class_142;DDD)V
 		ARG 1 world
 		ARG 2 x
 		ARG 4 y

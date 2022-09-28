@@ -1,6 +1,6 @@
-CLASS kh net/minecraft/world/worldgen/OverworldChunkGenerator
-	FIELD j rand Ljava/util/Random;
-	FIELD p world Lff;
-	METHOD <init> (Lff;J)V
+CLASS net/minecraft/class_279 net/minecraft/world/worldgen/OverworldChunkGenerator
+	FIELD field_1104 rand Ljava/util/Random;
+	FIELD field_1110 world Lnet/minecraft/class_142;
+	METHOD <init> (Lnet/minecraft/class_142;J)V
 		ARG 1 world
 		ARG 2 seed

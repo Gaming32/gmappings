@@ -1,4 +1,4 @@
-CLASS ez net/minecraft/nbt/NbtDouble
-	FIELD a value D
+CLASS net/minecraft/class_135 net/minecraft/nbt/NbtDouble
+	FIELD field_401 value D
 	METHOD <init> (D)V
 		ARG 1 value

@@ -1,29 +1,29 @@
-CLASS ar net/minecraft/math/noise/PerlinNoise
-	FIELD a xOffset D
-	FIELD b yOffset D
-	FIELD c zOffset D
-	FIELD d perm [I
+CLASS net/minecraft/class_19 net/minecraft/math/noise/PerlinNoise
+	FIELD field_30 xOffset D
+	FIELD field_31 yOffset D
+	FIELD field_32 zOffset D
+	FIELD field_33 perm [I
 	METHOD <init> (Ljava/util/Random;)V
 		ARG 1 rand
-	METHOD a noise2 (DD)D
+	METHOD method_34 noise2 (DD)D
 		ARG 1 x
 		ARG 3 y
-	METHOD a noise3 (DDD)D
+	METHOD method_35 noise3 (DDD)D
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
-	METHOD a grad2 (IDD)D
+	METHOD method_36 grad2 (IDD)D
 		ARG 1 hash
 		ARG 2 x
 		ARG 4 y
-	METHOD a grad3 (IDDD)D
+	METHOD method_37 grad3 (IDDD)D
 		ARG 1 hash
 		ARG 2 x
 		ARG 4 y
 		ARG 6 z
-	METHOD a ([DDDDIIIDDDD)V
+	METHOD method_38 ([DDDDIIIDDDD)V
 		ARG 1 result
-	METHOD b lerp (DDD)D
+	METHOD method_39 lerp (DDD)D
 		ARG 1 t
 		ARG 3 a
 		ARG 5 b

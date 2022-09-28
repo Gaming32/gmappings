@@ -1,2 +1,2 @@
-CLASS js net/minecraft/network/PacketManager$1
-	FIELD a this$0 Lbs;
+CLASS net/minecraft/class_263 net/minecraft/network/PacketManager$1
+	FIELD field_1062 this$0 Lnet/minecraft/class_47;

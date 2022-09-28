@@ -1,6 +1,6 @@
-CLASS ck net/minecraft/world/worldgen/NetherChunkGenerator
-	FIELD h rand Ljava/util/Random;
-	FIELD n world Lff;
-	METHOD <init> (Lff;J)V
+CLASS net/minecraft/class_66 net/minecraft/world/worldgen/NetherChunkGenerator
+	FIELD field_155 rand Ljava/util/Random;
+	FIELD field_161 world Lnet/minecraft/class_142;
+	METHOD <init> (Lnet/minecraft/class_142;J)V
 		ARG 1 world
 		ARG 2 seed

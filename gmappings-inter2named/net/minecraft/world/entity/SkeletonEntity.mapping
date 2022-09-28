@@ -1,2 +1,2 @@
-CLASS fs net/minecraft/world/entity/SkeletonEntity
-	FIELD a heldItem Lik;
+CLASS net/minecraft/class_155 net/minecraft/world/entity/SkeletonEntity
+	FIELD field_467 heldItem Lnet/minecraft/class_228;

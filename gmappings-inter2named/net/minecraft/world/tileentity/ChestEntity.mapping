@@ -1,2 +1,2 @@
-CLASS ja net/minecraft/world/tileentity/ChestEntity
-	FIELD e slots [Lik;
+CLASS net/minecraft/class_245 net/minecraft/world/tileentity/ChestEntity
+	FIELD field_997 slots [Lnet/minecraft/class_228;

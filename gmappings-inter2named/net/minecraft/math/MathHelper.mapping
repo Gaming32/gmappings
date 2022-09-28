@@ -1,19 +1,19 @@
-CLASS ib net/minecraft/math/MathHelper
-	FIELD a sinTable [F
-	METHOD a sqrtToFloat (D)F
+CLASS net/minecraft/class_219 net/minecraft/math/MathHelper
+	FIELD field_903 sinTable [F
+	METHOD method_664 sqrtToFloat (D)F
 		ARG 0 d
-	METHOD a maxAbs (DD)D
+	METHOD method_665 maxAbs (DD)D
 		ARG 0 a
 		ARG 2 b
-	METHOD a sin (F)F
+	METHOD method_666 sin (F)F
 		ARG 0 f
-	METHOD b floor (D)I
+	METHOD method_667 floor (D)I
 		ARG 0 d
-	METHOD b cos (F)F
+	METHOD method_668 cos (F)F
 		ARG 0 f
-	METHOD c sqrt (F)F
+	METHOD method_669 sqrt (F)F
 		ARG 0 f
-	METHOD d floor (F)I
+	METHOD method_670 floor (F)I
 		ARG 0 f
-	METHOD e abs (F)F
+	METHOD method_671 abs (F)F
 		ARG 0 f

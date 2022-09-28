@@ -1,29 +1,29 @@
-CLASS kj net/minecraft/server/PlayPacketHandler
-	FIELD a logger Ljava/util/logging/Logger;
-	FIELD b packetManager Lbs;
-	FIELD c disconnected Z
-	FIELD d server Lnet/minecraft/server/MinecraftServer;
-	FIELD e player Lfi;
-	FIELD f ticksActive I
-	FIELD g x D
-	FIELD h y D
-	FIELD i z D
-	FIELD j teleportAcknowledged Z
-	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lbs;Lfi;)V
+CLASS net/minecraft/class_281 net/minecraft/server/PlayPacketHandler
+	FIELD field_1118 logger Ljava/util/logging/Logger;
+	FIELD field_1119 packetManager Lnet/minecraft/class_47;
+	FIELD field_1120 disconnected Z
+	FIELD field_1121 server Lnet/minecraft/server/MinecraftServer;
+	FIELD field_1122 player Lnet/minecraft/class_145;
+	FIELD field_1123 ticksActive I
+	FIELD field_1124 x D
+	FIELD field_1125 y D
+	FIELD field_1126 z D
+	FIELD field_1127 teleportAcknowledged Z
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/class_47;Lnet/minecraft/class_145;)V
 		ARG 1 server
 		ARG 2 packetManager
 		ARG 3 player
-	METHOD a tick ()V
-	METHOD a teleport (DDDFF)V
+	METHOD method_797 tick ()V
+	METHOD method_798 teleport (DDDFF)V
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
 		ARG 7 yaw
 		ARG 8 pitch
-	METHOD a disconnect (Ljava/lang/String;)V
+	METHOD method_799 disconnect (Ljava/lang/String;)V
 		ARG 1 reason
-	METHOD b getChunkWriteQueueSize ()I
-	METHOD b sendPacket (Lju;)V
+	METHOD method_800 getChunkWriteQueueSize ()I
+	METHOD method_801 sendPacket (Lnet/minecraft/class_265;)V
 		ARG 1 packet
-	METHOD c handleCommand (Ljava/lang/String;)V
+	METHOD method_802 handleCommand (Ljava/lang/String;)V
 		ARG 1 message

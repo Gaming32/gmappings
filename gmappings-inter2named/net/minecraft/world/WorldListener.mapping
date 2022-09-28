@@ -1,16 +1,16 @@
-CLASS bw net/minecraft/world/WorldListener
-	METHOD a blockChanged (III)V
+CLASS net/minecraft/class_51 net/minecraft/world/WorldListener
+	METHOD method_109 blockChanged (III)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD a tileEntityUpdated (IIILbg;)V
+	METHOD method_111 tileEntityUpdated (IIILnet/minecraft/class_35;)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 entity
-	METHOD a entitySpawned (Lep;)V
+	METHOD method_112 entitySpawned (Lnet/minecraft/class_125;)V
 		ARG 1 entity
-	METHOD a spawnParticle (Ljava/lang/String;DDDDDD)V
+	METHOD method_113 spawnParticle (Ljava/lang/String;DDDDDD)V
 		ARG 1 particleId
 		ARG 2 x
 		ARG 4 y
@@ -18,17 +18,17 @@ CLASS bw net/minecraft/world/WorldListener
 		ARG 8 motionX
 		ARG 10 motionY
 		ARG 12 motionZ
-	METHOD a playSound (Ljava/lang/String;DDDFF)V
+	METHOD method_114 playSound (Ljava/lang/String;DDDFF)V
 		ARG 1 soundId
 		ARG 2 x
 		ARG 4 y
 		ARG 6 z
 		ARG 8 volume
 		ARG 9 pitch
-	METHOD a jukeboxPlayed (Ljava/lang/String;III)V
+	METHOD method_115 jukeboxPlayed (Ljava/lang/String;III)V
 		ARG 1 trackId
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD b entityRemoved (Lep;)V
+	METHOD method_116 entityRemoved (Lnet/minecraft/class_125;)V
 		ARG 1 entity

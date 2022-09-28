@@ -1,10 +1,10 @@
-CLASS hx net/minecraft/network/packet/BaseMovementPacket
-	FIELD a x D
-	FIELD b y D
-	FIELD c z D
-	FIELD d stance D
-	FIELD e yaw F
-	FIELD f pitch F
-	FIELD g onGround Z
-	FIELD h hasMovement Z
-	FIELD i hasRotation Z
+CLASS net/minecraft/class_214 net/minecraft/network/packet/BaseMovementPacket
+	FIELD field_872 x D
+	FIELD field_873 y D
+	FIELD field_874 z D
+	FIELD field_875 stance D
+	FIELD field_876 yaw F
+	FIELD field_877 pitch F
+	FIELD field_878 onGround Z
+	FIELD field_879 hasMovement Z
+	FIELD field_880 hasRotation Z

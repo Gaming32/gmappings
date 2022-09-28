@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_207
+	FIELD field_841 entity Lnet/minecraft/class_125;
+	METHOD <init> (Lnet/minecraft/class_125;IIZ)V
+		ARG 1 entity

@@ -1,2 +1,2 @@
-CLASS cf net/minecraft/world/item/BlockItem
-	FIELD a blockId I
+CLASS net/minecraft/class_61 net/minecraft/world/item/BlockItem
+	FIELD field_145 blockId I

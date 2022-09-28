@@ -1,16 +1,16 @@
-CLASS eh net/minecraft/server/ConnectionManager
-	FIELD a logger Ljava/util/logging/Logger;
-	FIELD b active Z
-	FIELD c server Lnet/minecraft/server/MinecraftServer;
-	FIELD d socket Ljava/net/ServerSocket;
-	FIELD e listenThread Ljava/lang/Thread;
-	FIELD g loginHandlers Ljava/util/ArrayList;
-	FIELD h playHandlers Ljava/util/ArrayList;
+CLASS net/minecraft/class_117 net/minecraft/server/ConnectionManager
+	FIELD field_289 logger Ljava/util/logging/Logger;
+	FIELD field_290 active Z
+	FIELD field_291 server Lnet/minecraft/server/MinecraftServer;
+	FIELD field_292 socket Ljava/net/ServerSocket;
+	FIELD field_293 listenThread Ljava/lang/Thread;
+	FIELD field_295 loginHandlers Ljava/util/ArrayList;
+	FIELD field_296 playHandlers Ljava/util/ArrayList;
 	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Ljava/net/InetAddress;I)V
 		ARG 1 server
 		ARG 2 address
 		ARG 3 port
-	METHOD a tick ()V
-	METHOD a access$1 (Leh;)Ljava/net/ServerSocket;
-	METHOD a access$3 (Leh;Lgh;)V
-	METHOD b access$2 (Leh;)I
+	METHOD method_185 tick ()V
+	METHOD method_186 access$1 (Lnet/minecraft/class_117;)Ljava/net/ServerSocket;
+	METHOD method_187 access$3 (Lnet/minecraft/class_117;Lnet/minecraft/class_171;)V
+	METHOD method_190 access$2 (Lnet/minecraft/class_117;)I

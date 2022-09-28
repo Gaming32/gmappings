@@ -1,13 +1,13 @@
-CLASS gk net/minecraft/world/block/SandBlock
-	FIELD a teleportToGround Z
+CLASS net/minecraft/class_174 net/minecraft/world/block/SandBlock
+	FIELD field_526 teleportToGround Z
 	METHOD <init> (II)V
 		ARG 1 blockId
-	METHOD g shouldFall (Lff;III)Z
+	METHOD method_473 shouldFall (Lnet/minecraft/class_142;III)Z
 		ARG 0 world
 		ARG 1 x
 		ARG 2 yUnder
 		ARG 3 z
-	METHOD h update (Lff;III)V
+	METHOD method_474 update (Lnet/minecraft/class_142;III)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y

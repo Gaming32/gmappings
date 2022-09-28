@@ -1,8 +1,8 @@
-CLASS dq net/minecraft/world/item/ToolItem
-	FIELD a level I
-	FIELD bb toolBlocks [Lgu;
-	FIELD bd attackDamage I
-	METHOD <init> (III[Lgu;)V
+CLASS net/minecraft/class_99 net/minecraft/world/item/ToolItem
+	FIELD field_248 level I
+	FIELD field_249 toolBlocks [Lnet/minecraft/class_184;
+	FIELD field_251 attackDamage I
+	METHOD <init> (III[Lnet/minecraft/class_184;)V
 		ARG 1 id
 		ARG 2 type
 		ARG 3 level

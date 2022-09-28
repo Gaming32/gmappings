@@ -1,9 +1,9 @@
-CLASS li net/minecraft/world/entity/BobberEntity
-	FIELD a shake I
-	FIELD aj inTile I
-	FIELD ak inGround Z
-	FIELD d xTile I
-	FIELD e yTile I
-	FIELD f zTile I
-	METHOD <init> (Lff;Lgp;)V
+CLASS net/minecraft/class_307 net/minecraft/world/entity/BobberEntity
+	FIELD field_1280 shake I
+	FIELD field_1281 inTile I
+	FIELD field_1282 inGround Z
+	FIELD field_1294 xTile I
+	FIELD field_1295 yTile I
+	FIELD field_1296 zTile I
+	METHOD <init> (Lnet/minecraft/class_142;Lnet/minecraft/class_179;)V
 		ARG 1 world

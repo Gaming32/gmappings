@@ -1,4 +1,4 @@
-CLASS gq net/minecraft/nbt/NbtShort
-	FIELD a value S
+CLASS net/minecraft/class_180 net/minecraft/nbt/NbtShort
+	FIELD field_662 value S
 	METHOD <init> (S)V
 		ARG 1 value

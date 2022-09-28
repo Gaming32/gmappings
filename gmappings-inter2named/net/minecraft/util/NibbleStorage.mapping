@@ -1,6 +1,6 @@
-CLASS ir net/minecraft/util/NibbleStorage
+CLASS net/minecraft/class_235 net/minecraft/util/NibbleStorage
 	COMMENT Stores an array of nibbles in a format optimal for {@link net.minecraft.world.Chunk Chunk}.
-	FIELD a data [B
+	FIELD field_980 data [B
 	METHOD <init> (I)V
 		COMMENT Create a nibble array that stores {@code size} nibbles.
 		COMMENT
@@ -8,13 +8,13 @@ CLASS ir net/minecraft/util/NibbleStorage
 		ARG 1 size
 	METHOD <init> ([B)V
 		ARG 1 data
-	METHOD a isAvailable ()Z
+	METHOD method_717 isAvailable ()Z
 		COMMENT Returns whether {@code this.data} is non-null.
-	METHOD a get (III)I
+	METHOD method_718 get (III)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD a set (IIII)V
+	METHOD method_719 set (IIII)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

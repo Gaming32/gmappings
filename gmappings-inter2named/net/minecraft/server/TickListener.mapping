@@ -1,2 +1,2 @@
-CLASS fc net/minecraft/server/TickListener
-	METHOD a onTick ()V
+CLASS net/minecraft/class_139 net/minecraft/server/TickListener
+	METHOD method_288 onTick ()V

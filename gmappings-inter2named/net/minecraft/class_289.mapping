@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_289
+	FIELD field_1150 chunk Lnet/minecraft/class_294;
+	FIELD field_1151 chunkProvider Lnet/minecraft/class_62;
+	FIELD field_1155 world Lnet/minecraft/class_149;
+	METHOD <init> (Lnet/minecraft/class_149;Lnet/minecraft/class_32;Lnet/minecraft/class_62;)V
+		ARG 1 world
+		ARG 3 chunkProvider

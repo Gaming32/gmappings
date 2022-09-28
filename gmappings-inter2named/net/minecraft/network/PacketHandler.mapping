@@ -1,24 +1,24 @@
-CLASS fr net/minecraft/network/PacketHandler
-	METHOD a handleEntityInteract (La;)V
+CLASS net/minecraft/class_154 net/minecraft/network/PacketHandler
+	METHOD method_395 handleEntityInteract (Lnet/minecraft/class_1;)V
 		ARG 1 packet
-	METHOD a handleClientInformation (Laj;)V
+	METHOD method_396 handleClientInformation (Lnet/minecraft/class_11;)V
 		ARG 1 packet
-	METHOD a handleRespawn (Lbh;)V
+	METHOD method_398 handleRespawn (Lnet/minecraft/class_36;)V
 		ARG 1 packet
-	METHOD a handleChat (Lbr;)V
+	METHOD method_399 handleChat (Lnet/minecraft/class_46;)V
 		ARG 1 packet
-	METHOD a handleSignUpdate (Lgm;)V
+	METHOD method_415 handleSignUpdate (Lnet/minecraft/class_176;)V
 		ARG 1 packet
-	METHOD a handleTimeUpdate (Lhb;)V
+	METHOD method_418 handleTimeUpdate (Lnet/minecraft/class_192;)V
 		ARG 1 packet
-	METHOD a handleHoldItem (Lhm;)V
+	METHOD method_419 handleHoldItem (Lnet/minecraft/class_203;)V
 		ARG 1 packet
-	METHOD a handleMovement (Lhx;)V
+	METHOD method_421 handleMovement (Lnet/minecraft/class_214;)V
 		ARG 1 packet
-	METHOD a onDisconnected (Ljava/lang/String;[Ljava/lang/Object;)V
+	METHOD method_425 onDisconnected (Ljava/lang/String;[Ljava/lang/Object;)V
 		ARG 1 reason
 		ARG 2 translationArgs
-	METHOD a handlePacket (Lju;)V
+	METHOD method_429 handlePacket (Lnet/minecraft/class_265;)V
 		ARG 1 packet
-	METHOD a handleDisconnect (Lkx;)V
+	METHOD method_430 handleDisconnect (Lnet/minecraft/class_295;)V
 		ARG 1 packet

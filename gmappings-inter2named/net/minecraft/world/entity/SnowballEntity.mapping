@@ -1,9 +1,9 @@
-CLASS bq net/minecraft/world/entity/SnowballEntity
-	FIELD a shake I
-	FIELD b xTile I
-	FIELD c yTile I
-	FIELD d zTile I
-	FIELD e inTile I
-	FIELD f inGround Z
-	METHOD <init> (Lff;Llb;)V
+CLASS net/minecraft/class_45 net/minecraft/world/entity/SnowballEntity
+	FIELD field_86 shake I
+	FIELD field_90 xTile I
+	FIELD field_91 yTile I
+	FIELD field_92 zTile I
+	FIELD field_93 inTile I
+	FIELD field_94 inGround Z
+	METHOD <init> (Lnet/minecraft/class_142;Lnet/minecraft/class_300;)V
 		ARG 1 world

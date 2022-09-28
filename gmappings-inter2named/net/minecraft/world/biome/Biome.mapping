@@ -1,30 +1,30 @@
-CLASS jp net/minecraft/world/biome/Biome
-	FIELD a RAINFOREST Ljp;
-	FIELD b SWAMPLAND Ljp;
-	FIELD c SEASONAL_FOREST Ljp;
-	FIELD d FOREST Ljp;
-	FIELD e SAVANNA Ljp;
-	FIELD f SHRUBLAND Ljp;
-	FIELD g TAIGA Ljp;
-	FIELD h DESERT Ljp;
-	FIELD i PLAINS Ljp;
-	FIELD j ICE_DESERT Ljp;
-	FIELD k TUNDRA Ljp;
-	FIELD l HELL Ljp;
-	FIELD m name Ljava/lang/String;
-	FIELD o topLayer B
-	FIELD p secondLayer B
-	FIELD r monsters [Ljava/lang/Class;
-	FIELD s passiveMobs [Ljava/lang/Class;
-	FIELD t biomeMap [Ljp;
-	METHOD a init ()V
-	METHOD a getBiomeMapAt (DD)Ljp;
+CLASS net/minecraft/class_260 net/minecraft/world/biome/Biome
+	FIELD field_1040 RAINFOREST Lnet/minecraft/class_260;
+	FIELD field_1041 SWAMPLAND Lnet/minecraft/class_260;
+	FIELD field_1042 SEASONAL_FOREST Lnet/minecraft/class_260;
+	FIELD field_1043 FOREST Lnet/minecraft/class_260;
+	FIELD field_1044 SAVANNA Lnet/minecraft/class_260;
+	FIELD field_1045 SHRUBLAND Lnet/minecraft/class_260;
+	FIELD field_1046 TAIGA Lnet/minecraft/class_260;
+	FIELD field_1047 DESERT Lnet/minecraft/class_260;
+	FIELD field_1048 PLAINS Lnet/minecraft/class_260;
+	FIELD field_1049 ICE_DESERT Lnet/minecraft/class_260;
+	FIELD field_1050 TUNDRA Lnet/minecraft/class_260;
+	FIELD field_1051 HELL Lnet/minecraft/class_260;
+	FIELD field_1052 name Ljava/lang/String;
+	FIELD field_1054 topLayer B
+	FIELD field_1055 secondLayer B
+	FIELD field_1057 monsters [Ljava/lang/Class;
+	FIELD field_1058 passiveMobs [Ljava/lang/Class;
+	FIELD field_1059 biomeMap [Lnet/minecraft/class_260;
+	METHOD method_757 init ()V
+	METHOD method_758 getBiomeMapAt (DD)Lnet/minecraft/class_260;
 		ARG 0 x
 		ARG 2 z
-	METHOD a calcBiomeMapAt (FF)Ljp;
+	METHOD method_759 calcBiomeMapAt (FF)Lnet/minecraft/class_260;
 		ARG 0 x
 		ARG 1 y
-	METHOD a name (Ljava/lang/String;)Ljp;
+	METHOD method_761 name (Ljava/lang/String;)Lnet/minecraft/class_260;
 		ARG 1 name
-	METHOD a getSpawnableMobs (Lkt;)[Ljava/lang/Class;
+	METHOD method_762 getSpawnableMobs (Lnet/minecraft/class_291;)[Ljava/lang/Class;
 		ARG 1 type

@@ -1,19 +1,19 @@
-CLASS hz net/minecraft/nbt/NbtElement
-	FIELD a name Ljava/lang/String;
-	METHOD a getTag ()B
-	METHOD a createElementFromTag (B)Lhz;
+CLASS net/minecraft/class_216 net/minecraft/nbt/NbtElement
+	FIELD field_884 name Ljava/lang/String;
+	METHOD method_643 getTag ()B
+	METHOD method_644 createElementFromTag (B)Lnet/minecraft/class_216;
 		ARG 0 tag
-	METHOD a writeElementToStream (Lhz;Ljava/io/DataOutput;)V
+	METHOD method_645 writeElementToStream (Lnet/minecraft/class_216;Ljava/io/DataOutput;)V
 		ARG 0 element
 		ARG 1 out
-	METHOD a read (Ljava/io/DataInput;)V
+	METHOD method_646 read (Ljava/io/DataInput;)V
 		ARG 1 in
-	METHOD a write (Ljava/io/DataOutput;)V
+	METHOD method_647 write (Ljava/io/DataOutput;)V
 		ARG 1 out
-	METHOD b getTagName (B)Ljava/lang/String;
+	METHOD method_648 getTagName (B)Ljava/lang/String;
 		ARG 0 tag
-	METHOD b readElementFromStream (Ljava/io/DataInput;)Lhz;
+	METHOD method_649 readElementFromStream (Ljava/io/DataInput;)Lnet/minecraft/class_216;
 		ARG 0 in
-	METHOD c getName ()Ljava/lang/String;
-	METHOD m setName (Ljava/lang/String;)Lhz;
+	METHOD method_650 getName ()Ljava/lang/String;
+	METHOD method_651 setName (Ljava/lang/String;)Lnet/minecraft/class_216;
 		ARG 1 name

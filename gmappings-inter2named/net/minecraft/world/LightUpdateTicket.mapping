@@ -1,12 +1,12 @@
-CLASS ev net/minecraft/world/LightUpdateTicket
-	FIELD a type Leb;
-	FIELD b minX I
-	FIELD c minY I
-	FIELD d minZ I
-	FIELD e maxX I
-	FIELD f maxY I
-	FIELD g maxZ I
-	METHOD <init> (Leb;IIIIII)V
+CLASS net/minecraft/class_131 net/minecraft/world/LightUpdateTicket
+	FIELD field_390 type Lnet/minecraft/class_111;
+	FIELD field_391 minX I
+	FIELD field_392 minY I
+	FIELD field_393 minZ I
+	FIELD field_394 maxX I
+	FIELD field_395 maxY I
+	FIELD field_396 maxZ I
+	METHOD <init> (Lnet/minecraft/class_111;IIIIII)V
 		ARG 1 type
 		ARG 2 minX
 		ARG 3 minY
@@ -14,12 +14,12 @@ CLASS ev net/minecraft/world/LightUpdateTicket
 		ARG 5 maxX
 		ARG 6 maxY
 		ARG 7 maxZ
-	METHOD a (IIIIII)Z
+	METHOD method_284 (IIIIII)Z
 		ARG 1 minX
 		ARG 2 minY
 		ARG 3 minZ
 		ARG 4 maxX
 		ARG 5 maxY
 		ARG 6 maxZ
-	METHOD a update (Lff;)V
+	METHOD method_285 update (Lnet/minecraft/class_142;)V
 		ARG 1 world

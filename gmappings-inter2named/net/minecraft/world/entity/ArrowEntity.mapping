@@ -1,7 +1,7 @@
-CLASS en net/minecraft/world/entity/ArrowEntity
-	FIELD a shake I
-	FIELD aj inGround Z
-	FIELD c xTile I
-	FIELD d yTile I
-	FIELD e zTile I
-	FIELD f inTile I
+CLASS net/minecraft/class_123 net/minecraft/world/entity/ArrowEntity
+	FIELD field_312 shake I
+	FIELD field_313 inGround Z
+	FIELD field_317 xTile I
+	FIELD field_318 yTile I
+	FIELD field_319 zTile I
+	FIELD field_320 inTile I

@@ -1,1 +1,1 @@
-CLASS cy net/minecraft/world/block/MobSpawnerBlock
+CLASS net/minecraft/class_80 net/minecraft/world/block/MobSpawnerBlock

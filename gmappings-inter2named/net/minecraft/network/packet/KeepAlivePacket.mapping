@@ -1,1 +1,1 @@
-CLASS ll net/minecraft/network/packet/KeepAlivePacket
+CLASS net/minecraft/class_310 net/minecraft/network/packet/KeepAlivePacket

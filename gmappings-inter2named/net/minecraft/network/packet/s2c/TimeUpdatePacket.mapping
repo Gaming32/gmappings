@@ -1,2 +1,2 @@
-CLASS hb net/minecraft/network/packet/s2c/TimeUpdatePacket
-	FIELD a time J
+CLASS net/minecraft/class_192 net/minecraft/network/packet/s2c/TimeUpdatePacket
+	FIELD field_802 time J

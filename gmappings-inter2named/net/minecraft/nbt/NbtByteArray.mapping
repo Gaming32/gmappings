@@ -1,4 +1,4 @@
-CLASS hh net/minecraft/nbt/NbtByteArray
-	FIELD a value [B
+CLASS net/minecraft/class_198 net/minecraft/nbt/NbtByteArray
+	FIELD field_813 value [B
 	METHOD <init> ([B)V
 		ARG 1 value

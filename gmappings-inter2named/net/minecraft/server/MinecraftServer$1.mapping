@@ -1,2 +1,2 @@
-CLASS cn net/minecraft/server/MinecraftServer$1
-	FIELD a this$0 Lnet/minecraft/server/MinecraftServer;
+CLASS net/minecraft/class_69 net/minecraft/server/MinecraftServer$1
+	FIELD field_169 this$0 Lnet/minecraft/server/MinecraftServer;

@@ -1,1 +1,1 @@
-CLASS fh net/minecraft/world/entity/MonsterEntity
+CLASS net/minecraft/class_144 net/minecraft/world/entity/MonsterEntity

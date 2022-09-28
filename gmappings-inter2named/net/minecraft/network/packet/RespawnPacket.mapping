@@ -1,1 +1,1 @@
-CLASS bh net/minecraft/network/packet/RespawnPacket
+CLASS net/minecraft/class_36 net/minecraft/network/packet/RespawnPacket

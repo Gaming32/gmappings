@@ -1,2 +1,2 @@
-CLASS i net/minecraft/inventory/CraftingInventory
-	FIELD a slots [Lik;
+CLASS net/minecraft/class_217 net/minecraft/inventory/CraftingInventory
+	FIELD field_885 slots [Lnet/minecraft/class_228;

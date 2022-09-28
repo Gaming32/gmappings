@@ -1,4 +1,0 @@
-CLASS ds
-	FIELD a everything Lds;
-	FIELD b mobs Lds;
-	FIELD c players Lds;

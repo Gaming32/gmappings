@@ -1,4 +1,4 @@
-CLASS gw net/minecraft/world/entity/SlimeEntity
-	FIELD c size I
-	METHOD a setSize (I)V
+CLASS net/minecraft/class_186 net/minecraft/world/entity/SlimeEntity
+	FIELD field_795 size I
+	METHOD method_566 setSize (I)V
 		ARG 1 size

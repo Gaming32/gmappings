@@ -1,188 +1,188 @@
-CLASS gu net/minecraft/world/block/Block
-	FIELD A waterFlowing Lgu;
-	FIELD B waterStill Lgu;
-	FIELD C lavaFlowing Lgu;
-	FIELD D lavaStill Lgu;
-	FIELD E sand Lgu;
-	FIELD F gravel Lgu;
-	FIELD G oreGold Lgu;
-	FIELD H oreIron Lgu;
-	FIELD I oreCoal Lgu;
-	FIELD J log Lgu;
-	FIELD K leaves Lbi;
-	FIELD L sponge Lgu;
-	FIELD M glass Lgu;
-	FIELD aA farmland Lgu;
-	FIELD aB unlitFurnace Lgu;
-	FIELD aC litFurnace Lgu;
-	FIELD aE doorWood Lgu;
-	FIELD aF ladder Lgu;
-	FIELD aG rail Lgu;
-	FIELD aH stairsStone Lgu;
-	FIELD aJ lever Lgu;
-	FIELD aL doorIron Lgu;
-	FIELD a stringId Ljava/lang/String;
-	FIELD aR button Lgu;
-	FIELD aT ice Lgu;
-	FIELD aV cactus Lgu;
-	FIELD aW clay Lgu;
-	FIELD aX reeds Lgu;
-	FIELD aY jukebox Lgu;
-	FIELD aZ fence Lgu;
-	FIELD ab cloth Lgu;
-	FIELD ad flower Lij;
-	FIELD ae rose Lij;
-	FIELD ah blockGold Lgu;
-	FIELD ai blockIron Lgu;
-	FIELD al brick Lgu;
-	FIELD am tnt Lgu;
-	FIELD an bookshelf Lgu;
-	FIELD ao stoneMoss Lgu;
-	FIELD ap obsidian Lgu;
-	FIELD aq torch Lgu;
-	FIELD ar fire Lku;
-	FIELD as mobSpawner Lgu;
-	FIELD at stairsWood Lgu;
-	FIELD au chest Lgu;
-	FIELD av redstoneDust Lgu;
-	FIELD aw oreDiamond Lgu;
-	FIELD ax blockDiamond Lgu;
-	FIELD ay workbench Lgu;
-	FIELD az crops Lgu;
-	FIELD bb hellrock Lgu;
-	FIELD bc hecksand Lgu;
-	FIELD bd lightgem Lgu;
-	FIELD be portal Lao;
-	FIELD bh blockId I
-	FIELD bk minX D
-	FIELD bl minY D
-	FIELD bm minZ D
-	FIELD bn maxX D
-	FIELD bo maxY D
-	FIELD bp maxZ D
-	FIELD bq stepSound Lcp;
-	FIELD bs material Lkz;
-	FIELD bt slipperiness F
-	FIELD d stoneSound Lcp;
-	FIELD e woodSound Lcp;
-	FIELD f gravelSound Lcp;
-	FIELD g grassSound Lcp;
-	FIELD h stoneSound2 Lcp;
-	FIELD i stoneSoundHigher Lcp;
-	FIELD j stoneSound3 Lcp;
-	FIELD k clothSound Lcp;
-	FIELD l sandSound Lcp;
-	FIELD m blocks [Lgu;
-	FIELD n hasRandomTick [Z
-	FIELD o opaque [Z
-	FIELD p tileEntity [Z
-	FIELD q solidity [I
-	FIELD s lightLevel [I
-	FIELD t stone Lgu;
-	FIELD u grass Lix;
-	FIELD v dirt Lgu;
-	FIELD w stonebrick Lgu;
-	FIELD x wood Lgu;
-	FIELD y sapling Lgu;
-	FIELD z bedrock Lgu;
-	METHOD <init> (IILkz;)V
+CLASS net/minecraft/class_184 net/minecraft/world/block/Block
+	FIELD field_669 waterFlowing Lnet/minecraft/class_184;
+	FIELD field_670 waterStill Lnet/minecraft/class_184;
+	FIELD field_671 lavaFlowing Lnet/minecraft/class_184;
+	FIELD field_672 lavaStill Lnet/minecraft/class_184;
+	FIELD field_673 sand Lnet/minecraft/class_184;
+	FIELD field_674 gravel Lnet/minecraft/class_184;
+	FIELD field_675 oreGold Lnet/minecraft/class_184;
+	FIELD field_676 oreIron Lnet/minecraft/class_184;
+	FIELD field_677 oreCoal Lnet/minecraft/class_184;
+	FIELD field_678 log Lnet/minecraft/class_184;
+	FIELD field_679 leaves Lnet/minecraft/class_37;
+	FIELD field_680 sponge Lnet/minecraft/class_184;
+	FIELD field_681 glass Lnet/minecraft/class_184;
+	FIELD field_695 farmland Lnet/minecraft/class_184;
+	FIELD field_696 unlitFurnace Lnet/minecraft/class_184;
+	FIELD field_697 litFurnace Lnet/minecraft/class_184;
+	FIELD field_699 doorWood Lnet/minecraft/class_184;
+	FIELD field_700 ladder Lnet/minecraft/class_184;
+	FIELD field_701 rail Lnet/minecraft/class_184;
+	FIELD field_702 stairsStone Lnet/minecraft/class_184;
+	FIELD field_704 lever Lnet/minecraft/class_184;
+	FIELD field_706 doorIron Lnet/minecraft/class_184;
+	FIELD field_707 stringId Ljava/lang/String;
+	FIELD field_713 button Lnet/minecraft/class_184;
+	FIELD field_715 ice Lnet/minecraft/class_184;
+	FIELD field_717 cactus Lnet/minecraft/class_184;
+	FIELD field_718 clay Lnet/minecraft/class_184;
+	FIELD field_719 reeds Lnet/minecraft/class_184;
+	FIELD field_720 jukebox Lnet/minecraft/class_184;
+	FIELD field_721 fence Lnet/minecraft/class_184;
+	FIELD field_723 cloth Lnet/minecraft/class_184;
+	FIELD field_725 flower Lnet/minecraft/class_227;
+	FIELD field_726 rose Lnet/minecraft/class_227;
+	FIELD field_729 blockGold Lnet/minecraft/class_184;
+	FIELD field_730 blockIron Lnet/minecraft/class_184;
+	FIELD field_733 brick Lnet/minecraft/class_184;
+	FIELD field_734 tnt Lnet/minecraft/class_184;
+	FIELD field_735 bookshelf Lnet/minecraft/class_184;
+	FIELD field_736 stoneMoss Lnet/minecraft/class_184;
+	FIELD field_737 obsidian Lnet/minecraft/class_184;
+	FIELD field_738 torch Lnet/minecraft/class_184;
+	FIELD field_739 fire Lnet/minecraft/class_292;
+	FIELD field_740 mobSpawner Lnet/minecraft/class_184;
+	FIELD field_741 stairsWood Lnet/minecraft/class_184;
+	FIELD field_742 chest Lnet/minecraft/class_184;
+	FIELD field_743 redstoneDust Lnet/minecraft/class_184;
+	FIELD field_744 oreDiamond Lnet/minecraft/class_184;
+	FIELD field_745 blockDiamond Lnet/minecraft/class_184;
+	FIELD field_746 workbench Lnet/minecraft/class_184;
+	FIELD field_747 crops Lnet/minecraft/class_184;
+	FIELD field_749 hellrock Lnet/minecraft/class_184;
+	FIELD field_750 hecksand Lnet/minecraft/class_184;
+	FIELD field_751 lightgem Lnet/minecraft/class_184;
+	FIELD field_752 portal Lnet/minecraft/class_16;
+	FIELD field_755 blockId I
+	FIELD field_758 minX D
+	FIELD field_759 minY D
+	FIELD field_760 minZ D
+	FIELD field_761 maxX D
+	FIELD field_762 maxY D
+	FIELD field_763 maxZ D
+	FIELD field_764 stepSound Lnet/minecraft/class_71;
+	FIELD field_766 material Lnet/minecraft/class_297;
+	FIELD field_767 slipperiness F
+	FIELD field_768 stoneSound Lnet/minecraft/class_71;
+	FIELD field_769 woodSound Lnet/minecraft/class_71;
+	FIELD field_770 gravelSound Lnet/minecraft/class_71;
+	FIELD field_771 grassSound Lnet/minecraft/class_71;
+	FIELD field_772 stoneSound2 Lnet/minecraft/class_71;
+	FIELD field_773 stoneSoundHigher Lnet/minecraft/class_71;
+	FIELD field_774 stoneSound3 Lnet/minecraft/class_71;
+	FIELD field_775 clothSound Lnet/minecraft/class_71;
+	FIELD field_776 sandSound Lnet/minecraft/class_71;
+	FIELD field_777 blocks [Lnet/minecraft/class_184;
+	FIELD field_778 hasRandomTick [Z
+	FIELD field_779 opaque [Z
+	FIELD field_780 tileEntity [Z
+	FIELD field_781 solidity [I
+	FIELD field_783 lightLevel [I
+	FIELD field_784 stone Lnet/minecraft/class_184;
+	FIELD field_785 grass Lnet/minecraft/class_241;
+	FIELD field_786 dirt Lnet/minecraft/class_184;
+	FIELD field_787 stonebrick Lnet/minecraft/class_184;
+	FIELD field_788 wood Lnet/minecraft/class_184;
+	FIELD field_789 sapling Lnet/minecraft/class_184;
+	FIELD field_790 bedrock Lnet/minecraft/class_184;
+	METHOD <init> (IILnet/minecraft/class_297;)V
 		ARG 1 id
 		ARG 3 material
-	METHOD <init> (ILkz;)V
+	METHOD <init> (ILnet/minecraft/class_297;)V
 		ARG 1 id
 		ARG 2 material
-	METHOD a isOpaque ()Z
-	METHOD a setLightLevel (F)Lgu;
+	METHOD method_517 isOpaque ()Z
+	METHOD method_518 setLightLevel (F)Lnet/minecraft/class_184;
 		COMMENT {@code level} in this method is unusually a float from {@code 0.0f} to
 		COMMENT {@code 1.0f} (inclusive) that maps to light levels 0 through 15.
 		ARG 1 level01
-	METHOD a setBlockBounds (FFFFFF)V
+	METHOD method_519 setBlockBounds (FFFFFF)V
 		ARG 1 minX
 		ARG 2 minY
 		ARG 3 minZ
 		ARG 4 maxX
 		ARG 5 maxY
 		ARG 6 maxZ
-	METHOD a getDroppedItemId (ILjava/util/Random;)I
+	METHOD method_521 getDroppedItemId (ILjava/util/Random;)I
 		ARG 1 metadata
 		ARG 2 random
-	METHOD a setStepSound (Lcp;)Lgu;
+	METHOD method_524 setStepSound (Lnet/minecraft/class_71;)Lnet/minecraft/class_184;
 		ARG 1 stepSound
-	METHOD a (Lff;III)Z
+	METHOD method_526 (Lnet/minecraft/class_142;III)Z
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD a dropItems (Lff;IIIIF)V
+	METHOD method_528 dropItems (Lnet/minecraft/class_142;IIIIF)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 		ARG 5 metadata
 		ARG 6 chance
-	METHOD a addOwnBoundingBoxToListIfColliding (Lff;IIILel;Ljava/util/ArrayList;)V
+	METHOD method_530 addOwnBoundingBoxToListIfColliding (Lnet/minecraft/class_142;IIILnet/minecraft/class_121;Ljava/util/ArrayList;)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 		ARG 5 box
 		ARG 6 list
-	METHOD a onMovementCollision (Lff;IIILep;)V
+	METHOD method_531 onMovementCollision (Lnet/minecraft/class_142;IIILnet/minecraft/class_125;)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 		ARG 5 entity
-	METHOD a a (Lff;IIILgp;)Z
-	METHOD a randomTick (Lff;IIILjava/util/Random;)V
+	METHOD method_533 a (Lnet/minecraft/class_142;IIILnet/minecraft/class_179;)Z
+	METHOD method_534 randomTick (Lnet/minecraft/class_142;IIILjava/util/Random;)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 		ARG 5 random
-	METHOD a setName (Ljava/lang/String;)Lgu;
+	METHOD method_537 setName (Ljava/lang/String;)Lnet/minecraft/class_184;
 		ARG 1 name
-	METHOD a getDropCount (Ljava/util/Random;)I
+	METHOD method_538 getDropCount (Ljava/util/Random;)I
 		ARG 1 random
-	METHOD a shouldRenderSide (Ljw;IIII)Z
+	METHOD method_540 shouldRenderSide (Lnet/minecraft/class_267;IIII)Z
 		ARG 1 world
 		ARG 2 sideX
 		ARG 3 sideY
 		ARG 4 sideZ
 		ARG 5 side
-	METHOD a setHasRandomTick (Z)V
+	METHOD method_541 setHasRandomTick (Z)V
 		ARG 1 hasRandomTick
-	METHOD a_ dropItems (Lff;IIII)V
+	METHOD method_542 dropItems (Lnet/minecraft/class_142;IIII)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 		ARG 5 metadata
-	METHOD b onDestroy (Lff;III)V
+	METHOD method_546 onDestroy (Lnet/minecraft/class_142;III)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD b blockChangedNearby (Lff;IIII)V
+	METHOD method_547 blockChangedNearby (Lnet/minecraft/class_142;IIII)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 		ARG 5 newBlockId
-	METHOD c setSoliditiy (I)Lgu;
+	METHOD method_553 setSoliditiy (I)Lnet/minecraft/class_184;
 		ARG 1 solidity
-	METHOD d getBoundingBox (Lff;III)Lel;
+	METHOD method_558 getBoundingBox (Lnet/minecraft/class_142;III)Lnet/minecraft/class_121;
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD e getStringId ()Ljava/lang/String;
-	METHOD e onPlace (Lff;III)V
+	METHOD method_560 getStringId ()Ljava/lang/String;
+	METHOD method_561 onPlace (Lnet/minecraft/class_142;III)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD g (Lff;IIII)V
+	METHOD method_564 (Lnet/minecraft/class_142;IIII)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y

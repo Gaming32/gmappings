@@ -1,47 +1,47 @@
-CLASS bs net/minecraft/network/PacketManager
-	FIELD a threadCountLock Ljava/lang/Object;
-	FIELD b readThreads I
-	FIELD c writeThreads I
-	FIELD e packetQueueLock Ljava/lang/Object;
-	FIELD f socket Ljava/net/Socket;
-	FIELD g remoteAddress Ljava/net/SocketAddress;
-	FIELD h input Ljava/io/DataInputStream;
-	FIELD i output Ljava/io/DataOutputStream;
-	FIELD j running Z
-	FIELD k readQueue Ljava/util/List;
-	FIELD l writeQueue Ljava/util/List;
-	FIELD m chunkWriteQueue Ljava/util/List;
-	FIELD n handler Lfr;
-	FIELD o stopped Z
-	FIELD p writeThread Ljava/lang/Thread;
-	FIELD q readThread Ljava/lang/Thread;
-	FIELD r disconnected Z
-	FIELD s disconnectReason Ljava/lang/String;
-	FIELD t disconnectTranslationArgs [Ljava/lang/Object;
-	FIELD u timeSinceLastRead I
-	FIELD v writeQueueSize I
-	METHOD <init> (Ljava/net/Socket;Ljava/lang/String;Lfr;)V
+CLASS net/minecraft/class_47 net/minecraft/network/PacketManager
+	FIELD field_100 packetQueueLock Ljava/lang/Object;
+	FIELD field_101 socket Ljava/net/Socket;
+	FIELD field_102 remoteAddress Ljava/net/SocketAddress;
+	FIELD field_103 input Ljava/io/DataInputStream;
+	FIELD field_104 output Ljava/io/DataOutputStream;
+	FIELD field_105 running Z
+	FIELD field_106 readQueue Ljava/util/List;
+	FIELD field_107 writeQueue Ljava/util/List;
+	FIELD field_108 chunkWriteQueue Ljava/util/List;
+	FIELD field_109 handler Lnet/minecraft/class_154;
+	FIELD field_110 stopped Z
+	FIELD field_111 writeThread Ljava/lang/Thread;
+	FIELD field_112 readThread Ljava/lang/Thread;
+	FIELD field_113 disconnected Z
+	FIELD field_114 disconnectReason Ljava/lang/String;
+	FIELD field_115 disconnectTranslationArgs [Ljava/lang/Object;
+	FIELD field_116 timeSinceLastRead I
+	FIELD field_117 writeQueueSize I
+	FIELD field_96 threadCountLock Ljava/lang/Object;
+	FIELD field_97 readThreads I
+	FIELD field_98 writeThreads I
+	METHOD <init> (Ljava/net/Socket;Ljava/lang/String;Lnet/minecraft/class_154;)V
 		ARG 1 socket
 		ARG 2 threadBaseName
 		ARG 3 handler
-	METHOD a processReadQueue ()V
-	METHOD a access$1 (Lbs;)Z
-	METHOD a setHandler (Lfr;)V
+	METHOD method_100 writePacket ()V
+	METHOD method_101 access$5 (Lnet/minecraft/class_47;)Ljava/lang/Thread;
+	METHOD method_102 readPacket ()V
+	METHOD method_103 access$6 (Lnet/minecraft/class_47;)Ljava/lang/Thread;
+	METHOD method_88 processReadQueue ()V
+	METHOD method_89 access$1 (Lnet/minecraft/class_47;)Z
+	METHOD method_90 setHandler (Lnet/minecraft/class_154;)V
 		ARG 1 handler
-	METHOD a disconnectForException (Ljava/lang/Exception;)V
+	METHOD method_91 disconnectForException (Ljava/lang/Exception;)V
 		ARG 1 e
-	METHOD a disconnect (Ljava/lang/String;[Ljava/lang/Object;)V
+	METHOD method_92 disconnect (Ljava/lang/String;[Ljava/lang/Object;)V
 		ARG 1 reason
 		ARG 2 translationArgs
-	METHOD a sendPacket (Lju;)V
+	METHOD method_93 sendPacket (Lnet/minecraft/class_265;)V
 		ARG 1 packet
-	METHOD b getRemoteAddress ()Ljava/net/SocketAddress;
-	METHOD b access$2 (Lbs;)Z
-	METHOD c stop ()V
-	METHOD c access$3 (Lbs;)V
-	METHOD d getChunkWriteQueueSize ()I
-	METHOD d access$4 (Lbs;)V
-	METHOD e writePacket ()V
-	METHOD e access$5 (Lbs;)Ljava/lang/Thread;
-	METHOD f readPacket ()V
-	METHOD f access$6 (Lbs;)Ljava/lang/Thread;
+	METHOD method_94 getRemoteAddress ()Ljava/net/SocketAddress;
+	METHOD method_95 access$2 (Lnet/minecraft/class_47;)Z
+	METHOD method_96 stop ()V
+	METHOD method_97 access$3 (Lnet/minecraft/class_47;)V
+	METHOD method_98 getChunkWriteQueueSize ()I
+	METHOD method_99 access$4 (Lnet/minecraft/class_47;)V

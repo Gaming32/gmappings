@@ -1,4 +1,4 @@
-CLASS q net/minecraft/nbt/NbtFloat
-	FIELD a value F
+CLASS net/minecraft/class_315 net/minecraft/nbt/NbtFloat
+	FIELD field_1328 value F
 	METHOD <init> (F)V
 		ARG 1 value

@@ -1,6 +1,6 @@
-CLASS aj net/minecraft/network/packet/c2s/ClientInformationPacket
-	FIELD a protocolVersion I
-	FIELD b username Ljava/lang/String;
+CLASS net/minecraft/class_11 net/minecraft/network/packet/c2s/ClientInformationPacket
+	FIELD field_12 protocolVersion I
+	FIELD field_13 username Ljava/lang/String;
 	METHOD <init> (Ljava/lang/String;Ljava/lang/String;IJB)V
 		ARG 1 username
 		ARG 3 protocolVersion

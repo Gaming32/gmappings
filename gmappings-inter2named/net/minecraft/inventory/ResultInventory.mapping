@@ -1,2 +1,2 @@
-CLASS is net/minecraft/inventory/ResultInventory
-	FIELD a slots [Lik;
+CLASS net/minecraft/class_236 net/minecraft/inventory/ResultInventory
+	FIELD field_981 slots [Lnet/minecraft/class_228;

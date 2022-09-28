@@ -1,23 +1,23 @@
-CLASS ju net/minecraft/network/packet/Packet
-	FIELD a packetIdToClass Ljava/util/Map;
-	FIELD b packetClassToId Ljava/util/Map;
-	FIELD j creationTime J
-	FIELD k isChunkPacket Z
-	METHOD a getSize ()I
-	METHOD a getPacketInstanceById (I)Lju;
+CLASS net/minecraft/class_265 net/minecraft/network/packet/Packet
+	FIELD field_1064 packetIdToClass Ljava/util/Map;
+	FIELD field_1065 packetClassToId Ljava/util/Map;
+	FIELD field_1066 creationTime J
+	FIELD field_1067 isChunkPacket Z
+	METHOD method_765 getSize ()I
+	METHOD method_766 getPacketInstanceById (I)Lnet/minecraft/class_265;
 		ARG 0 packetId
-	METHOD a register (ILjava/lang/Class;)V
+	METHOD method_767 register (ILjava/lang/Class;)V
 		ARG 0 packetId
 		ARG 1 packetClass
-	METHOD a handle (Lfr;)V
+	METHOD method_768 handle (Lnet/minecraft/class_154;)V
 		ARG 1 handler
-	METHOD a read (Ljava/io/DataInputStream;)V
+	METHOD method_769 read (Ljava/io/DataInputStream;)V
 		ARG 1 in
-	METHOD a write (Ljava/io/DataOutputStream;)V
+	METHOD method_770 write (Ljava/io/DataOutputStream;)V
 		ARG 1 out
-	METHOD a writePacket (Lju;Ljava/io/DataOutputStream;)V
+	METHOD method_771 writePacket (Lnet/minecraft/class_265;Ljava/io/DataOutputStream;)V
 		ARG 0 packet
 		ARG 1 out
-	METHOD b getPacketId ()I
-	METHOD b readPacket (Ljava/io/DataInputStream;)Lju;
+	METHOD method_772 getPacketId ()I
+	METHOD method_773 readPacket (Ljava/io/DataInputStream;)Lnet/minecraft/class_265;
 		ARG 0 in

@@ -1,18 +1,18 @@
-CLASS bg net/minecraft/world/tileentity/TileEntity
-	FIELD a world Lff;
-	FIELD b x I
-	FIELD c y I
-	FIELD d z I
-	FIELD e idToClass Ljava/util/Map;
-	FIELD f classToId Ljava/util/Map;
-	METHOD a read (Lad;)V
+CLASS net/minecraft/class_35 net/minecraft/world/tileentity/TileEntity
+	FIELD field_59 world Lnet/minecraft/class_142;
+	FIELD field_60 x I
+	FIELD field_61 y I
+	FIELD field_62 z I
+	FIELD field_63 idToClass Ljava/util/Map;
+	FIELD field_64 classToId Ljava/util/Map;
+	METHOD method_59 read (Lnet/minecraft/class_5;)V
 		ARG 1 nbt
-	METHOD a register (Ljava/lang/Class;Ljava/lang/String;)V
+	METHOD method_60 register (Ljava/lang/Class;Ljava/lang/String;)V
 		ARG 0 clazz
 		ARG 1 id
-	METHOD b write (Lad;)V
+	METHOD method_61 write (Lnet/minecraft/class_5;)V
 		ARG 1 nbt
-	METHOD c createAndRead (Lad;)Lbg;
+	METHOD method_62 createAndRead (Lnet/minecraft/class_5;)Lnet/minecraft/class_35;
 		ARG 0 nbt
-	METHOD d notifyUpdated ()V
-	METHOD e tick ()V
+	METHOD method_63 notifyUpdated ()V
+	METHOD method_64 tick ()V

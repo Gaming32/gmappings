@@ -1,35 +1,35 @@
-CLASS je net/minecraft/util/IntToObjectHashMap
-	FIELD a table [Liu;
-	FIELD b size I
-	FIELD c threshold I
-	FIELD d loadFactor F
-	FIELD e modCount I
-	METHOD a clear ()V
-	METHOD a get (I)Ljava/lang/Object;
+CLASS net/minecraft/class_249 net/minecraft/util/IntToObjectHashMap
+	FIELD field_1005 table [Lnet/minecraft/class_238;
+	FIELD field_1006 size I
+	FIELD field_1007 threshold I
+	FIELD field_1008 loadFactor F
+	FIELD field_1009 modCount I
+	METHOD method_723 clear ()V
+	METHOD method_724 get (I)Ljava/lang/Object;
 		ARG 1 key
-	METHOD a indexFor (II)I
+	METHOD method_725 indexFor (II)I
 		ARG 0 hash
 		ARG 1 size
-	METHOD a putInternal (IILjava/lang/Object;I)V
+	METHOD method_726 putInternal (IILjava/lang/Object;I)V
 		ARG 1 hash
 		ARG 2 key
 		ARG 3 value
 		ARG 4 index
-	METHOD a put (ILjava/lang/Object;)V
+	METHOD method_727 put (ILjava/lang/Object;)V
 		ARG 1 key
 		ARG 2 value
-	METHOD a rehash ([Liu;)V
+	METHOD method_728 rehash ([Lnet/minecraft/class_238;)V
 		ARG 1 newTab
-	METHOD b containsKey (I)Z
+	METHOD method_729 containsKey (I)Z
 		ARG 1 key
-	METHOD c getNode (I)Liu;
+	METHOD method_730 getNode (I)Lnet/minecraft/class_238;
 		ARG 1 key
-	METHOD d remove (I)Ljava/lang/Object;
+	METHOD method_731 remove (I)Ljava/lang/Object;
 		ARG 1 key
-	METHOD e removeNode (I)Liu;
+	METHOD method_732 removeNode (I)Lnet/minecraft/class_238;
 		ARG 1 key
-	METHOD f access$1 (I)I
-	METHOD g hash (I)I
+	METHOD method_733 access$1 (I)I
+	METHOD method_734 hash (I)I
 		ARG 0 key
-	METHOD h resize (I)V
+	METHOD method_735 resize (I)V
 		ARG 1 newSize

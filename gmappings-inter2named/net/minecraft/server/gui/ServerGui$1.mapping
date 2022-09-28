@@ -1,4 +1,4 @@
-CLASS ac net/minecraft/server/gui/ServerGui$1
-	FIELD a val$server Lnet/minecraft/server/MinecraftServer;
+CLASS net/minecraft/class_4 net/minecraft/server/gui/ServerGui$1
+	FIELD field_7 val$server Lnet/minecraft/server/MinecraftServer;
 	METHOD windowClosing windowClosing (Ljava/awt/event/WindowEvent;)V
 		ARG 1 event

@@ -1,4 +1,4 @@
-CLASS hj net/minecraft/math/RaycastResult
-	FIELD e side I
-	FIELD f location Lbn;
-	FIELD g entity Lep;
+CLASS net/minecraft/class_200 net/minecraft/math/RaycastResult
+	FIELD field_818 side I
+	FIELD field_819 location Lnet/minecraft/class_42;
+	FIELD field_820 entity Lnet/minecraft/class_125;

@@ -1,1 +1,1 @@
-CLASS db net/minecraft/math/noise/AbstractNoise
+CLASS net/minecraft/class_84 net/minecraft/math/noise/AbstractNoise

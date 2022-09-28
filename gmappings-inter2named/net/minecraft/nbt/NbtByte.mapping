@@ -1,4 +1,4 @@
-CLASS cm net/minecraft/nbt/NbtByte
-	FIELD a value B
+CLASS net/minecraft/class_68 net/minecraft/nbt/NbtByte
+	FIELD field_168 value B
 	METHOD <init> (B)V
 		ARG 1 value

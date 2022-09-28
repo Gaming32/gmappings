@@ -1,2 +1,2 @@
-CLASS iq net/minecraft/world/entity/PigEntity
-	FIELD a saddled Z
+CLASS net/minecraft/class_234 net/minecraft/world/entity/PigEntity
+	FIELD field_979 saddled Z

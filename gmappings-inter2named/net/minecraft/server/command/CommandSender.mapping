@@ -1,4 +1,4 @@
-CLASS fn net/minecraft/server/command/CommandSender
-	METHOD b respond (Ljava/lang/String;)V
+CLASS net/minecraft/class_150 net/minecraft/server/command/CommandSender
+	METHOD method_392 respond (Ljava/lang/String;)V
 		ARG 1 message
-	METHOD c getName ()Ljava/lang/String;
+	METHOD method_393 getName ()Ljava/lang/String;

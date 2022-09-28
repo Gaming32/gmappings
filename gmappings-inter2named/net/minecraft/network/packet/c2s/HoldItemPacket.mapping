@@ -1,2 +1,2 @@
-CLASS hm net/minecraft/network/packet/c2s/HoldItemPacket
-	FIELD a slot I
+CLASS net/minecraft/class_203 net/minecraft/network/packet/c2s/HoldItemPacket
+	FIELD field_833 slot I

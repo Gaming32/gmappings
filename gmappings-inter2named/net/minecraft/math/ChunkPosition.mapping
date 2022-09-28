@@ -1,10 +1,10 @@
-CLASS lj net/minecraft/math/ChunkPosition
-	FIELD a x I
-	FIELD b z I
+CLASS net/minecraft/class_308 net/minecraft/math/ChunkPosition
+	FIELD field_1297 x I
+	FIELD field_1298 z I
 	METHOD <init> (II)V
 		ARG 1 x
 		ARG 2 z
-	METHOD a distanceTo (Lep;)D
-		ARG 1 entity
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 o
+	METHOD method_902 distanceTo (Lnet/minecraft/class_125;)D
+		ARG 1 entity

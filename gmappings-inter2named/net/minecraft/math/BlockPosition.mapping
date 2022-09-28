@@ -1,7 +1,7 @@
-CLASS ip net/minecraft/math/BlockPosition
-	FIELD a x I
-	FIELD b y I
-	FIELD c z I
+CLASS net/minecraft/class_233 net/minecraft/math/BlockPosition
+	FIELD field_976 x I
+	FIELD field_977 y I
+	FIELD field_978 z I
 	METHOD <init> (III)V
 		ARG 1 x
 		ARG 2 y

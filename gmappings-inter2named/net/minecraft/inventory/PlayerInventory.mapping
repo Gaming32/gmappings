@@ -1,37 +1,37 @@
-CLASS ih net/minecraft/inventory/PlayerInventory
-	FIELD a inventorySlots [Lik;
-	FIELD b armorSlots [Lik;
-	FIELD c heldItemSlot I
-	FIELD e player Lgp;
-	METHOD <init> (Lgp;)V
+CLASS net/minecraft/class_225 net/minecraft/inventory/PlayerInventory
+	FIELD field_953 inventorySlots [Lnet/minecraft/class_228;
+	FIELD field_954 armorSlots [Lnet/minecraft/class_228;
+	FIELD field_955 heldItemSlot I
+	FIELD field_957 player Lnet/minecraft/class_179;
+	METHOD <init> (Lnet/minecraft/class_179;)V
 		ARG 1 player
-	METHOD a (II)Lik;
+	METHOD a (II)Lnet/minecraft/class_228;
 		COMMENT Gets an {@link net.minecraft.inventory.ItemStack ItemStack} from the specified
 		COMMENT {@code slotId} of up to {@code size} items, or {@code null} if the specified slot
 		COMMENT is empty.
-	METHOD a damageAgainst (Lep;)I
+	METHOD method_673 damageAgainst (Lnet/minecraft/class_125;)I
 		ARG 1 entity
-	METHOD a writeNbt (Les;)Les;
+	METHOD method_674 writeNbt (Lnet/minecraft/class_128;)Lnet/minecraft/class_128;
 		ARG 1 nbt
-	METHOD a add (Lik;)Z
+	METHOD method_676 add (Lnet/minecraft/class_228;)Z
 		COMMENT @return {@code true} if {@code itemStack} was added to the inventory in full,
 		COMMENT {@code false} if it was only added in part or not at all.
 		ARG 1 itemStack
-	METHOD b removeOneOf (I)Z
+	METHOD method_677 removeOneOf (I)Z
 		COMMENT @return {@code true} if an item was successfully removed, {@code} false otherwise.
 		ARG 1 itemId
-	METHOD b addToOneStack (II)I
+	METHOD method_678 addToOneStack (II)I
 		COMMENT Adds up to {@code amount} items of {@code itemId} to the first matching or empty
 		COMMENT slot.
 		COMMENT
 		COMMENT @return The remaining {@code amount} that couldn't fit into the inventory.
 		ARG 1 itemId
 		ARG 2 amount
-	METHOD b readNbt (Les;)V
+	METHOD method_679 readNbt (Lnet/minecraft/class_128;)V
 		ARG 1 nbt
-	METHOD d getFirstMatchingSlot (I)I
+	METHOD method_683 getFirstMatchingSlot (I)I
 		ARG 1 itemId
-	METHOD e getHeldItem ()Lik;
-	METHOD e getMatchingSlotWithRoomForOne (I)I
+	METHOD method_684 getHeldItem ()Lnet/minecraft/class_228;
+	METHOD method_685 getMatchingSlotWithRoomForOne (I)I
 		ARG 1 itemId
-	METHOD j getFirstEmptySlot ()I
+	METHOD method_690 getFirstEmptySlot ()I

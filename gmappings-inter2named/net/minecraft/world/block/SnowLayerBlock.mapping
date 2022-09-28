@@ -1,7 +1,7 @@
-CLASS iz net/minecraft/world/block/SnowLayerBlock
+CLASS net/minecraft/class_243 net/minecraft/world/block/SnowLayerBlock
 	METHOD <init> (II)V
 		ARG 1 blockId
-	METHOD g (Lff;III)Z
+	METHOD method_722 (Lnet/minecraft/class_142;III)Z
 		ARG 1 world
 		ARG 2 x
 		ARG 3 y

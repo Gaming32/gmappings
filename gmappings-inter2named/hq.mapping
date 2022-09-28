@@ -1,4 +1,0 @@
-CLASS hq
-	FIELD a entity Lep;
-	METHOD <init> (Lep;IIZ)V
-		ARG 1 entity

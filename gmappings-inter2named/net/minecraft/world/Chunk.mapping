@@ -1,38 +1,38 @@
-CLASS kw net/minecraft/world/Chunk
-	FIELD a hasEverHadSkyLight Z
-	FIELD b blocks [B
-	FIELD c syncEntitiesWithWorld Z
-	FIELD d world Lff;
-	FIELD e metadata Lir;
-	FIELD f skyLight Lir;
-	FIELD g blockLight Lir;
-	FIELD h heightmap [B
-	FIELD i lowestY I
-	FIELD j x I
-	FIELD k z I
-	FIELD l tileEntities Ljava/util/Map;
-	FIELD m entityLists [Ljava/util/List;
-	FIELD o modified Z
-	FIELD p neverSave Z
-	FIELD r hasEntities Z
-	FIELD s loadedAt J
-	METHOD <init> (Lff;II)V
+CLASS net/minecraft/class_294 net/minecraft/world/Chunk
+	FIELD field_1172 hasEverHadSkyLight Z
+	FIELD field_1173 blocks [B
+	FIELD field_1174 syncEntitiesWithWorld Z
+	FIELD field_1175 world Lnet/minecraft/class_142;
+	FIELD field_1176 metadata Lnet/minecraft/class_235;
+	FIELD field_1177 skyLight Lnet/minecraft/class_235;
+	FIELD field_1178 blockLight Lnet/minecraft/class_235;
+	FIELD field_1179 heightmap [B
+	FIELD field_1180 lowestY I
+	FIELD field_1181 x I
+	FIELD field_1182 z I
+	FIELD field_1183 tileEntities Ljava/util/Map;
+	FIELD field_1184 entityLists [Ljava/util/List;
+	FIELD field_1186 modified Z
+	FIELD field_1187 neverSave Z
+	FIELD field_1189 hasEntities Z
+	FIELD field_1190 loadedAt J
+	METHOD <init> (Lnet/minecraft/class_142;II)V
 		ARG 1 world
 		ARG 2 x
 		ARG 3 z
-	METHOD <init> (Lff;[BII)V
+	METHOD <init> (Lnet/minecraft/class_142;[BII)V
 		ARG 1 world
 		ARG 2 blocks
 		ARG 3 x
 		ARG 4 z
-	METHOD a coordinatesMatch (II)Z
+	METHOD method_833 coordinatesMatch (II)Z
 		ARG 1 x
 		ARG 2 z
-	METHOD a getBlockId (III)I
+	METHOD method_834 getBlockId (III)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD a setBlockId (IIII)Z
+	METHOD method_835 setBlockId (IIII)Z
 		COMMENT @apiNote Implicitly sets block data to {@code 0} as well.
 		COMMENT
 		COMMENT @see #setBlockIdAndMetaata
@@ -40,51 +40,51 @@ CLASS kw net/minecraft/world/Chunk
 		ARG 2 y
 		ARG 3 z
 		ARG 4 blockId
-	METHOD a setBlockIdAndMetadata (IIIII)Z
+	METHOD method_836 setBlockIdAndMetadata (IIIII)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 blockId
 		ARG 5 metadata
-	METHOD a setTileEntity (IIILbg;)V
+	METHOD method_837 setTileEntity (IIILnet/minecraft/class_35;)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 entity
-	METHOD a getChunkSeed (J)Ljava/util/Random;
+	METHOD method_838 getChunkSeed (J)Ljava/util/Random;
 		ARG 1 baseSeed
-	METHOD a addTileEntity (Lbg;)V
+	METHOD method_839 addTileEntity (Lnet/minecraft/class_35;)V
 		ARG 1 entity
-	METHOD a getLightLevel (Leb;III)I
+	METHOD method_840 getLightLevel (Lnet/minecraft/class_111;III)I
 		ARG 1 type
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
-	METHOD a setLightLevel (Leb;IIII)V
+	METHOD method_841 setLightLevel (Lnet/minecraft/class_111;IIII)V
 		ARG 1 type
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
 		ARG 5 level
-	METHOD a spawnEntity (Lep;)V
+	METHOD method_842 spawnEntity (Lnet/minecraft/class_125;)V
 		ARG 1 entity
-	METHOD a removeEntity (Lep;I)V
+	METHOD method_843 removeEntity (Lnet/minecraft/class_125;I)V
 		ARG 1 entity
 		ARG 2 sectionY
-	METHOD a getEntitiesInBoxExcluding (Lep;Lel;Ljava/util/List;)V
+	METHOD method_844 getEntitiesInBoxExcluding (Lnet/minecraft/class_125;Lnet/minecraft/class_121;Ljava/util/List;)V
 		ARG 1 excluded
 		ARG 2 box
 		ARG 3 output
-	METHOD a getEntitiesInBox (Ljava/lang/Class;Lel;Ljava/util/List;)V
+	METHOD method_845 getEntitiesInBox (Ljava/lang/Class;Lnet/minecraft/class_121;Ljava/util/List;)V
 		ARG 1 entityType
 		ARG 2 box
 		ARG 3 output
-	METHOD a shouldBeSaved (Z)Z
+	METHOD method_846 shouldBeSaved (Z)Z
 		COMMENT @param saveHarder Passing true means that the chunk always saves if any time has
 		COMMENT passed in the world since its load (otherwise it only saves if 600 ticks have
 		COMMENT passed since its load).
 		ARG 1 saveHarder
-	METHOD a writeBlocks ([BIIIIIII)I
+	METHOD method_847 writeBlocks ([BIIIIIII)I
 		COMMENT Writes all block data (blocks, metadata, sky light, and block light) in the
 		COMMENT specified block range (min* is inclusive, max* is exclusive) to {@code array} at
 		COMMENT {@code address}.
@@ -98,49 +98,49 @@ CLASS kw net/minecraft/world/Chunk
 		ARG 6 maxY
 		ARG 7 maxZ
 		ARG 8 address
-	METHOD b recalculateEverything ()V
-	METHOD b getHighestBlock (II)I
+	METHOD method_848 recalculateEverything ()V
+	METHOD method_849 getHighestBlock (II)I
 		ARG 1 x
 		ARG 2 z
-	METHOD b getBlockMetadata (III)I
+	METHOD method_850 getBlockMetadata (III)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD b setBlockMetadata (IIII)V
+	METHOD method_851 setBlockMetadata (IIII)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 metadata
-	METHOD b removeEntity (Lep;)V
+	METHOD method_852 removeEntity (Lnet/minecraft/class_125;)V
 		ARG 1 entity
-	METHOD c recalculateBlockLight ()V
-	METHOD c propogateLight (II)V
+	METHOD method_853 recalculateBlockLight ()V
+	METHOD method_854 propogateLight (II)V
 		ARG 1 x
 		ARG 2 z
-	METHOD c isTopBlockOrHigher (III)Z
+	METHOD method_855 isTopBlockOrHigher (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD c getLightLevel (IIII)I
+	METHOD method_856 getLightLevel (IIII)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD d addEntitiesToWorld ()V
-	METHOD d getTileEntity (III)Lbg;
+	METHOD method_857 addEntitiesToWorld ()V
+	METHOD method_858 getTileEntity (III)Lnet/minecraft/class_35;
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD e removeEntitiesFromWorld ()V
-	METHOD e removeTileEntity (III)V
+	METHOD method_859 removeEntitiesFromWorld ()V
+	METHOD method_860 removeTileEntity (III)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD f setModified ()V
-	METHOD f propogateLight (III)V
+	METHOD method_861 setModified ()V
+	METHOD method_862 propogateLight (III)V
 		ARG 1 absX
 		ARG 2 absZ
 		ARG 3 y
-	METHOD g findTopBlock (III)V
+	METHOD method_863 findTopBlock (III)V
 		ARG 1 x
 		ARG 2 searchFromY
 		ARG 3 z

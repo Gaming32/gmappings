@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_101
+	FIELD field_257 everything Lnet/minecraft/class_101;
+	FIELD field_258 mobs Lnet/minecraft/class_101;
+	FIELD field_259 players Lnet/minecraft/class_101;

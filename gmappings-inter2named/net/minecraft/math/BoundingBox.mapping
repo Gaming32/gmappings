@@ -1,12 +1,12 @@
-CLASS el net/minecraft/math/BoundingBox
-	FIELD a minX D
-	FIELD b minY D
-	FIELD c minZ D
-	FIELD d maxX D
-	FIELD e maxY D
-	FIELD f maxZ D
-	FIELD g boundingBoxPool Ljava/util/List;
-	FIELD h nextBoundingBox I
+CLASS net/minecraft/class_121 net/minecraft/math/BoundingBox
+	FIELD field_303 minX D
+	FIELD field_304 minY D
+	FIELD field_305 minZ D
+	FIELD field_306 maxX D
+	FIELD field_307 maxY D
+	FIELD field_308 maxZ D
+	FIELD field_309 boundingBoxPool Ljava/util/List;
+	FIELD field_310 nextBoundingBox I
 	METHOD <init> (DDDDDD)V
 		ARG 1 minX
 		ARG 3 minY
@@ -14,56 +14,56 @@ CLASS el net/minecraft/math/BoundingBox
 		ARG 7 maxX
 		ARG 9 maxY
 		ARG 11 maxZ
-	METHOD a poolBoundingBoxes ()V
-	METHOD a (DDD)Lel;
+	METHOD method_196 poolBoundingBoxes ()V
+	METHOD method_197 (DDD)Lnet/minecraft/class_121;
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
-	METHOD a createUnpooled (DDDDDD)Lel;
+	METHOD method_198 createUnpooled (DDDDDD)Lnet/minecraft/class_121;
 		ARG 0 minX
 		ARG 2 minY
 		ARG 4 minZ
 		ARG 6 maxX
 		ARG 8 maxY
 		ARG 10 maxZ
-	METHOD a collideYZ (Lbn;)Z
+	METHOD method_199 collideYZ (Lnet/minecraft/class_42;)Z
 		ARG 1 vec
-	METHOD a collide (Lel;)Z
+	METHOD method_201 collide (Lnet/minecraft/class_121;)Z
 		ARG 1 other
-	METHOD b copy ()Lel;
-	METHOD b expand (DDD)Lel;
+	METHOD method_203 copy ()Lnet/minecraft/class_121;
+	METHOD method_204 expand (DDD)Lnet/minecraft/class_121;
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
-	METHOD b create (DDDDDD)Lel;
+	METHOD method_205 create (DDDDDD)Lnet/minecraft/class_121;
 		ARG 0 minX
 		ARG 2 minY
 		ARG 4 minZ
 		ARG 6 maxX
 		ARG 8 maxY
 		ARG 10 maxZ
-	METHOD b collideXZ (Lbn;)Z
+	METHOD method_206 collideXZ (Lnet/minecraft/class_42;)Z
 		ARG 1 vec
-	METHOD b set (Lel;)V
+	METHOD method_207 set (Lnet/minecraft/class_121;)V
 		ARG 1 other
-	METHOD c move (DDD)Lel;
+	METHOD method_209 move (DDD)Lnet/minecraft/class_121;
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
-	METHOD c set (DDDDDD)Lel;
+	METHOD method_210 set (DDDDDD)Lnet/minecraft/class_121;
 		ARG 1 minX
 		ARG 3 minY
 		ARG 5 minZ
 		ARG 7 maxX
 		ARG 9 maxY
 		ARG 11 maxZ
-	METHOD c collideXY (Lbn;)Z
+	METHOD method_211 collideXY (Lnet/minecraft/class_42;)Z
 		ARG 1 vec
-	METHOD d moveInPlace (DDD)Lel;
+	METHOD method_213 moveInPlace (DDD)Lnet/minecraft/class_121;
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
-	METHOD e (DDD)Lel;
+	METHOD method_214 (DDD)Lnet/minecraft/class_121;
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z

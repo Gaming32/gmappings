@@ -1,8 +1,8 @@
-CLASS ci net/minecraft/world/entity/MobSpawnHandler
-	FIELD a spawnableChunks Ljava/util/Set;
-	METHOD a spawnMobs (Lff;)I
+CLASS net/minecraft/class_64 net/minecraft/world/entity/MobSpawnHandler
+	FIELD field_146 spawnableChunks Ljava/util/Set;
+	METHOD method_127 spawnMobs (Lnet/minecraft/class_142;)I
 		ARG 0 world
-	METHOD a randomizedBlockPos (Lff;II)Lip;
+	METHOD method_128 randomizedBlockPos (Lnet/minecraft/class_142;II)Lnet/minecraft/class_233;
 		ARG 0 world
 		ARG 1 baseX
 		ARG 2 baseZ

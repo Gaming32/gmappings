@@ -1,17 +1,17 @@
-CLASS jw net/minecraft/world/BlockContainer
-	METHOD a getBlockId (III)I
+CLASS net/minecraft/class_267 net/minecraft/world/BlockContainer
+	METHOD method_774 getBlockId (III)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD b getBlockMetadata (III)I
+	METHOD method_775 getBlockMetadata (III)I
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD c getMaterial (III)Lkz;
+	METHOD method_776 getMaterial (III)Lnet/minecraft/class_297;
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
-	METHOD d isBlockOpaque (III)Z
+	METHOD method_777 isBlockOpaque (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z

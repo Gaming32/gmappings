@@ -1,8 +1,8 @@
-CLASS es net/minecraft/nbt/NbtList
-	FIELD a value Ljava/util/List;
-	FIELD b elementTag B
-	METHOD a get (I)Lhz;
+CLASS net/minecraft/class_128 net/minecraft/nbt/NbtList
+	FIELD field_386 value Ljava/util/List;
+	FIELD field_387 elementTag B
+	METHOD method_281 get (I)Lnet/minecraft/class_216;
 		ARG 1 i
-	METHOD a add (Lhz;)V
+	METHOD method_282 add (Lnet/minecraft/class_216;)V
 		ARG 1 element
-	METHOD b size ()I
+	METHOD method_283 size ()I

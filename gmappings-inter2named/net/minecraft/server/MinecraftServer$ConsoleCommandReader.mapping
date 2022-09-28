@@ -1,2 +1,2 @@
-CLASS cl net/minecraft/server/MinecraftServer$ConsoleCommandReader
-	FIELD a this$0 Lnet/minecraft/server/MinecraftServer;
+CLASS net/minecraft/class_67 net/minecraft/server/MinecraftServer$ConsoleCommandReader
+	FIELD field_167 this$0 Lnet/minecraft/server/MinecraftServer;

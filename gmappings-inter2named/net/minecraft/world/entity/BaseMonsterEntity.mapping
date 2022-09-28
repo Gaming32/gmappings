@@ -1,2 +1,2 @@
-CLASS gt net/minecraft/world/entity/BaseMonsterEntity
-	FIELD f attackDamage I
+CLASS net/minecraft/class_183 net/minecraft/world/entity/BaseMonsterEntity
+	FIELD field_668 attackDamage I

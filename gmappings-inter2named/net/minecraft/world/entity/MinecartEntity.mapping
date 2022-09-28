@@ -1,11 +1,11 @@
-CLASS kp net/minecraft/world/entity/MinecartEntity
-	FIELD a damageAmount I
-	FIELD aj pushZ D
-	FIELD ak inventorySlots [Lik;
-	FIELD d type I
-	FIELD e fuel I
-	FIELD f pushX D
-	METHOD <init> (Lff;DDDI)V
+CLASS net/minecraft/class_287 net/minecraft/world/entity/MinecartEntity
+	FIELD field_1133 damageAmount I
+	FIELD field_1134 pushZ D
+	FIELD field_1135 inventorySlots [Lnet/minecraft/class_228;
+	FIELD field_1146 type I
+	FIELD field_1147 fuel I
+	FIELD field_1148 pushX D
+	METHOD <init> (Lnet/minecraft/class_142;DDDI)V
 		ARG 1 world
 		ARG 2 x
 		ARG 4 y

@@ -1,4 +1,4 @@
-CLASS ew net/minecraft/network/packet/PositionAndRotationPacket
+CLASS net/minecraft/class_132 net/minecraft/network/packet/PositionAndRotationPacket
 	METHOD <init> (DDDDFFZ)V
 		ARG 1 x
 		ARG 3 y

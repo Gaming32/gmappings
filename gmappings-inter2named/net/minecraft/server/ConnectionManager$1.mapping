@@ -1,3 +1,3 @@
-CLASS dx net/minecraft/server/ConnectionManager$1
-	FIELD a val$server Lnet/minecraft/server/MinecraftServer;
-	FIELD b this$0 Leh;
+CLASS net/minecraft/class_106 net/minecraft/server/ConnectionManager$1
+	FIELD field_271 val$server Lnet/minecraft/server/MinecraftServer;
+	FIELD field_272 this$0 Lnet/minecraft/class_117;

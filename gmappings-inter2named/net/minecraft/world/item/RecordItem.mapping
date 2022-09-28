@@ -1,5 +1,5 @@
-CLASS ga net/minecraft/world/item/RecordItem
-	FIELD a trackId Ljava/lang/String;
+CLASS net/minecraft/class_164 net/minecraft/world/item/RecordItem
+	FIELD field_482 trackId Ljava/lang/String;
 	METHOD <init> (ILjava/lang/String;)V
 		ARG 1 itemId
 		ARG 2 trackId

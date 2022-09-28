@@ -1,0 +1,4 @@
+CLASS net/minecraft/class_321
+	METHOD <init> (IILnet/minecraft/class_297;Z)V
+		ARG 1 blockId
+		ARG 3 material

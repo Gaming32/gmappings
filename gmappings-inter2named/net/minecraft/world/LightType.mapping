@@ -1,6 +1,6 @@
-CLASS eb net/minecraft/world/LightType
-	FIELD a Sky Leb;
-	FIELD b Block Leb;
-	FIELD c baseLightLevel I
+CLASS net/minecraft/class_111 net/minecraft/world/LightType
+	FIELD field_274 Sky Lnet/minecraft/class_111;
+	FIELD field_275 Block Lnet/minecraft/class_111;
+	FIELD field_276 baseLightLevel I
 	METHOD <init> (Ljava/lang/String;II)V
 		ARG 3 baseLightLevel

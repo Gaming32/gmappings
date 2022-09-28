@@ -1,19 +1,19 @@
-CLASS im net/minecraft/world/entity/EntityTypeMap
-	FIELD a typeNameToId Ljava/util/Map;
-	FIELD b classToTypeName Ljava/util/Map;
-	FIELD c typeIdToClass Ljava/util/Map;
-	FIELD d classToTypeId Ljava/util/Map;
-	METHOD a readEntity (Lad;Lff;)Lep;
+CLASS net/minecraft/class_230 net/minecraft/world/entity/EntityTypeMap
+	FIELD field_970 typeNameToId Ljava/util/Map;
+	FIELD field_971 classToTypeName Ljava/util/Map;
+	FIELD field_972 typeIdToClass Ljava/util/Map;
+	FIELD field_973 classToTypeId Ljava/util/Map;
+	METHOD method_712 readEntity (Lnet/minecraft/class_5;Lnet/minecraft/class_142;)Lnet/minecraft/class_125;
 		ARG 0 nbt
 		ARG 1 world
-	METHOD a getTypeId (Lep;)I
+	METHOD method_713 getTypeId (Lnet/minecraft/class_125;)I
 		ARG 0 entity
-	METHOD a register (Ljava/lang/Class;Ljava/lang/String;I)V
+	METHOD method_714 register (Ljava/lang/Class;Ljava/lang/String;I)V
 		ARG 0 entityClass
 		ARG 1 typeName
 		ARG 2 typeId
-	METHOD a createEntity (Ljava/lang/String;Lff;)Lep;
+	METHOD method_715 createEntity (Ljava/lang/String;Lnet/minecraft/class_142;)Lnet/minecraft/class_125;
 		ARG 0 typeName
 		ARG 1 world
-	METHOD b getTypeName (Lep;)Ljava/lang/String;
+	METHOD method_716 getTypeName (Lnet/minecraft/class_125;)Ljava/lang/String;
 		ARG 0 entity

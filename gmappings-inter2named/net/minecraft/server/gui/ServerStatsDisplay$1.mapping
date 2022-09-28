@@ -1,4 +1,4 @@
-CLASS lc net/minecraft/server/gui/ServerStatsDisplay$1
-	FIELD a this$0 Lkf;
+CLASS net/minecraft/class_301 net/minecraft/server/gui/ServerStatsDisplay$1
+	FIELD field_1276 this$0 Lnet/minecraft/class_277;
 	METHOD actionPerformed actionPerformed (Ljava/awt/event/ActionEvent;)V
 		ARG 1 event

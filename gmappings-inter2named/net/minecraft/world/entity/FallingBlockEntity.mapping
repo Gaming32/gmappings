@@ -1,7 +1,7 @@
-CLASS jb net/minecraft/world/entity/FallingBlockEntity
-	FIELD a tile I
-	FIELD b age I
-	METHOD <init> (Lff;DDDI)V
+CLASS net/minecraft/class_246 net/minecraft/world/entity/FallingBlockEntity
+	FIELD field_998 tile I
+	FIELD field_999 age I
+	METHOD <init> (Lnet/minecraft/class_142;DDDI)V
 		ARG 1 world
 		ARG 2 x
 		ARG 4 y

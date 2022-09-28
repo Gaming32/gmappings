@@ -1,13 +1,13 @@
-CLASS gg net/minecraft/math/noise/OctavedPerlinNoise
-	FIELD a noises [Lar;
-	FIELD b octaves I
+CLASS net/minecraft/class_170 net/minecraft/math/noise/OctavedPerlinNoise
+	FIELD field_504 noises [Lnet/minecraft/class_19;
+	FIELD field_505 octaves I
 	METHOD <init> (Ljava/util/Random;I)V
 		ARG 1 rand
 		ARG 2 octaves
-	METHOD a noise2 (DD)D
+	METHOD method_464 noise2 (DD)D
 		ARG 1 x
 		ARG 3 y
-	METHOD a ([DDDDIIIDDD)[D
+	METHOD method_465 ([DDDDIIIDDD)[D
 		ARG 1 result
-	METHOD a ([DIIIIDDD)[D
+	METHOD method_466 ([DIIIIDDD)[D
 		ARG 1 result

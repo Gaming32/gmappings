@@ -1,4 +1,4 @@
-CLASS bz net/minecraft/nbt/NbtInt
-	FIELD a value I
+CLASS net/minecraft/class_54 net/minecraft/nbt/NbtInt
+	FIELD field_127 value I
 	METHOD <init> (I)V
 		ARG 1 value

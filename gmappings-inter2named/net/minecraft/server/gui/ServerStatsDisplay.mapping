@@ -1,8 +1,8 @@
-CLASS kf net/minecraft/server/gui/ServerStatsDisplay
-	FIELD a memoryGraphData [I
-	FIELD b currentGraphTime I
-	FIELD c lines [Ljava/lang/String;
-	METHOD a update ()V
-	METHOD a access$1 (Lkf;)V
+CLASS net/minecraft/class_277 net/minecraft/server/gui/ServerStatsDisplay
+	FIELD field_1092 memoryGraphData [I
+	FIELD field_1093 currentGraphTime I
+	FIELD field_1094 lines [Ljava/lang/String;
+	METHOD method_792 update ()V
+	METHOD method_793 access$1 (Lnet/minecraft/class_277;)V
 	METHOD paint paint (Ljava/awt/Graphics;)V
 		ARG 1 graphics

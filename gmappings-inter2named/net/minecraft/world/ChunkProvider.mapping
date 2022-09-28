@@ -1,7 +1,7 @@
-CLASS cg net/minecraft/world/ChunkProvider
-	METHOD a isLoaded (II)Z
+CLASS net/minecraft/class_62 net/minecraft/world/ChunkProvider
+	METHOD method_122 isLoaded (II)Z
 		ARG 1 x
 		ARG 2 z
-	METHOD b getChunk (II)Lkw;
+	METHOD method_126 getChunk (II)Lnet/minecraft/class_294;
 		ARG 1 x
 		ARG 2 z

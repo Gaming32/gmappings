@@ -1,37 +1,37 @@
-CLASS bn net/minecraft/math/Vector3d
-	FIELD a x D
-	FIELD b y D
-	FIELD c z D
-	FIELD d vectorPool Ljava/util/List;
-	FIELD e nextVector I
+CLASS net/minecraft/class_42 net/minecraft/math/Vector3d
+	FIELD field_79 x D
+	FIELD field_80 y D
+	FIELD field_81 z D
+	FIELD field_82 vectorPool Ljava/util/List;
+	FIELD field_83 nextVector I
 	METHOD <init> (DDD)V
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
-	METHOD a poolVectors ()V
-	METHOD a createUnpooled (DDD)Lbn;
+	METHOD method_73 poolVectors ()V
+	METHOD method_74 createUnpooled (DDD)Lnet/minecraft/class_42;
 		ARG 0 x
 		ARG 2 y
 		ARG 4 z
-	METHOD a add (Lbn;)D
+	METHOD method_75 add (Lnet/minecraft/class_42;)D
 		ARG 1 other
-	METHOD b normalize ()Lbn;
-	METHOD b create (DDD)Lbn;
+	METHOD method_77 normalize ()Lnet/minecraft/class_42;
+	METHOD method_78 create (DDD)Lnet/minecraft/class_42;
 		ARG 0 x
 		ARG 2 y
 		ARG 4 z
-	METHOD b subtract (Lbn;)D
+	METHOD method_79 subtract (Lnet/minecraft/class_42;)D
 		ARG 1 other
-	METHOD c magnitude ()D
-	METHOD c add (DDD)Lbn;
+	METHOD method_81 magnitude ()D
+	METHOD method_82 add (DDD)Lnet/minecraft/class_42;
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
-	METHOD d subtract (DDD)D
+	METHOD method_84 subtract (DDD)D
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
-	METHOD e set (DDD)Lbn;
+	METHOD method_85 set (DDD)Lnet/minecraft/class_42;
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z

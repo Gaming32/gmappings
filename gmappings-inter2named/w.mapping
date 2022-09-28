@@ -1,4 +1,0 @@
-CLASS w
-	METHOD <init> (IILkz;Z)V
-		ARG 1 blockId
-		ARG 3 material

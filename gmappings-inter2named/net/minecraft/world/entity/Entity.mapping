@@ -1,119 +1,119 @@
-CLASS ep net/minecraft/world/entity/Entity
-	FIELD A onGround Z
-	FIELD G dead Z
-	FIELD I width F
-	FIELD J height F
-	FIELD N fallDistance F
-	FIELD O tempX D
-	FIELD P tempY D
-	FIELD Q tempZ D
-	FIELD W random Ljava/util/Random;
-	FIELD X ticksLiving I
-	FIELD Z fireTicks I
-	FIELD a nextEntityId I
-	FIELD ad airTicks I
-	FIELD af isLoaded Z
-	FIELD ag chunkX I
-	FIELD ah chunkY I
-	FIELD ai chunkZ I
-	FIELD g entityId I
-	FIELD j ridingEntity Lep;
-	FIELD k riddenEntity Lep;
-	FIELD l world Lff;
-	FIELD m lastX D
-	FIELD n lastY D
-	FIELD o lastZ D
-	FIELD p x D
-	FIELD q y D
-	FIELD r z D
-	FIELD s motionX D
-	FIELD t motionY D
-	FIELD u motionZ D
-	FIELD v yaw F
-	FIELD w pitch F
-	FIELD x lastYaw F
-	FIELD y lastPitch F
-	FIELD z boundingBox Lel;
-	METHOD <init> (Lff;)V
+CLASS net/minecraft/class_125 net/minecraft/world/entity/Entity
+	FIELD field_321 onGround Z
+	FIELD field_327 dead Z
+	FIELD field_329 width F
+	FIELD field_330 height F
+	FIELD field_334 fallDistance F
+	FIELD field_335 tempX D
+	FIELD field_336 tempY D
+	FIELD field_337 tempZ D
+	FIELD field_343 random Ljava/util/Random;
+	FIELD field_344 ticksLiving I
+	FIELD field_346 fireTicks I
+	FIELD field_347 nextEntityId I
+	FIELD field_351 airTicks I
+	FIELD field_353 isLoaded Z
+	FIELD field_354 chunkX I
+	FIELD field_355 chunkY I
+	FIELD field_356 chunkZ I
+	FIELD field_361 entityId I
+	FIELD field_364 ridingEntity Lnet/minecraft/class_125;
+	FIELD field_365 riddenEntity Lnet/minecraft/class_125;
+	FIELD field_366 world Lnet/minecraft/class_142;
+	FIELD field_367 lastX D
+	FIELD field_368 lastY D
+	FIELD field_369 lastZ D
+	FIELD field_370 x D
+	FIELD field_371 y D
+	FIELD field_372 z D
+	FIELD field_373 motionX D
+	FIELD field_374 motionY D
+	FIELD field_375 motionZ D
+	FIELD field_376 yaw F
+	FIELD field_377 pitch F
+	FIELD field_378 lastYaw F
+	FIELD field_379 lastPitch F
+	FIELD field_380 boundingBox Lnet/minecraft/class_121;
+	METHOD <init> (Lnet/minecraft/class_142;)V
 		ARG 1 world
-	METHOD a setPosition (DDD)V
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 o
+	METHOD method_227 setPosition (DDD)V
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
-	METHOD a setDimensions (FF)V
+	METHOD method_230 setDimensions (FF)V
 		ARG 1 width
 		ARG 2 height
-	METHOD a dropItem (IIF)Lhe;
+	METHOD method_232 dropItem (IIF)Lnet/minecraft/class_195;
 		ARG 1 itemId
 		ARG 2 count
 		ARG 3 yOffset
-	METHOD a writeTypeNbt (Lad;)V
+	METHOD method_233 writeTypeNbt (Lnet/minecraft/class_5;)V
 		ARG 1 nbt
-	METHOD a distanceTo (Lep;)F
+	METHOD method_234 distanceTo (Lnet/minecraft/class_125;)F
 		ARG 1 other
-	METHOD a damage (Lep;I)Z
+	METHOD method_235 damage (Lnet/minecraft/class_125;I)Z
 		ARG 1 damager
 		ARG 2 amount
-	METHOD a interactedWith (Lgp;)Z
+	METHOD method_236 interactedWith (Lnet/minecraft/class_179;)Z
 		ARG 1 player
-	METHOD a arrayToNbtList ([D)Les;
+	METHOD method_238 arrayToNbtList ([D)Lnet/minecraft/class_128;
 		ARG 1 array
-	METHOD a arrayToNbtList ([F)Les;
+	METHOD method_239 arrayToNbtList ([F)Lnet/minecraft/class_128;
 		ARG 1 array
-	METHOD b teleport (DDDFF)V
+	METHOD method_241 teleport (DDDFF)V
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
 		ARG 7 yaw
 		ARG 8 pitch
-	METHOD b setRotation (FF)V
+	METHOD method_243 setRotation (FF)V
 		ARG 1 yaw
 		ARG 2 pitch
-	METHOD b damage (I)V
+	METHOD method_244 damage (I)V
 		ARG 1 amount
-	METHOD b dropItem (II)Lhe;
+	METHOD method_245 dropItem (II)Lnet/minecraft/class_195;
 		ARG 1 itemId
 		ARG 2 count
-	METHOD b readTypeNbt (Lad;)V
+	METHOD method_246 readTypeNbt (Lnet/minecraft/class_5;)V
 		ARG 1 nbt
-	METHOD b distanceToSquared (Lep;)D
+	METHOD method_247 distanceToSquared (Lnet/minecraft/class_125;)D
 		ARG 1 entity
-	METHOD b collidedWith (Lgp;)V
+	METHOD method_249 collidedWith (Lnet/minecraft/class_179;)V
 		ARG 1 player
-	METHOD b_ tick ()V
-	METHOD c move (DDD)V
+	METHOD method_250 tick ()V
+	METHOD method_251 move (DDD)V
 		ARG 1 vx
 		ARG 3 vy
 		ARG 5 vz
-	METHOD c setPositionAndRotation (DDDFF)V
+	METHOD method_252 setPositionAndRotation (DDDFF)V
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
 		ARG 7 yaw
 		ARG 8 pitch
-	METHOD c writeNbtWithType (Lad;)Z
+	METHOD method_253 writeNbtWithType (Lnet/minecraft/class_5;)Z
 		COMMENT @return {@code false} if this entity is dead or does not have a valid entity type,
 		COMMENT otherwise {@code true}.
 		ARG 1 nbt
-	METHOD d distanceToSquared (DDD)D
+	METHOD method_256 distanceToSquared (DDD)D
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
-	METHOD d writeNbt (Lad;)V
+	METHOD method_257 writeNbt (Lnet/minecraft/class_5;)V
 		ARG 1 nbt
-	METHOD e distanceTo (DDD)D
+	METHOD method_259 distanceTo (DDD)D
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
-	METHOD e readNbt (Lad;)V
+	METHOD method_260 readNbt (Lnet/minecraft/class_5;)V
 		ARG 1 nbt
-	METHOD equals (Ljava/lang/Object;)Z
-		ARG 1 o
-	METHOD f addVelocity (DDD)V
+	METHOD method_262 addVelocity (DDD)V
 		ARG 1 vx
 		ARG 3 vy
 		ARG 5 vz
-	METHOD l discard ()V
-	METHOD m livingTick ()V
-	METHOD w getTypeName ()Ljava/lang/String;
-	METHOD x isAlive ()Z
+	METHOD method_264 discard ()V
+	METHOD method_265 livingTick ()V
+	METHOD method_275 getTypeName ()Ljava/lang/String;
+	METHOD method_276 isAlive ()Z
